@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../estiloWar.css">
+    <script src="../scritpWar.js" defer></script>
+    <link rel="shortcut icon" href="../img/warhammer-seeklogo.ico" type="image/x-icon">
+
+    <title>Facciones</title>
+</head>
+
+<body>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <nav id="nav" class="">
+                        <ul id="link">
+                            <li><a href="../index.html" class="selec" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="../paginas/crono.html" class="selec" onclick="seleccionar(this)">CRONOLOGÍA</a>
+                            </li>
+                            <li><a href="#facc" class="selec" onclick="seleccionar(this)">FACCIONES</a></li>
+                            <li><a href="../paginas/juegoMesa.html" class="selec" onclick="seleccionar(this)">JUEGO DE
+                                    MESA</a></li>
+                            <li><a href="../paginas/contacto.html" class="selec"
+                                    onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <img id="imgPortada" src="../img/portada.webp" alt="">
+        </div>
+
+        <section id="portfolio">
+            <h3 class="titulo-seccion"> FACCIONES</h3><br><br>
+            <p>En este universo, hay varias facciones distintas que luchan por el control del espacio, recursos y poder.
+                Aquí hay una descripción general de algunas de las facciones más importantes:</p><br>
+
+            <p><b>Imperio de la Humanidad:</b> El Imperio es la facción más grande y poderosa en el universo de
+                Warhammer 40K. Está gobernado por el Emperador de la Humanidad, quien es adorado como un dios, y su
+                objetivo principal es la supervivencia y expansión del Imperio. Las fuerzas del Imperio incluyen los
+                Adeptus Astartes (Marines Espaciales), la Guardia Imperial (Astra Militarum), la Inquisición y varios
+                otros grupos militares y eclesiásticos.</p><br>
+
+            <p><b>Caos:</b> El Caos es una fuerza maligna y corruptora que se opone al Imperio. Está compuesto por
+                adoradores de los poderes del Caos, entidades demoníacas y traidores del Imperio. Los seguidores del
+                Caos son conocidos por su brutalidad y su voluntad de corromper y destruir. Los cuatro principales
+                poderes del Caos son Khorne, el dios de la guerra; Tzeentch, el dios del cambio; Nurgle, el dios de la
+                plaga; y Slaanesh, el dios del placer y la decadencia.</p><br>
+
+            <p><b>Eldars:</b> Los Eldars son una antigua raza alienígena con una civilización altamente avanzada. Son
+                expertos en el uso de la tecnología y la psiquiatría, pero su civilización está en declive. Los Eldars
+                están divididos en varias facciones, incluyendo los Eldars Oscuros, que son hedonistas y malvados; los
+                Eldars Aeldari, que buscan preservar lo que queda de su civilización; y los Harlequins, guerreros y
+                artistas de élite.</p><br>
+
+            <p><b>Orkos:</b> Los Orkos son una raza de guerreros brutales y salvajes que adoran la guerra y la
+                destrucción. Son conocidos por su brutalidad, su resistencia y su amor por la lucha. Los Orkos están
+                organizados en bandas y clanes, liderados por los más fuertes y carismáticos entre ellos. Su sociedad
+                está basada en la ley del más fuerte, y su tecnología es rudimentaria pero efectiva.</p><br>
+
+            <p><b>El imperio Tau:</b> El Imperio Tau es una facción relativamente nueva en el universo de Warhammer 40K.
+                Son una raza alienígena tecnológicamente avanzada que busca expandir su influencia a través de la
+                diplomacia y la guerra justa. Los Tau valoran el bien común sobre el individualismo y creen en una
+                sociedad altamente estructurada y jerárquica. Su tecnología incluye armas de plasma, robots de combate y
+                poderosos mechs de batalla.</p><br>
+
+            <p><b>El Adeptus Mechanicus:</b> también conocido como el Mechanicum o el Culto Mechanicus, es una de las
+                facciones más distintivas y fascinantes en el universo de Warhammer 40,000. Se trata de una organización
+                tecnológicamente avanzada que venera la tecnología como si fuera una religión. Su cultura, tecnología y
+                creencias los convierten en una fuerza poderosa y misteriosa en el universo de 40K.</p><br>
+
+            <p><b>Los Tiranidos:</b> son una de las facciones más temibles y enigmáticas en el universo de Warhammer
+                40,000. Son una raza alienígena bio-orgánica altamente evolucionada y voraz que se mueve a través de la
+                galaxia devorando planetas enteros en su insaciable búsqueda de biomasa para alimentar a su colmena.</p>
+            <br>
+
+            <p><b>Las Ligas de los Votann:</b> (Leagues of Votann en inglés) son la facción político-militar formada por
+                los pseudohumanos Homo sapiens rotundus. Son conocidos en el Imperio de la Humanidad como los Squats o
+                Cabezahierro (Necromunda), aunque ellos mismos prefieren llamarse Familiares (Kin en inglés); en el
+                Imperio T'au se les llama Demiurgos o Bentu'sin (literalmente, "aquellos dotados de sabiduría"),
+                mientras que los Aeldari les conocen como Heliosi.</p><br>
+
+            <p>Estas son solo algunas de las facciones principales en Warhammer 40K, pero hay muchas más, cada una con
+                su propio trasfondo, estilo de juego y motivaciones. El universo de Warhammer 40K es vasto y diverso, lo
+                que lo convierte en un escenario rico y emocionante para juegos y narrativas.</p><br>
+
+
+            <div class="fila">
+                <div class="proyecto">
+                    <div class="vertlay"></div>
+                    <img src="../img/impHum.webp" alt="">
+                    <div class="info">
+                        <h4>Imperio de la Humanidad</h4>
+                        <ul id="faccs">
+                            <li><a href="/Warhammer 40K/facciones/ImperioHumano/ImperioHumano.html">Historia y Origen</a></li>
+                            <li><a href="/Warhammer 40K/facciones/ImperioHumano/astartes.html">Post-Humanos</a></li>
+                            <li><a href="/Warhammer 40K/facciones/ImperioHumano/adeptas.html">Adepta Sororitas</a></li>
+                            <li><a href="/Warhammer 40K/facciones/ImperioHumano/milicia.html">Astra Militarum</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="vertlay"></div>
+                    <img src="../img/caos.webp" alt="">
+                    <div class="info">
+                        <h4>los Dioses Oscuros</h4>
+                        <ul id="faccs">
+                            <li><a href="/Warhammer 40K/facciones/Caos/caos.html">Historia y Origen</a></li>
+                            <li><a href="/Warhammer 40K/facciones/Caos/disformidad.html">La Disformidad</a></li>
+                            <li><a href="/Warhammer 40K/facciones/Caos/dioses.html">Los Cuatro Dioses </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="vertlay"></div>
+                    <img src="../img/Aeldari.webp" alt="">
+                    <div class="info">
+                        <h4>Los Aeldari</h4>
+                        <ul id="faccs">
+                            <li><a href="/Warhammer 40K/facciones/Eldar/eldars.html">Historia y Origen</a></li>
+                            <li><a href="/Warhammer 40K/facciones/Eldar/aeldari.html">Los Exoditas</a></li>
+                            <li><a href="/Warhammer 40K/facciones/Eldar/drukari.html">Los Drukhari</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="proyecto">
+                    <div class="vertlay"></div>
+                    <img src="../img/tyranids.webp" alt="">
+                    <div class="info">
+                        <h4>Tiránidos</h4>
+                        <ul id="faccs">
+                            <li><a href="/Warhammer 40K/facciones/Tiranidos/tiranidos.html">Historia y Origen</a></li>
+                            <li><a href="/Warhammer 40K/facciones/Tiranidos/conquistaTyrand.html">Invación</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="vertlay"></div>
+                    <img src="../img/tau.webp" alt="">
+                    <div class="info">
+                        <h4>Imperio T'au</h4>
+                        <ul id="faccs">
+                            <li><a href="/Warhammer 40K/facciones/Tau/imperioTau.html">Historia y Origen</a></li>
+                            <li><a href="/Warhammer 40K/facciones/Tau/tau.html">Castas</a></li>
+                            <li><a href="/Warhammer 40K/facciones/Tau/tecTau.html">Esferas de expanción</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="vertlay"></div>
+                    <img src="../img/necrons.webp" alt="">
+                    <div class="info">
+                        <h4>Imperio Necron</h4>
+                        <ul id="faccs">
+                            <li><a href="/Warhammer 40K/facciones/Necron/necron.html">Historia y Origen</a></li>
+                            <li><a href="/Warhammer 40K/facciones/Necron/mundosNecron.html">Mundos Tumba</a></li>
+                            <li><a href="/Warhammer 40K/facciones/Necron/dinasNecron.html">Dinastias Necron</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="proyecto">
+                    <div class="vertlay"></div>
+                    <img src="../img/Orkos.webp" alt="">
+                    <div class="info">
+                        <h4>Descripción del Proyecto</h4>
+                        <p>Diseño Web 7</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="vertlay"></div>
+                    <img src="../img/mechanicus.webp" alt="">
+                    <div class="info">
+                        <h4>Descripción del Proyecto</h4>
+                        <p>Diseño Web 8</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="vertlay"></div>
+                    <img src="../img/votann.webp" alt="">
+                    <div class="info">
+                        <h4>Descripción del Proyecto</h4>
+                        <p>Diseño Web 8</p>
+                    </div>
+                </div>
+            </div>
+        </section><br>
+        <!--SECCION FOOTER-->
+        <footer>
+            <p>Todos los derechos reservados - 2024</p>
+        </footer>
+</body>
+
+</html>
