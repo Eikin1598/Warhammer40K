@@ -190,7 +190,7 @@ footer {
     float: right;
     border: 3px;
     border-radius: 10px;
-    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .imgFacc3{
@@ -198,7 +198,7 @@ footer {
     float: right;
     border: 3px;
     border-radius: 10px;
-    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .imgFacc4{
@@ -210,7 +210,7 @@ footer {
 }
 
 .imgFacc5{
-    width: 400px;
+    width: 500px;
     float: left;
     border: 3px;
     border-radius: 10px;
@@ -225,6 +225,15 @@ body {
 .dark-mode {
     background-color: #000;
     color: #fff;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    
+}
+.clear {
+    clear: both;
 }
 
 
