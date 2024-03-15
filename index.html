@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,64 +13,114 @@
     <script src="scritpWar.js" defer></script>
     <title>Warhammer 40K</title>
 </head>
+
 <body>
-    <!--SECCION INICIO-->
-    <section id="inicio">
+
+    <!--SECCION NAV-->
+
+    <section id="nav">
         <div class="contenido">
             <header>
                 <div class="contenido-header">
                     <nav id="nav" class="">
                         <ul id="link">
-                            <li><a href="index.html" class="selec" onclick="seleccionar(this)">INICIO</a></li>
-                            <li><a href="paginas/crono.html" class="selec" onclick="seleccionar(this)">CRONOLOGÍA</a></li>
-                            <li><a href="paginas/facc.html" class="selec" onclick="seleccionar(this)">FACCIONES</a></li>
-                            <li><a href="paginas/juegoMesa.html" class="selec" onclick="seleccionar(this)">JUEGO DE MESA</a></li>
-                            <li><a href="paginas/contacto.html" class="selec" onclick="seleccionar(this)">CONTACTO</a></li>
-                            <button onclick="toggleDarkMode()">Activar Modo Nocturno</button> 
+                            <li><a href="" class="selec" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="./paginas/crono.html" class="selec" onclick="seleccionar(this)">CRONOLOGÍA</a>
+                            </li>
+                            <li><a href="./paginas/facc.html" class="selec" onclick="seleccionar(this)">FACCIONES</a>
+                            </li>
+                            <li><a href="./paginas/juegoMesa.html" class="selec" onclick="seleccionar(this)">JUEGO DE
+                                    MESA</a></li>
+                            <li><a href="./paginas/contacto.html" class="selec" onclick="seleccionar(this)">CONTACTO</a>
+                            </li>
+                            <button class="modo-nocturno-btn" id="modo-nocturno-btn">
+                                <span><i class="fa-regular fa-sun"></i></span>
+                                <span><i class="fa-regular fa-moon"></i></span>
+                            </button>
                         </ul>
                     </nav>
                 </div>
             </header>
-            <img id="imgPortada" src="img/portada.webp" alt="">
-        </div>
     </section>
+
+    <!--SECCION CONT-ESCRITO-->
     <section class="contenido-escrito">
+        <img id="imgPortada" src="./img/portada.webp" alt="">
+
+
         <div class="bienvenida">
-            <h3  class="titulo-seccion">¡Bienvenido al universo de Warhammer 40K!</h3><br>
+            <h3 class="titulo-seccion">¡Bienvenido al universo de Warhammer 40K!</h3><br>
             <h3>Introducción</h3>
             <br>
-            <p>"Es el 41º Milenio. Durante más de cien siglos, el Emperador de la Humanidad ha permanecido inmóvil en el Trono Dorado de la Tierra. Es el amo de la humanidad por la voluntad de los dioses y el amo de un millón de mundos por el poder de sus inagotables ejércitos. Es un cadáver en descomposición retorciéndose invisiblemente con poder de la Era Oscura de la Tecnología. Es el Señor de los Despojos del vasto Imperio del Hombre, por el cual mil almas son sacrificadas cada día para que Él nunca muera verdaderamente. <br>
+            <p>"Es el 41º Milenio. Durante más de cien siglos, el Emperador de la Humanidad ha permanecido inmóvil en el
+                Trono Dorado de la Tierra. Es el amo de la humanidad por la voluntad de los dioses y el amo de un millón
+                de mundos por el poder de sus inagotables ejércitos. Es un cadáver en descomposición retorciéndose
+                invisiblemente con poder de la Era Oscura de la Tecnología. Es el Señor de los Despojos del vasto
+                Imperio del Hombre, por el cual mil almas son sacrificadas cada día para que Él nunca muera
+                verdaderamente. <br>
 
-                Sin embargo, incluso en su estado inmortal, el Emperador continúa su eterna vigilancia. Poderosas flotas de batalla cruzan el miasma infestado de demonios del Warp, la única ruta entre estrellas distantes, su camino iluminado por el Astronomican, la manifestación psíquica de la voluntad del Emperador. Vastos ejércitos combaten en su nombre en incontables mundos. Los más grandes entre sus soldados son los Adeptus Astartes, los Marines Espaciales, superguerreros bioingenierizados. Sus camaradas en armas son legión: la Guardia Imperial y las innumerables fuerzas de defensa planetaria, la siempre vigilante Inquisición y los Tecno-sacerdotes del Adeptus Mechanicus, por nombrar solo algunos. Pero a pesar de sus multitudes, apenas son suficientes para contener la amenaza siempre presente para la humanidad de los alienígenas, herejes, mutantes, y mucho, mucho peor. <br>
-                
-                Ser un hombre en tales tiempos es ser uno entre billones incontables. Es vivir en el régimen más cruel y sangriento imaginable. Estos son los relatos de esos tiempos. Olvidad el poder de la tecnología y la ciencia, pues mucho se ha olvidado, nunca para ser reaprendido. Olvidad la promesa de progreso y comprensión, pues en el oscuro y sombrío futuro solo hay guerra. No hay paz entre las estrellas, solo una eternidad de carnicería y matanza, y la risa de dioses sedientos."
+                Sin embargo, incluso en su estado inmortal, el Emperador continúa su eterna vigilancia. Poderosas flotas
+                de batalla cruzan el miasma infestado de demonios del Warp, la única ruta entre estrellas distantes, su
+                camino iluminado por el Astronomican, la manifestación psíquica de la voluntad del Emperador. Vastos
+                ejércitos combaten en su nombre en incontables mundos. Los más grandes entre sus soldados son los
+                Adeptus Astartes, los Marines Espaciales, superguerreros bioingenierizados. Sus camaradas en armas son
+                legión: la Guardia Imperial y las innumerables fuerzas de defensa planetaria, la siempre vigilante
+                Inquisición y los Tecno-sacerdotes del Adeptus Mechanicus, por nombrar solo algunos. Pero a pesar de sus
+                multitudes, apenas son suficientes para contener la amenaza siempre presente para la humanidad de los
+                alienígenas, herejes, mutantes, y mucho, mucho peor. <br>
+
+                Ser un hombre en tales tiempos es ser uno entre billones incontables. Es vivir en el régimen más cruel y
+                sangriento imaginable. Estos son los relatos de esos tiempos. Olvidad el poder de la tecnología y la
+                ciencia, pues mucho se ha olvidado, nunca para ser reaprendido. Olvidad la promesa de progreso y
+                comprensión, pues en el oscuro y sombrío futuro solo hay guerra. No hay paz entre las estrellas, solo
+                una eternidad de carnicería y matanza, y la risa de dioses sedientos."
             </p>
-            <br><hr><br>
+            <br>
+            <hr><br>
         </div>
-    
-    
+
+
         <div class="contenedor-inicio">
             <h3>¿Que es Warhammer 40K?</h3><br>
             <p>
-                Warhammer 40,000, también conocido como Warhammer 40K o simplemente 40K, es un juego de guerra de mesa de ciencia ficción creado por la compañía británica Games Workshop. Se desarrolla en un oscuro y distópico universo en el 41º milenio, donde múltiples facciones luchan por el control del cosmos.</p>
-                <br><hr><br>
-            <h3>Aspectos destacados sobre Warhammer 40K</h3>  <br>
+                Warhammer 40,000, también conocido como Warhammer 40K o simplemente 40K, es un juego de guerra de mesa
+                de ciencia ficción creado por la compañía británica Games Workshop. Se desarrolla en un oscuro y
+                distópico universo en el 41º milenio, donde múltiples facciones luchan por el control del cosmos.</p>
+            <br>
+            <hr><br>
+            <h3>Aspectos destacados sobre Warhammer 40K</h3> <br>
             <ul class="lista-inicio">
-                <li><b>Universo y ambientación:</b>Warhammer 40K se sitúa en un futuro lejano donde el Imperio Humano, liderado por el Emperador, lucha por la supervivencia contra numerosas amenazas, incluidas las razas alienígenas, las fuerzas del Caos y las criaturas abominables. El universo está lleno de conflictos, traiciones, batallas y héroes trágicos.</li>
-                <li><b>Facciones:</b>El juego presenta una amplia variedad de facciones jugables, cada una con su propio trasfondo, ejército, unidades y estética distintiva. Algunas de las facciones más icónicas incluyen el Imperio Espacial, los Marines Espaciales, los Eldars, los Orkos, los Tau, los Caos y los Tiránidos, entre otros.</li>
-                <li><b>Juego de guerra de miniaturas:</b>Warhammer 40K es un juego de guerra de mesa en el que los jugadores recolectan y pintan miniaturas de plástico que representan a las unidades militares de sus ejércitos. Estas miniaturas se utilizan luego en batallas estratégicas que se desarrollan en un campo de juego con terreno variado.</li>
-                <li><b>Reglas y mecánicas:</b>El juego se rige por un conjunto de reglas y mecánicas que determinan cómo se desarrollan las batallas, incluidos los movimientos de las unidades, las tiradas de dados para ataques y defensa, y el uso de habilidades especiales y estrategias tácticas.</li>
-                <li><b>Expansión continua:</b>Warhammer 40K ha evolucionado y crecido desde su lanzamiento inicial en la década de 1980. Games Workshop continúa lanzando nuevas ediciones del juego, así como expansiones, suplementos, campañas y novelas que expanden el trasfondo del universo y agregan nuevas opciones de juego.</li>
+                <li><b>Universo y ambientación:</b>Warhammer 40K se sitúa en un futuro lejano donde el Imperio Humano,
+                    liderado por el Emperador, lucha por la supervivencia contra numerosas amenazas, incluidas las razas
+                    alienígenas, las fuerzas del Caos y las criaturas abominables. El universo está lleno de conflictos,
+                    traiciones, batallas y héroes trágicos.</li>
+                <li><b>Facciones:</b>El juego presenta una amplia variedad de facciones jugables, cada una con su propio
+                    trasfondo, ejército, unidades y estética distintiva. Algunas de las facciones más icónicas incluyen
+                    el Imperio Espacial, los Marines Espaciales, los Eldars, los Orkos, los Tau, los Caos y los
+                    Tiránidos, entre otros.</li>
+                <li><b>Juego de guerra de miniaturas:</b>Warhammer 40K es un juego de guerra de mesa en el que los
+                    jugadores recolectan y pintan miniaturas de plástico que representan a las unidades militares de sus
+                    ejércitos. Estas miniaturas se utilizan luego en batallas estratégicas que se desarrollan en un
+                    campo de juego con terreno variado.</li>
+                <li><b>Reglas y mecánicas:</b>El juego se rige por un conjunto de reglas y mecánicas que determinan cómo
+                    se desarrollan las batallas, incluidos los movimientos de las unidades, las tiradas de dados para
+                    ataques y defensa, y el uso de habilidades especiales y estrategias tácticas.</li>
+                <li><b>Expansión continua:</b>Warhammer 40K ha evolucionado y crecido desde su lanzamiento inicial en la
+                    década de 1980. Games Workshop continúa lanzando nuevas ediciones del juego, así como expansiones,
+                    suplementos, campañas y novelas que expanden el trasfondo del universo y agregan nuevas opciones de
+                    juego.</li>
             </ul>
 
         </div>
-    </section><br>
-    
-       
+        <button id="btnGenerico" title="Subir" onclick="scrollToTop()"><i class="fa-solid fa-up-long"></i></button>
+    </section>
+
+
     <!--SECCION FOOTER-->
     <footer>
         <p>Todos los derechos reservados - 2024</p>
-            </footer>
-     
+    </footer>
+
 </body>
+
 </html>

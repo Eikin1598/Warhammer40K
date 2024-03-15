@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,359 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../estiloWar.css">
-        <script src="../scritpWar.js" defer></script>
+    <link rel="stylesheet" href="../estiloWar.css">
+    <script src="../scritpWar.js" defer></script>
     <link rel="shortcut icon" href="../img/warhammer-seeklogo.ico" type="image/x-icon">
-    
+
     <title>Juego de Mesa</title>
 </head>
+
 <body>
-    <!--SECCION INICIO-->
-    <section id="inicio">
+    <!--SECCION NAV-->
+
+    <section id="nav">
         <div class="contenido">
             <header>
                 <div class="contenido-header">
                     <nav id="nav" class="">
                         <ul id="link">
                             <li><a href="../index.html" class="selec" onclick="seleccionar(this)">INICIO</a></li>
-                            <li><a href="../paginas/crono.html" class="selec" onclick="seleccionar(this)" >CRONOLOGÍA</a></li>
-                            <li><a href="../paginas/facc.html" class="selec" onclick="seleccionar(this)">FACCIONES</a></li>
-                            <li><a href="#juegoMesa" class="selec" onclick="seleccionar(this)">JUEGO DE MESA</a></li>
-                            <li><a href="../paginas/contacto.html" class="selec" onclick="seleccionar(this)">CONTACTO</a></li>
+                            <li><a href="./crono.html" class="selec" onclick="seleccionar(this)">CRONOLOGÍA</a></li>
+                            <li><a href="./facc.html" class="selec" onclick="seleccionar(this)">FACCIONES</a></li>
+                            <li><a href="#" class="selec" onclick="seleccionar(this)">JUEGO DE MESA</a></li>
+                            <li><a href="./contacto.html" class="selec" onclick="seleccionar(this)">CONTACTO</a></li>
+                            <button class="modo-nocturno-btn" id="modo-nocturno-btn">
+                                <span><i class="fa-regular fa-sun"></i></span>
+                                <span><i class="fa-regular fa-moon"></i></span>
+                            </button>
                         </ul>
                     </nav>
                 </div>
             </header>
-            <img src="../img/portada.webp" alt="">
-        </div>
-        <h1>JUEGO DE MESA</h1>
+    </section>
+
+    <!--SECCION CONT-ESCRITO-->
+    <section class="contenido-escrito">
+        <img id="imgPortada" src="../img/portada.webp" alt="">
+
+
+
+        <br>
+        <h2><u>Origen</u></h2><br>
+
+        <p>Warhammer 40000 (conocido coloquialmente también como Warhammer 40k, W40k, o simplemente 40k) es un juego de
+            guerra ambientado en un futuro distópico, en donde se mezclan elementos de la ciencia ficción con elementos
+            de la fantasía heroica. Fue creado en 1987 por Rick Priestley y Andy Chambers como un complemento futurista
+            de Warhammer Fantasy Battle, compartiendo sus mecánicas de juego. Cada cierto tiempo se publican expansiones
+            del juego que añaden reglas para combate urbano, asedios planetarios, combate a gran escala, etc.
+            Actualmente el juego se encuentra en su décima edición.</p><br>
+
+        <p>Los jugadores han de ensamblar y pintar miniaturas de unos 28 mm de altura que representan soldados,
+            criaturas o vehículos de guerra. Estas miniaturas se organizan en escuadrones que se usan para combatir
+            contra los ejércitos de otros jugadores en tableros que representan un campo de batalla. Cada jugador coloca
+            un conjunto aproximadamente equivalente en puntos de unidades en un tablero que representa un campo de
+            batalla con terreno hecho a mano o comprado. Los jugadores deben entonces decidir un escenario determinado,
+            desde simples escaramuzas a batallas complejas que pueden incluir la defensa de posiciones y la llegada de
+            refuerzos. Los jugadores mueven las figuras a lo largo del tablero y la distancia real entre las miniaturas
+            juega un papel importante en el resultado de los enfrentamientos. El juego es por turnos, con varios
+            desenlaces posibles determinados por tablas y lanzamiento de dados. Las batallas pueden durar desde unas dos
+            horas hasta un fin de semana entero y las batallas pueden enlazarse para crear campañas. Muchas tiendas de
+            juegos y miniaturas acogen partidas del juego y se organizan con regularidad torneos oficiales auspiciados
+            por Games Workshop.</p><br>
+
+        <p>La ambientación fantástico-espacial de Warhammer 40000 abarca un amplio universo ficticio ubicado en el
+            lejano futuro del cuadragésimo primer milenio que incluye varias facciones y razas como el Imperio del
+            Hombre (un imperio interestelar descentralizado aunque totalitario, que ha gobernado a la gran mayoría de la
+            humanidad durante milenios), los orkos (similares a los orcos de Warhammer Fantasy), los eldar (similares a
+            los elfos de Warhammer Fantasy) y demonios (muy parecidos en ambos universos, aunque la exacta naturaleza de
+            su creación y su existencia varían ligeramente), entre otras. El trasfondo y las reglas de juego de cada
+            facción están recogidas en los reglamentos de juego publicados y los códex suplementarios para cada
+            ejército, además de los artículos aparecidos en las revistas de Games Workshop (White Dwarf e Imperial
+            Armour). Citadel Miniatures y Forge World son las compañías encargadas de fabricar las miniaturas.</p><br>
+
+        <br>
+        <h2><u>Historia</u></h2><br>
+
+        <p>Publicado por primera vez en 1987, Warhammer 40.000 está basado en otro juego de miniaturas que había sido
+            publicado algunos años antes: Warhammer Fantasy Battle (1983). El universo de juego de este último,
+            denominado universo Warhammer Fantasy, es un mundo deliberadamente medieval-fantástico, más propio de los
+            juegos de rol clásicos (como Dungeons & Dragons) y de la literatura asociada a esa temática. Si bien es
+            probable que en el momento del nacimiento de este juego las reglas y otros aspectos del mismo fueran
+            bastante similares a las de Warhammer Fantasy Battle, las de su versión futurista han evolucionado de manera
+            diferente, resultando en un ambiente sombrío y pesimista a la vez que altamente inmerso en temáticas
+            vinculadas a la ciencia ficción, con cierto tinte lovecraftiano.</p><br>
+
+        <br>
+        <h2><u>Ambientación</u></h2><br>
+
+        <p>Warhammer 40.000 está ambientado en un universo apocalíptico neogótico ficticio, cronológicamente situado en
+            el 41.º milenio. Es una época en la que un Imperio Humano domina la galaxia pero sufre ataques desde todos
+            los frentes por diversos alienígenas y humanos traidores corrompidos por el Caos o por rebeldes en pugna
+            secesionista. El Imperio de la Humanidad es un régimen fundamentalista religioso en el que se considera al
+            Emperador (héroe que reunió a todos los humanos de la galaxia bajo un solo gobierno y los lanzó a la
+            conquista de la galaxia en la Gran Cruzada) como el único Dios de la Humanidad. En su tarea de mantener el
+            Imperio unido frente a las constantes amenazas, el Emperador se ve asistido por distintas instituciones. La
+            más destacable de estas son los Marines espaciales, guerreros que luchan en el nombre del Dios-Emperador de
+            la Humanidad. Además de los Marines Espaciales, existen otros cuerpos que les asisten, como la Guardia
+            Imperial, la Armada Imperial, la Inquisición y sus distintas órdenes, y el Adeptus Mechanicus (los
+            científicos militares del Imperio).</p><br>
+
+        <br>
+        <h2><u>Reglas</u> </h2><br>
+
+        <p>Se desarrolla con dos o más jugadores, cada uno desplegando un grupo de unidades. El tamaño y composición de
+            este grupo, denominados como ejércitos, están determinados por un sistema de puntos, donde cada unidad
+            (modelo o conjunto de modelos) es asignado un valor proporcional a su rol en el campo de batalla y a su
+            equipamiento. Antes de un juego, los jugadores acuerdan cuántos puntos se van a utilizar como el máximo
+            puntaje total de cada ejército y cada jugador genera hasta ese nivel. La composición de estos ejércitos está
+            determinado por las reglas del manual básico de Warhammer 40 000 y en los diferentes manuales específicos
+            por ejércitos denominados "Codex". Gran parte de este proceso de creación de ejércitos sucede previo al
+            juego en si por el tiempo de elaboración de las listas adecuadas al puntaje a utilizar. Usualmente el tamaño
+            de estos juegos varía entre 500 y 2000 puntos en una mesa de cuatro pies de ancho y ocho pies de largo, pero
+            también se pueden jugar juegos mucho más grandes.</p><br>
+
+        <p>Al inicio de cada partida, se determina una cantidad de reglas y de objetivos para la batalla. En estos
+            escenarios o misiones, como se suelen llamar, se le asignan a los jugadores objetivos básicos que pueden,
+            por ejemplo, ser defender o capturar una sección del tablero o destruir al ejército enemigo. Reglas
+            adicionales pueden representar combates en diferentes momentos del día (como "combates nocturnos") o a la
+            influencia del medio ambiente en las habilidades de las tropas. Estos escenarios pueden ser más simples,
+            tomando poco más de una hora para terminar, o pueden ser más complejos y necesitar varias horas o incluso
+            días en ser completados. Una serie de escenarios pueden ser organizados en una campaña, donde dos o más
+            jugadores compiten entre ellos en varios combates. Estas campañas pueden tener sus propias reglas
+            especiales, y usualmente están ligadas a la historia que se desarrolla basado en los resultados de cada
+            escenario. Muchos de estos escenario y campañas están diseñadas por Games Workshop e impresos en los
+            "codices", manuales, suplementos o en White Dwarf. Alternativamente los jugadores puede diseñar sus propios
+            escenarios o crear nuevas campañas con escenarios pre determinados.</p><br>
+
+        <p>Se divide en "fases" donde cada jugador mueve sus unidades, manifiesta poderes psíquicos (si tienen alguno),
+            disparan, cargan hacia otra unidad y se enfrentan en combate cuerpo a cuerpo. En la fase de Movimiento, el
+            jugador determina la dirección y distancia individual de cada unidad, a menos que una regla especial
+            establezca lo contrario. Algunas unidades pueden mover más que otras en un solo movimiento, y el terreno
+            puede inhibir el movimiento. En la fase de disparo, el jugador tiene la oportunidad de realizar ataques de
+            larga distancia a unidades que se encuentran dentro del alcance establecido en el perfil del arma de fuego a
+            usar. En la fase de Asalto, las unidades pueden participar en combates cuerpo a cuerpo con unidades enemigas
+            cercanas. En la fase de carga, el jugador declara la(s) unidad(es) que quiere cargar. A continuación, el
+            enemigo resuelve el disparo de "Overwatch" (reacción). En la fase de lucha, las tropas participan en combate
+            cuerpo a cuerpo. Las unidades se amontonan y las unidades que cargaron intentan golpear al enemigo. Luego de
+            esto, el resto de las unidades intentarán golpear en orden del jugador cuyo turno esté jugando
+            intercalándose cada unidad con el contrincante. Las bajas se resuelven y, por lo general, un lado tendrá que
+            pasar un control de moral o retroceder. También hay una fase psíquica, en la que los jugadores pueden
+            utilizar modelos conocidos como Psíquicos para realizar acciones especiales (que se determinan, algunas al
+            azar, antes del juego) que ningún otro modelo puede hacer. Después de que un jugador completa todas las
+            fases, el turno se pase al jugador contrario. Los impactos y fallas de armas, se determinan mediante el
+            lanzamiento de un dado de seis caras (tenga en cuenta que los libros de reglas usan la palabra "dados" para
+            referirse a un solo dado) y las características de la unidad.</p><br>
+
+        <p>A diferencia de algunos wargames , Warhammer 40 000 no se juega en un mapa hexagonal ni en ningún tipo de
+            tablero predefinido. En cambio, las unidades se pueden colocar desde 12 pulgadas desde el borde hasta el
+            borde de la mesa. El rango entre las unidades es importante durante cada fase del juego. La distancia se
+            mide en pulgadas usando una regla. Para determinar la línea de visión se mide desde la "vista de modelo":
+            los jugadores pueden inclinarse para observar el tablero desde el punto de vista del modelo específico. La
+            victoria está determinada por puntos, otorgados por completar objetivos y / o destruir unidades enemigas.
+        </p><br>
+
+        <p>Benjamin Fox, en "The Performance of War Games", argumenta que la interacción de los jugadores en el campo de
+            batalla refleja todas las partes de una "actuación": guion, drama y teatro. Compara juegos de guerra como
+            Warhammer Fantasy Battle y Warhammer 40 000 con juegos de rol como Dungeons & Dragons y toma nota de la
+            naturaleza dinámica de las batallas, donde cada conflicto es diferente al anterior.</p><br>
+
+        <p>El terreno es también una parte importante del juego. Aunque Games Workshop vende kits de terreno, muchos
+            aficionados prefieren hacer sus propias piezas elaboradas y únicas. Artículos domésticos comunes como latas
+            de bebidas gaseosas, tazas de café, material de embalaje de poliestireno y botellas de píldoras pueden
+            transformarse en catedrales en ruinas, hábitats extraños u otros terrenos con la adición de tarjetas de
+            plástico, masilla y la habilidad y creatividad del modelador.</p><br>
+
+        <br>
+        <h2><u>Ediciones</u> </h2><br>
+
+        <br>
+        <h4>Rogue Trader (1987)</h4><br>
+
+        <p>La primera edición del juego, Warhammer 40 000: Rogue Trader, fue publicado en 1987. El diseñador de juegos
+            Rick Priestley creó las reglas originales (basándose en la contemporánea segunda edición de Warhammer
+            Fantasy Battle) junto con el mundo de Warhammer 40 000. El juego de Rogue Trader estaba fuertemente
+            orientado como un juego de rol más que en los Wargames. Esta versión original vino como un libro de reglas
+            muy detallado, aunque bastante confuso, que lo hizo más adecuado para el combate entre pequeñas escaramuzas.
+            Gran parte de la composición de las unidades se determinaba al azar, lanzando dados. Algunos elementos
+            (bólteres, rifles láser, granadas de fragmentación, armaduras Terminator) se pueden ver en un conjunto de
+            reglas de juegos de guerra anterior llamado Laserburn (producido por la empresa ya desaparecida, Tabletop
+            Games) escrito por Bryan Ansell. Estas reglas fueron luego ampliadas tanto por Ansell como por Richard
+            Halliwell (ambos terminaron trabajando para Games Workshop), aunque las reglas originalmente no eran
+            precursoras de Rogue Trader.</p><br>
+
+        <p>Además, el material complementario se publicó continuamente en la revista White Dwarf, que proporcionó las
+            reglas para nuevas unidades y modelos. Finalmente, White Dwarf proporcionó las "listas de ejército"
+            apropiadas que podrían usarse para crear fuerzas más grandes y más coherentes de lo que era posible en el
+            libro de reglas principal. Estos artículos fueron publicados de vez en cuando en libros de expansión junto
+            con nuevas reglas, trasfondos e ilustraciones. Todos los diez libros fueron lanzados para la edición
+            original de WH40K: "Capítulo Aprobado - Libro de Astronomican", "Compendio", "Compilación Warhammer 40,000",
+            "Waaagh - Orkos", dos "Reino del Caos" ("Esclavos de la Oscuridad" y "Los Perdidos y los Condenados"), "'Ere
+            we Go", "Freebooterz", "Manual de Batalla" y "Manual de Vehículos". El 'Manual de Batalla' no solo modificó
+            y codificó las reglas de combate, sino que proporcionó estadísticas actualizadas para la mayoría de las
+            armas en el juego. El 'Manual de vehículos' contenía un nuevo sistema para la gestión del vehículo sobre la
+            mesa que pretendía reemplazar las reglas bastante torpes del manual de tapa dura y en el compendio de tapa
+            blanda roja, tenía un sistema de localización objetivo inventivo que usaba retícula de acetato para simular
+            el arma golpea las siluetas del vehículo con diferentes valores de armadura para diferentes ubicaciones
+            (como ruedas, compartimiento del motor, almacén de municiones, etc.). 'Waaagh - Orkos' era un manual
+            introductorio a la cultura y fisiología orka y no contenía reglas pero era puro trasfondo puro ("fluff"),
+            otros libros con temática orka en cambio estaban repletos de listas de ejército no solo para clanes orkos
+            mayores sino también para piratas de pieles verdes y atuendos mercenarios. Los libros del "Reino del Caos"
+            eran sólidos tomos de tapa dura, que incluían reglas para el Caos en Warhammer 40,000, Warhammer Fantasy
+            Roleplay y Warhammer Fantasy Battle (3rd Ed.).</p><br>
+
+        <br>
+        <h4>Segunda edición (1993)</h4><br>
+
+        <p>La segunda edición de Warhammer 40,000 se publicó a fines de 1993. Este nuevo curso para el juego se forjó
+            bajo la dirección del editor Andy Chambers . La segunda edición vino en un conjunto en caja que incluía
+            miniaturas de Marines Espaciales y orcos, paisajes, dados y las reglas principales. Un conjunto de caja de
+            expansión titulado Milenio Oscuro fue lanzado más tarde, que incluía reglas para los poderes psíquicos. Otro
+            rasgo del juego fue la atención prestada a los "personajes especiales" que representaban a individuos
+            específicos del trasfondo, que tenían acceso a equipos y habilidades más allá de los de los demás; la
+            edición anterior solo tenía tres perfiles "heroicos" genéricos para cada ejército: "campeón", "héroe menor"
+            y "héroe mayor".</p><br>
+
+        <br>
+        <h4>Tercera edición (1998)</h4><br>
+
+        <p>La tercera edición del juego fue lanzada en 1998 y, al igual que la segunda edición, se concentró en la
+            racionalización de las reglas para batallas más grandes.Las reglas de la tercera edición fueron notablemente
+            más simples. El libro de reglas estaba disponible solo, o como un conjunto con una caja con miniaturas de
+            Marines Espaciales y los Eldar Oscuros recién introducidos . El sistema de 'códices' del ejército continuó
+            en la tercera edición.</p><br>
+
+        <p>Hacia el final de la tercera edición, se introdujeron cuatro nuevos códices del ejército: las razas xeno (es
+            decir, alienígenas) de los necrones y los tau y los dos ejércitos de la Inquisición: los Ordo Malleus
+            (llamados Cazadores de Demonios) y el Ordo Hereticus (llamado Cazadores de Brujas); elementos de los últimos
+            dos ejércitos habían aparecido antes en material suplementario (como Reino del Caos y Codex: Hermanas de
+            Batalla). Al final de la tercera edición, estos ejércitos fueron relanzados con nuevas ilustraciones y
+            listas de ejército. El lanzamiento del Tau coincidió con un aumento en la popularidad del juego en los
+            Estados Unidos.</p><br>
+
+        <br>
+        <h4>Cuarta edición (2004)</h4><br>
+
+        <p>La cuarta edición de Warhammer 40,000 se lanzó en 2004. Esta edición no incluía tantos cambios importantes
+            como las ediciones anteriores, y era "compatible con versiones anteriores" de cada ejército. La cuarta
+            edición se lanzó en tres formas: la primera era una versión de tapa dura independiente, con información
+            adicional sobre pintura, construcción de escenarios e información del trasfondo sobre el universo de
+            Warhammer 40,000. El segundo era un juego en caja, llamado Batalla por Macragge, que incluía una versión
+            compacta de tapa blanda de las reglas, los dados, las plantillas y las miniaturas de Marines Espaciales y
+            Tiránidos . El tercero era una edición de coleccionista limitada. Batalla por Macragge era un "juego en una
+            caja", dirigido principalmente a principiantes. La batalla por Macragge se basó en la invasión tiránida del
+            planeta natal de los Ultramarines, Macragge. Se lanzó una expansión llamada The Battle Rages On! , que
+            presentó nuevos escenarios y unidades, como el Guerrero Tiránido .</p><br>
+
+        <br>
+        <h4>Quinta edición (2008)</h4><br>
+
+        <p>La quinta edición de Warhammer 40,000 se lanzó el 12 de julio de 2008. Si bien existen algunas diferencias
+            entre la cuarta y la quinta edición, el conjunto de reglas generales comparte numerosas similitudes. Los
+            libros del Codex diseñados antes de la quinta edición siguen siendo compatibles con solo algunos cambios en
+            la forma en que funcionan esos ejércitos. El reemplazo del juego de inicio de Batalla de Macragge de la
+            edición anterior se llamó Asalto en Black Reach, que presenta un libro de reglas de bolsillo (que contiene
+            el conjunto de reglas completo pero omite las secciones trasfondo y afición del libro de reglas de tamaño
+            completo) y ejércitos de Orcos y Marines Espaciales. Cada ejército contiene una opción HQ, ya sea un Jefe
+            Orco o un Capitán Marines Espaciales.</p><br>
+
+        <p>Las nuevas adiciones a las reglas incluyen la capacidad de los modelos de infantería para "ir a tierra"
+            cuando están bajo fuego enemigo, proporcionando protección adicional a costa de la movilidad y el tiro
+            mientras se sumergen para protegerse. Se necesita una línea de visión real para disparar a los modelos
+            enemigos. También se presenta la capacidad de correr, por lo que las unidades pueden renunciar a disparar
+            para cubrir más terreno. Además, la cobertura se ha cambiado para que ahora sea más fácil para una unidad
+            obtener un ahorro de cobertura. El daño a los vehículos se ha simplificado y reducido significativamente, y
+            los tanques ahora pueden embestir a otros vehículos. Algunas de estas reglas se modelaron según las reglas
+            que existían en la Segunda Edición, pero que se eliminaron en la Tercera. Del mismo modo, los códices de la
+            5.ª edición han visto un retorno de muchas unidades recortadas previamente en la edición anterior por tener
+            reglas difíciles de manejar. Estas unidades se han recuperado en gran medida con la mayoría de sus antiguas
+            reglas optimizadas para la nueva edición. Los lanzamientos de la quinta edición se centraron principalmente
+            en las fuerzas de los Marines Espaciales, incluida la abolición de los Cazadores de Demonios en favor de un
+            ejército compuesto casi exclusivamente por Caballeros Grises, un capítulo especial de los Marines
+            Espaciales, que en ediciones anteriores había proporcionado las opciones de élite del ejército del Cazador
+            de Demonios. Otro cambio importante fue el cambio de figuras de metal a kits de resina .</p><br>
+
+        <br>
+        <h4>Sexta edición (2012)</h4><br>
+
+        <p>La sexta edición fue lanzada el 23 de junio de 2012. Los cambios a esta edición incluyen la adopción de un
+            sistema de tarjeta opcional de Poder Psíquico similar al producto hermano del juego Warhammer Fantasy Battle
+            , así como la inclusión de reglas completas para vehículos voladores y monstruos y una reelaboración
+            importante de la forma en que el daño se resuelve contra los vehículos. También incluye reglas ampliadas
+            para una mayor interacción con el escenario y un combate cuerpo a cuerpo más dinámico. Además de actualizar
+            las reglas existentes y agregar nuevas, la 6.ª edición introdujo varios otros cambios importantes: el
+            sistema de la Alianza, en el cual los jugadores pueden traer unidades de otros ejércitos para trabajar con
+            las suyas, con diferentes niveles de confianza; la elección de tomar una fortificación como parte de tu
+            fuerza; y los rasgos del Señor de la Guerra, que le permitirán al Comandante de un jugador obtener un rasgo
+            categóricamente aleatorio que pueda ayudar a sus fuerzas en diferentes situaciones. Reemplazando el conjunto
+            de caja "Asalto en Black Reach" está el conjunto de la caja "Venganza oscura" que incluye los modelos de los
+            Ángeles Oscuros y Marines Espaciales del Caos. Algunos de los conjuntos de cajas de lanzamiento anticipado
+            de Venganza Oscura contenían una edición limitada del Capellán Interrogador para los Ángeles Oscuros.</p>
+        <br>
+
+        <br>
+        <h4>Séptima edición (2014)</h4><br>
+
+        <p>Anunciado en la edición 15 de White Dwarf , pre-pedidos para el 17 de mayo y fecha de lanzamiento del 24 de
+            mayo de 2014. La 7.ª edición vio varios cambios importantes en el juego, incluida una fase psíquica
+            dedicada, así como la forma en que los poderes psíquicos funcionaron en general, y los objetivos tácticos
+            modificables a mitad de juego. Los Objetivos Tácticos les darían a los jugadores formas alternativas de
+            ganar Puntos de Victoria, y así ganar juegos. Estos objetivos podrían cambiar en diferentes puntos durante
+            el juego.</p><br>
+
+        <p>Además de estas adiciones, la 7.ª edición brindó una nueva forma de organizar listas del ejército. Los
+            jugadores podían jugar como Forjados en Batalla, haciendo una lista de la misma manera que la 6.ª edición, o
+            Unbound, lo que permitía al jugador usar cualquier modelo que deseara, sin tener en cuenta el Organigrama de
+            la Fuerza.Las bonificaciones se otorgan a los ejércitos forjados en batalla. Además, las unidades de Señor
+            de la Guerra, que son unidades poderosas que anteriormente solo se permitían en juegos de gran escala
+            ("Apocalipsis"), ahora están incluidas en el libro de reglas estándar, y son una parte normal de la Carta de
+            Organización de la Fuerza.</p><br>
+
+        <br>
+        <h4>Octava edición (2017)</h4><br>
+
+        <p>Anunciado el 22 de abril de 2017 en la página de Warhammer Community, pre-pedidos para el 3 de junioy fecha
+            de lanzamiento del 17 de junio de 2017. La 8.ª edición fue una revisión importante de la edición anterior
+            del juego, simplificando el sistema y homogeneizando los perfiles de tropas y vehículos, lo que facilita a
+            los nuevos jugadores entrar en el hobby y comenzar a jugar. A este respecto, el juego introdujo el concepto
+            de Tres Maneras de Jugar: Abierto, Igualado y Narrativo. El conjunto de reglas se simplificó hasta 14
+            páginas, como un folleto PDF gratuito disponible en el sitio web de Games Workshop. Las reglas más complejas
+            aún permanecen en la mecánica del juego, que se encuentra en el manual de tapa dura actualizado,
+            introduciendo el concepto de Estratagemas y Puntos de mando con las que gestionarlas, que se reciben en
+            función de la organización del ejército.</p><br>
+
+        <p>El trasfondo detrás de la 8.ª edición también ha avanzado. La galaxia ha sido dividida por la mitad con la
+            Cicatrix Maledictum por fuerzas de Caos, separando el Imperio en dos partes y dejando a casi la mitad (el
+            Imperium Nihilus) sin la luz del Astronomicon, con Roboute Guilliman, Primarca de los Ultramarines,
+            regresando para liderar el Imperio como Lord Comandante y comenzando con la recuperación de mundos
+            devastados a través de la Cruzada Indomitus.</p><br>
+
+        <p>La 8.ª edición también presentó una nueva caja de iniciación llamado "Imperio Oscuro", que presentaba una
+            nueva evolución de facciones: Marines Espaciales Primaris (unos marines espaciales mejorados por las
+            investigaciones de Belisarius Cawl), así como la reintroducción de nuevos personajes y reglas para La
+            Guardia de la Muerte.</p><br>
+
+        <br>
+        <h4>Novena Edición (2020)</h4><br>
+
+        <p>La novena edición salió publicada finalmente en verano del año 2020, introdujo nuevas mecánicas y sistemas de
+            juego como el modo cruzada. El trasfondo principal de esta edición son las batallas relacionadas con la
+            Cruzada indomitus, por lo que antes del lanzamiento de las cajas de inicio de esta edición salió una caja
+            edición limitada, Caja Indomitus. Esta caja contiene figuras únicas de Marines Espaciales y Necrones. Las
+            demás cajas de inicio también son de Marines contra Necrones, y se venden en 3 formatos de tamaño y precio.
+        </p><br>
+
+        <br>
+        <h4>Decima Edición (2023)</h4><br>
+
+        <p>La décima edición salió publicada finalmente en verano del año 2023. La caja "Leviatán" incluía a los
+            renovados tiranidos para que se enfrenten a los marines.</p><br>
+
+    </section>
+    <button id="btnGenerico" title="Subir" onclick="scrollToTop()"><i class="fa-solid fa-up-long"></i></button>
+    <!--SECCION FOOTER-->
+    <footer>
+        <p>Todos los derechos reservados - 2024</p>
+    </footer>
 </body>
+
 </html>

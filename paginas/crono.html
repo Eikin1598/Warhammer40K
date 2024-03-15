@@ -16,8 +16,9 @@
 </head>
 
 <body>
-    <!--SECCION INICIO-->
-    <section id="inicio">
+    <!--SECCION NAV-->
+
+    <section id="nav">
         <div class="contenido">
             <header>
                 <div class="contenido-header">
@@ -25,22 +26,30 @@
                         <ul id="link">
                             <li><a href="../index.html" class="selec" onclick="seleccionar(this)">INICIO</a></li>
                             <li><a href="#" class="selec" onclick="seleccionar(this)">CRONOLOGÍA</a></li>
-                            <li><a href="../paginas/facc.html" class="selec" onclick="seleccionar(this)">FACCIONES</a>
+                            <li><a href="./facc.html" class="selec" onclick="seleccionar(this)">FACCIONES</a></li>
+                            <li><a href="./juegoMesa.html" class="selec" onclick="seleccionar(this)">JUEGO DE MESA</a>
                             </li>
-                            <li><a href="../paginas/juegoMesa.html" class="selec" onclick="seleccionar(this)">JUEGO DE
-                                    MESA</a></li>
-                            <li><a href="../paginas/contacto.html" class="selec"
-                                    onclick="seleccionar(this)">CONTACTO</a></li>
+                            <li><a href="./contacto.html" class="selec" onclick="seleccionar(this)">CONTACTO</a></li>
+                            <button class="modo-nocturno-btn" id="modo-nocturno-btn">
+                                <span><i class="fa-regular fa-sun"></i></span>
+                                <span><i class="fa-regular fa-moon"></i></span>
+                            </button>
                         </ul>
                     </nav>
                 </div>
             </header>
-            <img id="imgPortada" src="../img/portada.webp" alt="">
-        </div>
-        <section class="contenido-escrito">
-            <h3  class="titulo-seccion">CRONOLOGÍA Y TRASFONDO DEL UNIVERSO</h3><br>
-            <p>Dado que la cronología de todo Warhammer 40K se encuentra en cambio constante, puede ser tedio encontrar toda la historia de su universo. Sin embargo éste es un resumen de todo el transfondo que podemos encontrar.</p>
-            <br>
+    </section>
+
+    <!--SECCION CONT-ESCRITO-->
+    <section class="contenido-escrito">
+        <img id="imgPortada" src="../img/portada.webp" alt="">
+
+        <h3 class="titulo-seccion">CRONOLOGÍA Y TRASFONDO DEL UNIVERSO</h3><br>
+        <p>Dado que la cronología de todo Warhammer 40K se encuentra en cambio constante, puede ser un tedio encontrar toda
+            la historia de su universo. Sin embargo éste es un resumen de todo el transfondo que podemos encontrar.</p>
+        <br>
+
+        <div class="lista-contenido">
             <h3>Contenido:</h3><br>
             <ul class="listadoCronologia">
                 <li><a href="#Historia Pre-Humana"> <b> Historia Pre-Humana</b></a></li>
@@ -48,7 +57,9 @@
                 <li><a href="#Los Antiguos">Los Antiguos</a></li>
                 <li><a href="#Los Necrontyr y las Guerras de Secesión">Los Necrontyr y las Guerras de Secesión</a></li>
                 <li><a href="#La Guerra en el Cielo">La Guerra en el Cielo</a></li>
-                <li><a href="#Biotransferencia y el surgimiento de los Necrones">Biotransferencia y el surgimiento de los Necrones</a></li><li><a href="#La ascención de los Necrones">La ascención de los Necrones</a></li>
+                <li><a href="#Biotransferencia y el surgimiento de los Necrones">Biotransferencia y el surgimiento de
+                        los Necrones</a></li>
+                <li><a href="#La ascención de los Necrones">La ascención de los Necrones</a></li>
                 <li><a href="#El Giro de la Marea">El Giro de la Marea</a></li>
                 <li><a href="#Plaga Esclavista">Plaga Esclavista</a></li>
                 <li><a href="#Traición del Rey Silente">Traición del Rey Silente</a></li>
@@ -63,466 +74,1218 @@
                 <li><a href="#Gran Purga">Gran Purga</a></li>
                 <li><a href="#Segunda Fundación">Segunda Fundación</a></li>
                 <li><a href="#Era del Imperio">Era del Imperio</a></li>
-                
+
             </ul>
-            <br id="Historia Pre-Humana"><br><br>
-            <h2 id="Nacimiento de los Dioses Estelares"><u> Historia Pre-Humana</u></h2>
-            
-            <br>
-            <h3>Nacimiento de los Dioses Estelares</h3><br>
-            <p>El nacimiento de las entidades posteriormente conocidas como los Dioses Estelares ocurrió al mismo tiempo
-                que el momento de la Creación misma, ya que se formaron a partir de las vastas, insensibles energías
-                primero desatadas por esa masa tumultuosa de fuerza cataclísmica. En ese entrelazamiento anárquico de
-                materia y energía, el mar de estrellas comenzó a girar hacia la existencia y durante un eón el universo
-                no era más que gas de hidrógeno caliente y polvo elemental de luz dominado por la fuerza gravitatoria de
-                miles de millones de soles recién nacidos.</p>
-
-            <p>Mucho antes de que se formaran y enfriaran los primeros planetas, los primeros seres verdaderamente
-                conscientes emergieron en el universo, sus pensamientos encerrados dentro de las líneas de fuerza
-                producidas por el plasma y las ráfagas electromagnéticas de las propias estrellas. En tiempos
-                posteriores, estas entidades serían conocidas como los C'tan, pero al principio de su existencia no se
-                parecían en nada a los seres malignos que eventualmente llegarían a ser. Eran poco más que monstruosos
-                parásitos de energía que se alimentaban de las energías solares de las estrellas que los habían traído a
-                la existencia, acortando las vidas de estrellas de secuencia principal por millones de años estándar.
-            </p>
-
-            <p>Con el tiempo, estos vampiros estelares aprendieron a moverse a lo largo de las líneas del flujo
-                electromagnético del universo, dejando sus lugares de nacimiento para derivar a través del éter cósmico
-                hacia nuevos campos de alimentación estelar y comenzar su ciclo de destrucción estelar una vez más.
-                Siendo seres de energía pura, no prestaban atención a los trozos de materia sólida que pasaban en el
-                vacío del espacio, los ardientes fuegos geotérmicos y los débiles campos geomagnéticos de estos planetas
-                incipientes eran insuficientes para alimentar siquiera su hambre insaciable.</p><br id="Los Antiguos">
-
-            <hr><br><br>
-            <h3>Los Antiguos</h3><br>
-            <p>Así como las estrellas dieron a luz a sus hijos, los planetas de la recién nacida Vía Láctea
-                eventualmente dieron a luz a formas de vida compuestas de materia que comenzaron la larga escalada
-                evolutiva hacia la autoconciencia. Los primeros seres inteligentes de la galaxia conocidos por haber
-                desarrollado una civilización tecnológicamente avanzada suficiente para cruzar las estrellas fueron una
-                especie reptiliana de seres posteriormente llamados "Antiguos" por los Aeldari, quienes los conocieron
-                mejor de todas sus creaciones.</p>
-
-            <p>Los Antiguos poseían una sabiduría lenta y fría, pero aún así profunda, habiendo estudiado durante mucho
-                tiempo las estrellas y elevado la astronomía y la física a tal nivel que su ciencia y tecnología ahora
-                parecen a la Humanidad como un arte arcano. Su comprensión del funcionamiento del universo era tal que
-                podían manipular dimensiones alternas y emprender grandes obras de ingeniería psíquica.</p>
-
-            <p>Los Antiguos eran poderosos psíquicos que rutinariamente utilizaban los poderes del Disforme para una
-                amplia variedad de aplicaciones tecnológicas. Esto incluía la construcción de un sistema de portales
-                instantáneos más rápidos que la luz a través del Espacio Disforme. Estos portales conectaban todos los
-                mundos coloniales de los Antiguos, lo que les permitía cruzar los vastos abismos del espacio con solo un
-                paso a través de las innumerables Puertas del Disforme que construyeron para conectar los mundos de la
-                galaxia. Esta era una vasta red interdimensional similar al Webway de hoy, que es su descendiente
-                directo, aunque en una escala mucho mayor y más avanzada.</p>
-
-            <p>A través de esta red, los Antiguos dispersaron su descendencia en muchos lugares de la galaxia, pero
-                también sabían que toda vida era preciosa. Donde pasaban, sembraban nuevas especies inteligentes y
-                remodelaban miles de mundos para hacerlos propios según sus criterios ambientales y geográficos
-                predeterminados. Algunos en el Adeptus Mechanicus creen que incluso Terra sintió el toque de los
-                Antiguos mucho antes del surgimiento de la Humanidad a la autoconciencia, aunque esta noción se
-                considera herética en el mejor de los casos por el Ecclesiarchy, ya que el Credo Imperial enseña que la
-                Humanidad fue creada a imagen del Dios-Emperador antes de que su espíritu fuera encarnado en carne
-                física hace milenios.</p>
-
-            <p>La civilización de los Antiguos alcanzó su apogeo hace más de 60 millones de años estándar. Los Antiguos
-                fueron responsables de la creación o el avance genético de la mayoría de las especies inteligentes
-                actualmente activas de la galaxia, incluidos los Aeldari, los Krork (los precursores de los Orkos), los
-                Slann y los Jokaero, aunque se desconoce si desempeñaron algún papel directo en la evolución de la
-                Humanidad.</p><br id="Los Necrontyr y las Guerras de Secesión">
-            <hr><br><br>
-            <h3 >Los Necrontyr y las Guerras de Secesión</h3><br>
-            <p>La especie humanoide que se convertiría en los Necrones comenzó su existencia bajo una estrella temible
-                y devastadora en los rincones más lejanos de la galaxia conocida como la región de las Estrellas del
-                Halo, miles de millones de años estándar antes de que la Humanidad evolucionara en Terra. Asediados en
-                cada momento por vientos solares e intensas tormentas de radiación, la especie de carne y sangre
-                conocida como los Necrontyr se convirtieron en un pueblo mórbido cuyos precarios lapsos de vida estaban
-                marcados por pérdidas constantes. La poca información que el Imperio del Hombre ha recuperado sobre los
-                Necrontyr indica que sus vidas eran cortas e inciertas, sus cuerpos plagados y consumidos a una edad
-                temprana por los terribles cánceres y otras enfermedades vinculadas a los altos niveles de radiación
-                ionizante emitidos por su sol.</p>
-
-            <p>Las ciudades de los Necrontyr fueron construidas anticipando la muerte prematura de sus habitantes, ya
-                que los vivos eran solo residentes breves que rascaban sus medios de vida diarios a la sombra de las
-                vastas sepulcros y tumbas de sus antepasados. De manera similar, sus dinastías gobernantes se fundaron
-                en la anticipación de una muerte temprana, y se considerabaa los vivos como no más que residentes
-                temporales que se apresuraban a través de las estructuras más permanentes y duraderas erigidas para
-                honrar a los muertos. En el mundo natal de los Necrontyr, los mayores monumentos siempre se construían
-                para los muertos, nunca para los vivos.</p>
-            Impulsados por la necesidad, los Necrontyr escaparon de su prisión-crucible y se lanzaron a las estrellas,
-            con la esperanza de tallar un imperio en el que pudieran realizar la libertad de su especie de las mortales
-            energías de su estrella natal. Utilizando criptas de estasis y naves antorcha impulsadas por antimateria de
-            movimiento lento, recubiertas en el metal vivo conocido como necrodermis para resistir los viajes milenarios
-            a través del vacío, los Necrontyr comenzaron a colonizar mundos distantes.</p>
-
-            <p>Poco a poco, las dinastías Necrontyr se extendieron cada vez más, hasta que gran parte de la antigua
-                galaxia respondió a su gobierno. Desde los primeros días, los gobernantes de las dinastías Necrontyr
-                eran ellos mismos gobernados por el Triarca, un consejo compuesto por tres monarcas de dinastía Necron
-                conocidos como faraones. El jefe del Triarca era conocido como el Rey Silente, pues se dirigía a sus
-                súbditos solo a través de los otros dos faraones que gobernaban junto a él. Nominalmente una posición
-                hereditaria, las inciertas esperanzas de vida de los Necrontyr aseguraron que el título de Rey Silente
-                pasara de una dinastía real a otra muchas veces. Los días finales del Imperio Necrontyr ocurrieron
-                durante el reinado de Szarekh, el último de los Reyes Silentes.</p>
-
-            <p>En algún momento durante su lenta expansión interestelar, los Necrontyr encontraron una especie antigua
-                mucho más vieja que cualquier otra en existencia en la galaxia conocida. Estos seres eran los Antiguos,
-                y eran los maestros absolutos de formas de energía que los Necrontyr ni siquiera podían concebir, y
-                mucho menos manejar. Los Antiguos habían conquistado hacía mucho tiempo los secretos de la inmortalidad,
-                pero se negaban a compartir el don de la vida eterna con los Necrontyr, que aún llevaban la maldición
-                genética de la estrella amarga bajo la que habían nacido.</p>
-
-            <p>La colonización de gran parte de la galaxia por los místicos reptilianos había sido incomparablemente más
-                rápida y expansiva que la de los Necrontyr debido a sus Puertas del Disforme y su dominio del
-                Inmaterial. Eso, y las longevas, si no inmortales, vidas de los Antiguos, encendieron una ardiente y
-                envidiosa ira en los Necrontyr, que carcomió su cultura espiritualmente tanto como los cánceres físicos
-                consumían sus cuerpos. Los Necrontyr se asombraron al descubrir que otra especie inteligente disfrutaba
-                de vidas tan largas mientras las suyas se cortaban tan brutalmente cortas.</p>
-
-            <p>Pero a medida que pasaba el tiempo, más conflictos llegaban a los Necrontyr. Cada dinastía buscaba
-                reclamar su propio destino y pronto las grandes casas se vieron envueltas en conflictos totales
-                conocidos como las "Guerras de Secesión". Si las circunstancias hubieran permanecido como estaban por
-                solo una generación más, es posible que los Necrontyr se hubieran exterminado, como tantas especies
-                antes que ellos y lo harán en el futuro. A medida que su territorio se ampliaba cada vez más y se
-                diversificaba, la unidad que los había hecho fuertes se erosionaba, y se libraban amargas guerras
-                mientras reinos enteros luchaban por ganar independencia.
-
-            <p>En última instancia, el Triarca se dio cuenta de que la única esperanza de unidad para su pueblo residía
-                en el conflicto con un enemigo externo, pero había pocos que pudieran representar una amenaza creíble
-                para los Necrontyr tecnológicamente avanzados. Solo los Antiguos eran un enemigo potencialmente lo
-                suficientemente poderoso como para unir a las dinastías Necrontyr en una causa común. Tal guerra era
-                simple de justificar, pues los Necrontyr siempre se habían resentido de la negativa de los Antiguos a
-                compartir los secretos de la vida eterna.</p>
-
-            <p>Así fue como Szarekh, el último de los Reyes Silentes, en un acto típicamente amargo de celos y
-                resentimiento hacia la raza Necrontyr, declaró la guerra a los Antiguos. Al mismo tiempo, ofreció
-                amnistía a cualquier dinastía Necrontyr secesionista que regresara voluntariamente al seno del Triarca.
-                Atraídas por los despojos de la victoria y la promesa de inmortalidad, los reinos Necrontyr
-                secesionistas abandonaron sus Guerras de Secesión y comenzó lo que más tarde se conocería como la
-                "Guerra en el Cielo". Un conflicto como ningún otro antes estalló a través de las estrellas, pero aunque
-                el Rey Silente y el Triarca habían logrado unir a su odiado pueblo, era una guerra que los Necrontyr no
-                podían ganar. No por sí solos.</p><br id="La Guerra en el Cielo">
-
-
-                <hr><br><br>
-                <h3 >La Guerra en el Cielo</h3><br>
-
-<p>Las terribles guerras entre los Antiguos y los Necrontyr que siguieron, conocidas más tarde en el mito Aeldari como la "Guerra en el Cielo", llenarían una biblioteca por sí solas, pero los Necrontyr nunca podrían ganar. Su tecnología superior fue consistentemente superada por los Antiguos gracias a su dominio de los portales del Webway y las Puertas del Disforme. Los Necrontyr fueron empujados hacia atrás hasta que no fueron más que una irritación para la dominación de los Antiguos en la galaxia, una amenaza quiescente aferrada a su mundo irradiado entre las Estrellas del Halo, exiliados y olvidados. La furia de los Necrontyr fue enfriada por sus largos milenios de encarcelamiento en su mundo natal, transformándose lentamente en un odio absoluto hacia todas las demás formas de vida inteligente y en una determinación implacable de vengarse de sus enemigos aparentemente invencibles.</p>
-
-<p>Pero ante la derrota, la siempre frágil unidad de los Necrontyr comenzó a fracturarse una vez más. Ya no tenía ningún atractivo la perspectiva de un enemigo común sobre las dispares dinastías. Generaciones enteras habían vivido y muerto en el servicio de una guerra inviable, y muchas dinastías Necrontyr habrían solicitado la paz con los Antiguos si el Triarca gobernante lo hubiera permitido.</p>
-
-<p>Así comenzó la segunda iteración de las Guerras de Secesión, más extendida y ruinosa que cualquier otra que hubiera ocurrido antes. Tan fracturadas se habían vuelto las dinastías Necrontyr para entonces que, si los Antiguos hubieran querido, podrían haber aniquilado a sus enemigos con facilidad. Frente al colapso total de su dominio, el Triarca buscó desesperadamente un medio de restaurar el orden. En esto, sus oraciones fueron respondidas, aunque el precio para su especie sería incalculablemente alto.</p>
-
-<p>Fue durante el reinado del Rey Silente Szarekh que los seres de energía divina conocidos como los C'tan primero asolaron a los Necrontyr. Es imposible decir con certeza cómo los Necrontyr hicieron contacto por primera vez con los C'tan, aunque existen muchas cuentas engañosas, contradictorias y unilaterales de estos eventos. Los polvorientos archivos del Mundo Tumba de Solemnace afirman que fue solo un accidente, un descubrimiento fortuito hecho por una sonda estelar durante la investigación de una estrella moribunda. El Libro de la Noche Lamentable, guardado bajo estrecha vigilancia en el santuario más interno de la Biblioteca Negra Aeldari, cuenta más bien que el odio crudo que los Necrontyr sostenían como especie por los Antiguos resonaba a través del espacio, actuando como un faro que los C'tan no podían ignorar.</p>
-
-<p>Otra versión afirma que desde los primeros días de su civilización, los científicos Necrontyr estuvieron profundamente involucrados en estudios estelares para tratar de entender y protegerse de las energías malignas de su propio sol. Después de largos, amargos siglos de búsqueda de algún poder para desatar sobre los Antiguos, los investigadores Necrontyr usaron sondas estelares para descubrir anomalías electrodinámicas inusuales en las estrellas más antiguas y moribundas de la galaxia. En los complejos hilos de plasma energético de estas estrellas, los Necrontyr encontraron una inteligencia más antigua que la de cualquiera de las especies corporales en la Creación, incluidos los Antiguos, entidades de pura energía que habían surgido durante el nacimiento de las estrellas eones antes.</p>
-
-<p>Estas entidades tenían poca concepción de lo que el resto del universo implicaba cuando los Necrontyr las encontraron por primera vez, alimentándose de las llamaradas solares y tormentas magnéticas de estos gigantes rojos hinchados. Aquí estaba el arma que los Necrontyr habían buscado durante mucho tiempo para derrotar a los Antiguos, seres que creían eran la descendencia del dios de la muerte al que habían adorado durante mucho tiempo. De cualquier manera que ocurriera el primer contacto, la sombra de los C'tan cayó primero sobre las dinastías Necrontyr más antiguas.</p>
-
-<p>El poder de estas criaturas nacidas de las estrellas era increíble, la energía cruda de las estrellas se hacía animada, y los Necrontyr los llamaban los C'tan o "Dioses Estelares" en su propia lengua. Los C'tan estaban dispersos en áreas más grandes que planetas enteros, sus conciencias demasiado vastas para que los humanoides las comprendieran. Cómo los Necrontyr lograron comunicarse con ellos es desconocido para el Adeptus Mechanicus. Entendiendo que mentes tan difusas nunca podrían percibir el universo material sin manifestarse en una forma material, algunos Necrontyr buscaron activamente el favor de los C'tan y supervisaron la forja de caparazones físicos para que los C'tan los ocuparan, fundidos en el metal vivo llamado necrodermis que alguna vez habían usado para sus naves antorchas coloniales.</p>
-
-<p>Leyendas fragmentarias Aeldari cuentan de franjas translúcidas de fuerza electromagnética cambiando a través del espacio mientras los vampiros estelares se enrollaban en sus nuevos cuerpos en el reino físico a través de un puente incorpóreo de luz estelar. Así vestidos, los C'tan tomaron las formas físicas de los dioses semiolvidados de los Necrontyr, ocultando sus propios verdaderos deseos bajo mantos de servilismo obsequioso.</p>
-
-<p>Fuerzas incomprensibles fueron comprimidas en el metal vivo de los cuerpos de necrodermis que los Necrontyr habían forjado cuando el poder completo de los C'tan finalmente encontró forma. A medida que los C'tan enfocaban sus conciencias y se volvían cada vez más conscientes de su nuevo modo de existencia, llegaron a apreciar los placeres disponibles para los seres materiales y las otras realidades de la vida corpórea. Los deliciosamente enfocados goteos de energía electromagnética emitidos por los cuerpos físicos de los Necrontyr a su alrededor despertaron un nuevo hambre en los C'tan, muy diferente a la que habían saciado una vez usando las energías nutritivas pero esencialmente insípidas de las estrellas.</p>
-
-<p>Así fue como uno de los C'tan se presentó ante el Rey Silente Szarekh, actuando como precursor de la llegada de sus hermanos. Entre los suyos, a este C'tan se le conocía como Mephet'ran, el "Engañador", pues era voluntariamente traicionero. Sin embargo, el Rey Silente no conocía la verdadera naturaleza de este C'tan, y en cambio concedió al ser una audiencia. El Engañador habló de una guerra, librada mucho antes del nacimiento de los Necrontyr, entre los C'tan y los Antiguos. Era una guerra, dijo, que los C'tan habían perdido. En el caos posterior, y temiendo la venganza de los Antiguos, él y sus hermanos se habían escondido, esperando algún día encontrar aliados con quienes finalmente pudieran rendir cuentas a los Antiguos.</p>
-
-<p>A cambio de esta ayuda, aseguró el Engañador, él y sus hermanos entregarían todo lo que los Necrontyr anhelaban. La unidad podría ser suya una vez más, y la inmortalidad que habían buscado durante tanto tiempo finalmente estaría al alcance de su mano. No habría precio por estos grandes regalos, insistió el Engañador, pues eran simplemente favores que se otorgarían a valiosos aliados.</p>
-
-<p>Así habló el Engañador, ¿y quién puede decir cuánto de su historia era verdad? Es dudoso siquiera si el propio Engañador lo sabía, pues el engaño se había convertido tanto en parte de su existencia que ni siquiera los C'tan podían ya discernir sus raíces. Sin embargo, sus palabras ejercieron influencia sobre Szarekh, quien, como sus antepasados antes que él, desesperaba de las divisiones que una vez más estaban desgarrando a su pueblo. Durante largos meses solares, debatió el asunto con los otros dos faraones del Triarca y los nobles de su Corte Real.</p>
-
-<p>A lo largo de todo esto, la única voz disidente fue la de Orikan, el astrólogo de la corte del Triarca, quien predijo que la alianza entre los Necrontyr y los C'tan traería un renacimiento de gloria, pero destruiría para siempre el alma del pueblo Necrontyr. Sin embargo, el deseo y la ambición rápidamente anularon la precaución, y la profecía de Orikan fue desestimada. Un año Necrontyr después de que el Engañador hubiera presentado su proposición, el Triarca acordó la alianza, y así para siempre condenaron a su especie.</p>
-
-<p>Por su parte, los Necrontyr pronto cayeron en asombro por sus descubrimientos y los C'tan pasaron a tomar el control sobre sus benefactores. Los poderes de los C'tan manifestados en el mundo físico eran de hecho casi divinos y no pasó mucho tiempo antes de que los C'tan fueran adorados como los Dioses Estelares que los Necrontyr los habían nombrado.</p>
-
-<p>Tal vez habían sido contaminados por el universo material del que ahora formaban parte, o tal vez esta había sido siempre su naturaleza incluso cuando estaban atados a los soles de los que se alimentaban, pero los C'tan resultaron ser tan crueles y caprichosos como las estrellas de las que habían nacido. Pronto se regocijaron en la adoración religiosa de los Necrontyr y se deleitaron con las energías electromagnéticas vitales de incontables esclavos mortales.</p><br id="Biotransferencia y el surgimiento de los Necrones">
-
-
-<hr><br><br>
-<h3>Biotransferencia y el surgimiento de los Necrones</h3><br>
-
-<p>
-<i> "Cuando el Rey Silente vio lo que se había hecho, finalmente comprendió la verdadera naturaleza de los C'tan y el destino que habían traído en su nombre."</i>
-— Extracto del Libro de la Noche Lamentable.</p>
-
-
-<p>Armados con armas de poder divino y naves estelares capaces de cruzar la galaxia en un parpadeo mediante el uso de tecnología de fase cuántica, los Necrontyr estaban listos para comenzar su guerra contra los Antiguos una vez más. Pero los C'tan tenían otro regalo para sus sujetos mortales. Ofrecieron a los Necrontyr un camino hacia la inmortalidad y la estabilidad física que su especie siempre había anhelado. Su carne enferma sería reemplazada por el metal vivo de la necrodermis que constituía las propias formas físicas de sus Dioses Estelares. Sus desechadas cáscaras orgánicas serían consumidas y sus formas metálicas frías estarían entonces libres para perseguir su gran venganza contra los Antiguos y el resto de un universo lleno de odio, liberados para siempre de las debilidades de su carne odiada.</p>
-<p>Con el pacto sellado entre los Necrontyr y los C'tan, los Dioses Estelares revelaron la forma que tomaría la inmortalidad para los Necrontyr, y comenzó el gran proceso de biotransferencia. Se construyeron vastas bio-fundiciones, y en ellas marcharon los pueblos del Rey Silente de acuerdo con los términos del pacto que había hecho con los C'tan. Los procedimientos blasfemos a los que fueron sometidos los Necrontyr dentro de las furiosas bio-fundiciones no pueden ser conocidos, pero ciertamente, cada uno fue despojado de carne y de alma, su cuerpo reemplazado por una concha de necrodermis de metal vivo, similar a los propios C'tan, animada por lo que quedaba de su disminuida esencia.</p>
-
-<p>Sobre cada horno se cernían y se zambullían las formas etéreas verdaderas de los C'tan mientras se hartaban del detritus espiritual y electromagnético de una especie entera. Solo cuando el Rey Silente emergió del proceso de biotransferencia y contempló lo que había sucedido a su pueblo, vio la terrible verdad del pacto que había hecho. Aunque la inmortalidad y la fuerza y vigor casi divinos eran suyos, había venido a costa de su alma, cuyos restos etéreos ya habían sido absorbidos por la boca de un C'tan en vuelo.</p>
-
-<p>Mientras Szarekh observaba a los C'tan festinando con la esencia vital de su pueblo, se dio cuenta de la terrible profundidad de su error. En muchos aspectos, se sentía mejor que en décadas de Necrontyr, los innumerables dolores y dudas de la vida orgánica ahora estaban detrás de él. Su nuevo cuerpo mecánico era mucho más poderoso que la frágil forma que había tolerado durante tanto tiempo, y sus pensamientos eran más rápidos y claros que nunca.</p>
-
-<p>Sin embargo, había un terrible vacío que carcomía su mente, un hueco insondable de espíritu que desafiaba toda explicación racional. En ese momento, supo con fría certeza que el precio de la inmortalidad física había sido la pérdida de su alma. Con gran pesar, el Rey Silente contempló el destino que había traído a su pueblo: los Necrontyr ahora eran solo un recuerdo, y los Necrones sin alma, imperecederos, habían renacido en su lugar.</p>
-
-<p>Pero si el precio había sido elevado, la biotransferencia había cumplido todas las promesas que los C'tan habían hecho. Incluso el más humilde de los Necrontyr ahora estaba bendecido con la inmortalidad; la edad y la radiación ionizante apenas podían erosionar sus nuevos cuerpos mecánicos, y solo las lesiones más terribles podían destruirlos por completo.</p>
-
-<p>El proceso de biotransferencia había incrustado protocolos de comando engramáticos en cada mente necrona, otorgando al Rey Silente la lealtad inquebrantable de sus súbditos. Al principio, el Rey Silente abrazó esta unanimidad, pues era un respiro bienvenido del caos y la fractura que habían consumido al Imperio Necrontyr en años recientes. Toda la especie estaba ahora bajo su mando, y así recayó sobre los Necrones cumplir su parte del terrible trato. Sin embargo, con el paso del tiempo, Szarekh se cansó de su carga pero no se atrevió a romper los protocolos de comando, temeroso de que sus súbditos se volvieran contra él buscando venganza por la terrible maldición que había traído sobre ellos.</p>
-
-<p>La biotransferencia solo dejó atrás los ecos espectrales de la conciencia de los Necrontyr. Solo unos pocos de los más fuertes de voluntad entre la nobleza y el ejército Necrontyr retuvieron su intelecto y autoconciencia, y aún así eran solo sombras de lo que alguna vez fueron. Se habían purgado de gran parte de lo que los hacía individuos únicos. Pero a diferencia del Rey Silente, la mayoría de los Necrones al principio no les importaba en absoluto su pérdida; todo lo que les importaba era que vivirían para siempre sin enfermedad ni muerte, como habían prometido sus Dioses Estelares.</p>
-
-<p>Renovados y fortalecidos como nunca antes por su devoración de las almas de una especie entera, los C'tan eran ahora imparables, y con las legiones inmortales de los Necrones marchando a su paso, los Antiguos estaban condenados. Solo una cosa quedaba verdaderamente de los antiguos Necrontyr: su ardiente odio por todas las demás especies vivientes e inteligentes del universo.</p>
-
-<p>Legiones de guerreros de metal vivo imperecederos se aventuraron en la galaxia en sus Naves Tumba, y las estrellas ardieron a su paso. El dominio de los Antiguos sobre el Warp ahora era contrarrestado por la supremacía de los C'tan sobre el universo físico, y los antiguos enemigos de los Necrones sufrieron enormemente en la masacre interestelar que siguió.</p><br id="La ascención de los Necrones">
-
-<hr><br><br>
-<h3>La ascención de los Necrones</h3><br>
-
-<p>Con los C'tan y los Necrones luchando como uno solo, los Antiguos estaban ahora condenados a la derrota. Saciados con la fuerza vital de los Necrontyr, los C'tan empoderados pudieron desatar fuerzas más allá de la comprensión. Planetas fueron arrasados, soles extinguieron y sistemas estelares enteros devorados por agujeros negros invocados por los poderes de distorsión de la realidad de los Dioses Estelares. Las legiones Necron finalmente atravesaron la Telaraña y asaltaron a los Antiguos en cada rincón de la galaxia. Sitian las fortalezas de los muchos aliados de los Antiguos entre las jóvenes especies inteligentes de la galaxia, cosechando la fuerza vital de los defensores para alimentar a sus voraces amos C'tan.</p>
-
-<p>En los últimos años de la Guerra en el Cielo, uno de los factores principales que llevó a la ascendencia de los Necrones fue su capacidad para finalmente acceder a la Telaraña de los Antiguos. El C'tan conocido como Nyadra'zath, el Ardiente, había deseado llevar sus fuegos arcanos a ese espacio más allá del espacio, y así mostró a los Necrones cómo romper sus fronteras extradimensionales. A través de una serie de portales de piedra viva conocidos como las Puertas de Dolmen, los Necrones finalmente pudieron utilizar el arma más poderosa de los Antiguos en su contra, acelerando enormemente el fin último de la Guerra en el Cielo.</p>
-
-<p>Los portales ofrecidos por las Puertas de Dolmen no son tan estables ni tan controlables como las entradas naturales al Webway dispersas por la galaxia. De hecho, de alguna manera curiosa, el Webway puede detectar cuando sus alrededores han sido violados por una Puerta de Dolmen y sus mecanismos arcanos intentan sellar rápidamente el ramal infectado del resto de la Dimensión del Laberinto hasta que haya pasado el peligro para su integridad. Así, los Necrones que entran al Webway deben llegar a su destino previsto a través de sus corredores extradimensionales cambiantes rápidamente, no sea que la propia red provoque su destrucción.</p>
-
-<p>Por supuesto, en la era presente, eones han pasado desde que los Necrones utilizaron las Puertas de Dolmen para asaltar a sus archienemigos. Los Antiguos han desaparecido, y el Webway mismo se ha convertido en un laberinto enredado y roto. Muchas Puertas de Dolmen se perdieron o fueron abandonadas durante el tiempo del Gran Sueño de los Necrones, y muchas más fueron destruidas por los Aeldari, los sucesores de los Antiguos como guardianes del Webway. Aquellas que quedan conceden acceso solo a una pequeña porción del inmenso laberinto que es el Webway, gran parte de eso sellado voluntariamente por los Aeldari para evitar más contaminación.</p>
-
-<p>Sin embargo, el Webway es inmensamente vasto, y incluso estos hilos separados permiten a los Necrones un modo de viaje que supera con creces a los de las razas más jóvenes. Es bueno que así sea. Como especie desprovista de psíquicos como resultado de la pérdida de sus almas durante el proceso de biotransferencia, los Necrones también son incapaces de viajar por el Warp, y sin acceso al Webway, se verían obligados a depender una vez más de las naves de estasis de viaje lento, condenándolos al aislamiento interestelar.</p>
-
-<p>Tras estas victorias, los C'tan y sus servidores Necrones imperecederos dominaban ahora la galaxia. Las últimas fortalezas planetarias de los Antiguos estaban sitiadas y las especies inteligentes que alguna vez habían nutrido se convirtieron en ganado para el hambre obscena de los C'tan. Para las especies inteligentes más jóvenes de la galaxia, los Necrones y sus Dioses Estelares eran amos crueles, cosechando sin escrúpulos sus poblaciones a voluntad para alimentar el hambre incesante de energías vitales de los C'tan. Los C'tan eran figuras de terror que exigían la adoración y el miedo de los mortales en igual medida.</p>
-
-<p>Por razones desconocidas, pero probablemente porque sus hambres individuales de energías vitales mortales no conocían límites, los C'tan finalmente comenzaron a pelear entre ellos mismos tanto por deporte como por rencor. Entre los Aeldari, un antiguo mito sostiene que su Dios Riente engañó al C'tan conocido como "el Extranjero" para que se volviera contra sus hermanos y comenzara su larga guerra por la supremacía.</p>
-
-<p>En el curso de la lucha de los C'tan entre sí, se arrasaron planetas enteros, se extinguieron estrellas y sistemas solares enteros fueron devorados por agujeros negros liberados. Se construyeron nuevas ciudades por los esfuerzos de millones y luego fueron derribadas una vez más. A medida que las "cosechas rojas" de los C'tan y sus servidores Necrones se volvían escasas, los C'tan eventualmente devoraron a los C'tan, hasta que solo quedaron unos pocos en el universo y compitieron entre sí durante una larga edad.</p>
-
-<p>Eventualmente, incluso los Antiguos, que alguna vez se habían definido por su paciencia y voluntad imparable, se volvieron desesperados ante el asalto de los Necrones. Utilizaron sus grandes habilidades científicas para ingeniar seres inteligentes con un vínculo psíquico aún más fuerte con el Warp, con la esperanza de crear servidores con la capacidad de canalizar el poder psíquico para defenderse.</p>
-
-<p>Nurturaron muchas especies guerreras potenciales, entre las cuales se cree que se encuentran los primeros miembros de la especie Aeldari y muchas otras razas xenos, incluidas los Rashan, los K'nib, los Krork y muchos otros. Pasaron milenios terrestres mientras las creaciones y experimentos de los Antiguos finalmente daban fruto, incluso cuando los C'tan y sus servidores Necrones continuaban extinguir la vida en toda la galaxia.</p><br  id="El Giro de la Marea">
-
-<hr><br><br>
-
-<h3>El Giro de la Marea</h3><br>
-
-<p>Las especies servidores de los Antiguos, empoderadas psíquicamente, se extendieron por la galaxia, luchando contra la tecnología avanzada Necron con el poder psíquico de su "magia" invocada del Warp. Ante este nuevo asalto, el imperio de los C'tan fue destrozado, ya que las fuerzas psíquicas del Inmaterium eran anatema para entidades sin alma cuya existencia estaba completamente contenida dentro de patrones puramente físicos de fuerza electromagnética. Por toda la destrucción que podían desatar, no podían detener el avance implacable de los Antiguos y las razas más jóvenes a través de las estrellas.</p>
-
-<p>Los C'tan restantes, unificados por esta gran amenaza por primera vez en millones de años terrestres, buscaron una forma de derrotar las energías alimentadas por el alma de las especies más jóvenes. Iniciaron un gran amurallamiento, un plan para derrotar para siempre las sortilegios psíquicos de los Antiguos sellando el universo material del Warp, un plan cuyos primeros frutos una vez se encontraban en el Mundo Fortaleza Imperial de Cadia en forma de los grandes pilones que llenaban la superficie de ese mundo en redes intrincadas y creaban el área de estabilidad espacio-temporal cerca del Ojo del Terror conocida como la Puerta Cadia.</p>
-
-<p>Con sus poderes como dioses, solo era cuestión de tiempo hasta que los C'tan tuvieran éxito. Pero antes de que su gran obra estuviera completa, las semillas de destrucción que los Antiguos habían plantado milenios antes trajeron un cataclismo imprevisto. Los dolores del crecimiento y los defectos psíquicos colectivos de las especies más jóvenes arrojaron las energías del Inmaterium, reactivas psíquicamente, del caos.</p>
-
-<p>La guerra, el dolor y la destrucción se reflejaron en la profundidad sin fondo del Mar de Almas que era el Warp. El torbellino de almas liberado en el Inmaterium por la carnicería de la Guerra en el Cielo se condensó en las energías antes informes del Warp. Entidades más antiguas que habían existido dentro del Inmaterium se transformaron en terroríficos depredadores psíquicos, desgarrando las almas de los psíquicos vulnerables mientras su propio entorno era destrozado y refundido en el Reino del Caos.</p><br id="Plaga Esclavista">
-
-<hr><br><br>
-<h3 >Plaga Esclavista</h3><br>
-
-<p>Los habitantes del Warp, agitados en un frenesí por el conflicto en el Materium, se agruparon vorazmente en las grietas entre el Inmaterium y el universo material, buscando nuevas formas de entrar en el reino físico. Los Antiguos trajeron nuevas especies guerreras genéticamente modificadas para defender sus últimos bastiones, incluidos los Jokaero, que imitaban la tecnología, y los formidables Krork de piel verde, ancestros de los presentes Orkos, pero ya era demasiado tarde. La red intergaláctica del Webway de los Antiguos fue violada desde el Inmaterium y perdida para ellos, varias de sus Puertas de Warp fueron destruidas por sus propias manos para evitar que las entidades del Warp se propagaran a mundos no corrompidos y las mayores obras y lugares de poder de los Antiguos fueron invadidos por los horrores que sus propias creaciones habían desencadenado.</p>
-
-<p>Los más aterradores de estos horrores fueron los Esclavistas, entidades del Warp cuya capacidad para dominar las mentes de las especies más jóvenes y crear sus propios portales en el reino material usando psíquicos mutados y poseídos los trajeron en cada vez mayor número. Para los Antiguos, este fue el desastre final cuando los Esclavistas tomaron el control de sus servidores. La Caja de Pandora desatada por la creación de las especies más jóvenes finalmente dispersó a los últimos de los Antiguos y rompió su poder sobre la galaxia de una vez por todas. La vida había estado al borde de un apocalipsis durante la Guerra en el Cielo entre los Antiguos y los C'tan. Ahora, mientras los Esclavistas irrumpían en el Inmaterium en proporciones epidémicas, los supervivientes parecían condenados.</p>
-
-<p>Finalmente, acosados por el avance implacable de los C'tan y los peligros catastróficos del Warp que habían desencadenado ellos mismos por error, los Antiguos fueron derrotados, dispersados y finalmente destruidos. Si las especies se extinguieron o simplemente huyeron de la galaxia para buscar un nuevo refugio en otro lugar es desconocido.</p><br id="Traición del Rey Silente">
-
-<hr><br><br>
-<h3>Traición del Rey Silente</h3><br>
-
-<p>A lo largo de las etapas finales de la Guerra en el Cielo, Szarekh esperó pacientemente, esperando el momento en que los C'tan demostrarían ser más vulnerables.</p>
-
-<p>Aunque toda la especie Necron estaba ahora bajo su mando, el Rey Silente no podía esperar oponerse a los C'tan en la cúspide de su poder, y aun si lo hiciera y tuviera éxito, entonces los Necrones tendrían que terminar la Guerra en el Cielo contra los Antiguos y sus cada vez más potentes especies aliadas solos. No, los Antiguos tenían que ser completamente y completamente derrotados antes de que los C'tan pudieran ser llevados a rendir cuentas por el horror que habían traído entre los Necrontyr.</p>
-
-<p>Y así, cuando finalmente los C'tan ganaron su gran guerra, su triunfo fue efímero. Con un enemigo odiado finalmente derrotado, y el otro agotado por una victoria luchada duramente, el Rey Silente finalmente lideró a los Necrones en revuelta. En su arrogancia, los C'tan no se dieron cuenta de su peligro hasta que fue demasiado tarde.</p>
-
-<p>Los Necrones enfocaron las inimaginables energías del universo vivo en armas, hipercañones para matar dioses ideados por los mejores Crypteks de la galaxia, demasiado poderosos incluso para que los Dioses Estelares los soportaran. Ni siquiera los grandes señores de las mundos corona Necron bien recuerdan las batallas contra los Dioses Estelares, pues la causalidad misma fue dañada por las fuerzas desatadas para desmembrar a los C'tan, y el Rey Silente solía eliminar el conocimiento de las armas terribles empleadas de sus guerreros después del hecho por temor a lo que se podría hacer más tarde con ellas.</p>
-
-<p>Lamentablemente, los C'tan eran seres estelares inmortales, parte de la tela fundamental de la realidad y por lo tanto casi imposibles de destruir. Así, cada C'tan fue dividido en miles de fragmentos energéticos más pequeños y menos poderosos, cada uno con la personalidad de la entidad completa, sin embargo, este resultado fue suficiente para los objetivos del Rey Silente.</p>
-
-<p>De hecho, había sabido que la destrucción final de los C'tan era imposible y había trazado sus planes en consecuencia; cada "Fragmento C'tan" recién nacido fue atado dentro de un Laberinto Tesseract multidimensional, tan atado y seguro como un legendario djinn Terrano atrapado en una botella. Aunque el costo de la victoria fue alto, millones de Necrones fueron destruidos como consecuencia de su rebelión, incluidos todos los miembros del Triarca salvo el Rey Silente mismo, los Necrones estaban una vez más al mando de su propio destino.</p><br id="Gran Sueño">
-
-<hr><br><br>
-<h3>Gran Sueño</h3><br>
-
-<p>Los Necrones habían sido vindicados en su búsqueda única de ciencia y control sobre el reino material y ciertamente se complacieron al ver el colapso de la civilización de los Antiguos como resultado de su exceso de poder psíquico y el fin de la dominación de los C'tan sobre su especie. Sin embargo, incluso con la derrota de los Antiguos y los C'tan por igual, el Rey Silente vio que el tiempo de los Necrones en la galaxia había terminado, al menos por el momento. Permitirían que los Esclavistas se llevaran lo que quedaba de la vida inteligente en la galaxia y permitirían que se convirtiera en un páramo interestelar; luego, la plaga psíquica se extinguiría y con el tiempo la galaxia evolucionaría nuevas formas de vida que serían menos sofisticadas y más fáciles de dominar.</p>
-
-<p>Además, los Necrones entendían que el manto del dominio galáctico pronto pasaría a los Aeldari, una de las especies psíquicamente potentes que habían luchado junto a los Antiguos durante toda la Guerra en el Cielo y que, por lo tanto, habían llegado a odiar a los Necrones y todas sus obras con la pasión ardiente que es la característica definitoria de esa especie. Los Aeldari habían sobrevivido donde los Antiguos no lo habían hecho y los Necrones, debilitados por su gasto de vidas y recursos en derrocar el dominio de los C'tan, no podían enfrentarse a ellos.</p>
-
-<p>Sin embargo, el Rey Silente sabía que el tiempo de los Aeldari eventualmente pasaría, como debía pasar para todos aquellos seres aún envueltos en carne. Tomaría millones de años terrestres para que el poder de los Aeldari se desvaneciera, pero lo importante era que los Necrones estarían allí para aprovecharlo.</p>
-
-<p>Así fue como el Rey Silente ordenó que las ciudades Necron restantes fueran transformadas en grandes complejos de tumbas atravesados por criptas de estasis. Dejen que los Aeldari den forma a la galaxia por un tiempo; ellos eran efímeros, mientras que los Necrones eran inmortales y eternos. El mandato final del Rey Silente a su pueblo fue que debían dormir durante el equivalente a 60 millones de años estándar, pero despertar listos para reconstruir todo lo que habían perdido, para restaurar las dinastías Necron a su antigua gloria.</p>
-
-<p>Esta fue la orden final del Rey Silente, y cuando el último Mundo Tumba selló sus bóvedas subterráneas, Szarekh destruyó los protocolos de comando engramáticos mediante los cuales había controlado a su pueblo durante tanto tiempo, pues los había fallado completamente. Sin mirar hacia atrás, Szarekh, el último de los Reyes Silentes del Triarca, se embarcó en la oscuridad del vacío interestelar, allí para encontrar cualquier medida de consuelo o penitencia que pudiera.</p>
-
-<p>Mientras tanto, pasaron eones y los Necrones siguieron durmiendo, sus esclavos y construcciones de máquinas los guardaban mientras dormían en Mundos Tumba que habían sido purgados de toda vida para mantener a los Esclavistas lejos de su puerta. Este plan funcionó con un grado asombroso de éxito hasta que los Necrones fueron despertados por las fuerzas del Imperio del Hombre en el 41er Milenio para asolar la galaxia una vez más. Descubrieron una nueva e inesperada era de civilización y guerra interestelar muy similar a la que habían dejado atrás hace 60 millones de años estándar.</p>
-
-<p>La galaxia está floreciendo con vida una vez más, pero aún está plagada de psíquicos latentes y adoradores de las energías infernales del Caos del Warp, primero desatadas durante la Guerra en el Cielo. Se necesitará tiempo y muchas maquinaciones para que las dinastías Necron recuperen su lugar legítimo como gobernantes de la galaxia; los agentes del Caos deben ser derrocados; los peligrosos Aeldari, herederos del manto de los Antiguos, eliminados; la Humanidad subyugada y el gran trabajo de cortar el universo material del Warp completado antes de que pueda comenzar verdaderamente una nueva era de dominio Necron.</p>
-
-<p>Pero los Necrones son eternos e inmortales, su tecnología aún no igualada por ninguna de las especies estelares más jóvenes. Y el tiempo siempre está de su lado...</p><br id="Ascenso de la Humanidad">
-
-<hr><br><br>
-<h2 id="Edad de Terra y el Éxodo Estelar"><u> Ascenso de la Humanidad</u></h2><br>
-
-<h3>Edad de Terra y el Éxodo Estelar (M1-M15)</h3><br>
-
-<p>Durante millones de años estándar después de que los Necrones y sus fragmentos cautivos de C'tan entraran en hibernación en sus Mundos Tumba, las poblaciones devastadas de las especies inteligentes de la galaxia se recuperaron lentamente de las "cosechas rojas" de los C'tan. Con el tiempo, los Aeldari emergieron como la civilización más dominante en la galaxia, con el núcleo de su imperio que se extendía por las estrellas ubicado en la región de la galaxia que más tarde se convertiría en la brecha del Warp llamada el Ojo del Terror.</p>
-
-<p>Pero en el planeta llamado Tierra y luego Terra por sus habitantes, una especie inteligente, mamífera y humanoide conocida como la Humanidad estaba ascendiendo a la prominencia hace más de 40,000 años estándar. Durante la Edad de Terra, o la Edad del Progreso como a veces la llaman los historiadores imperiales, la raza humana avanzó más allá de su antiguo pasado preindustrial para obtener capacidad de viaje espacial y comenzar a colonizar lentamente los mundos terraformables en su propio sistema solar y en los sistemas estelares cercanos a su mundo natal utilizando enormes naves estelares de subluz.</p>
-
-<p>El así llamado "Éxodo Estelar" que ocurrió durante la Edad de Terra es un período mal entendido de la historia humana que generalmente se acepta que cubre la mayoría de las incursiones iniciales de la humanidad en el espacio interestelar y el origen de la mayoría de las colonias humanas extrasolares más antiguas, comenzando en algún punto desconocido a mediados o finales del tercer milenio.</p>
-
-<p>Este período generalmente se entiende que lleva al llamado "Edad Oscura de la Tecnología" en algún momento alrededor del año 15,000 d.C. Durante gran parte del Éxodo Estelar, la Humanidad carecía de cualquier conocimiento de la existencia del Inmaterial o del Impulsor de Warp, por lo que se vio obligada a viajar entre las estrellas en enormes naves generacionales de subluz o mediante hibernación criogénica.</p><br id="Edad de la Tecnología">
-
-<hr><br><br>
-<h3>Edad de la Tecnología (M15-M25)</h3><br>
-
-<p>Gran parte de la era de la historia humana conocida por los historiadores imperiales como la Edad de la Tecnología o la "Edad Oscura de la Tecnología", que duró aproximadamente entre el 15º milenio y el 25º milenio d.C., es misteriosa. Fue en este tiempo cuando los mutantes psíquicos llamados Navegantes nacieron por primera vez o fueron creados mediante ingeniería genética, y combinados con la invención del Impulsor de Warp, permitieron que la Humanidad viajara entre mundos más rápido que la velocidad de la luz utilizando el peligroso medio hiperdimensional y psíquicamente reactivo del Inmaterial o "Warp".</p>
-
-<p>Mucho antes del surgimiento del Emperador y el nacimiento del Imperio, durante la Edad de la Tecnología, la Humanidad se extendió hacia las estrellas, ansiosa por ocupar nuevos mundos y expandir su floreciente imperio interestelar. Enormes naves colonizadoras llevaban a colonos humanos entusiastas, junto con todos los recursos que pudieran necesitar, y aterrizaban en mundos lejanos, a menudo aislados.</p>
-
-<p>Los primeros Mundos de los Caballeros fueron fundados al comienzo mismo de la Edad de la Tecnología, antes del descubrimiento del Impulsor de Warp en el 18º Milenio, cuando exploradores de la Vieja Tierra viajaron lejos a través de la galaxia buscando planetas para utilizar como mundos agrícolas para proporcionar alimentos para la creciente población de la Humanidad, o como colonias mineras para proporcionar los materiales necesarios para alimentar su expansión a través de las estrellas. De hecho, estos llamados "Mundos de los Caballeros" ya habían sido establecidos durante miles de años estándar cuando se fundó por primera vez el Imperio en el 30º Milenio.</p>
-
-<p>Cuando esas primeras naves exploradoras humanas descubrían un planeta adecuado para la colonización, se enviaban enormes naves espaciales de subluz para establecerse en ellos. Estas naves formaban parte de las flotas del "Largo Viaje" de Terra, nombradas así por la duración de su viaje y su destino entre las estrellas. El nombre era apropiado; cada una de las naves coloniales del Largo Viaje llevaba a miles de colonos en un viaje de décadas solares a un planeta muy distante. A su llegada, la nave colonial aterrizaba y era inmediatamente desmantelada por los colonos para proporcionar los materiales necesarios para sus primeros asentamientos; no había esperanza de regreso al lejano hogar de la Humanidad.</p>
-
-<p>La lucha por la supervivencia en muchos de estos mundos fue desalentadora. En algunos, los colonos se encontraban como presa de depredadores viciosos o eran atacados por especies alienígenas nativas, que veían a los colonos humanos como invasores. En otros mundos, las condiciones climáticas extremas o una atmósfera no respirable hacían que el viaje fuera imposible fuera de las zonas de hábitat con domos.</p>
-
-<p>Sin embargo, se anticiparon problemas como estos, y para enfrentarlos, los colonos recibieron bases de datos de Constructos de Plantillas Estándar (STC) artificialmente inteligentes y facilidades de fabricación que les permitían construir trajes de exoarmadura potenciados. Los pilotos de estas máquinas bípedas estaban protegidos por una dura cáscara de plasteel y armados con una serie de armas pesadas de grado militar.</p>
-
-<p>Los trajes resultaron invaluables: pocos, si acaso ninguno, depredadores naturales o guerreros alienígenas hostiles podían resistirles, y podían viajar incluso a través del entorno más peligroso con facilidad. Las figuras acorazadas y altas pronto se convirtieron en una vista común en las colonias del Largo Viaje Humano, donde los colonos los conocían como "Caballeros", en honor a los legendarios guerreros y protectores acorazados de la antigua historia terráquea.</p>
-
-<p>Impulsados por los efectos de alteración mental instilados por los Tronos Mechanicum (una plataforma de control de impulsos mentales que permite a un piloto interfazarse mentalmente con su traje de batalla de Caballero), a lo largo de unas pocas generaciones, estos guerreros de élite gradualmente desarrollaron una sociedad que evolucionó hacia las posteriores casas nobles. Las placas de plasteel de los trajes de exo-esqueleto originales fueron reemplazadas lentamente por una armadura más ornamental hecha de adamantium, proporcionando una mejor protección, así como una panoplia digna del prestigio y rango del portador en su sociedad.</p>
-
-<p>Los deberes más mundanos que los Caballeros habían asumido alguna vez en los mundos coloniales - tal como talar con sus poderosas sierras de cadena segadoras, por ejemplo, o despedazar rocas con sus cañones de batalla de disparo rápido - fueron delegados a aquellos de rangos inferiores, permitiendo que los Caballeros se concentraran en las artes de la guerra y el gobierno.</p>
-
-<p>Residiendo en altos bastiones, estos "Nobles" y "Herederos" se esforzaban por proteger las vidas de sus súbditos (como ahora veían a los colonos que protegían) y por traer orden al caótico maelstrom primordial en los planetas que eran sus hogares. Las casas nobles demostraron ser sumamente exitosas en ambas cosas, y pronto se convirtieron en una parte vital de la sociedad humana durante la Edad de la Tecnología.</p>
-
-<p>La existencia de viajes interestelares rápidos proporcionados eventualmente por la invención del Impulsor de Warp permitió que los mundos coloniales humanos interactuaran en una escala de tiempo normal por primera vez, y el comercio y la comunicación interestelar se volvieron posibles, permitiendo que los mundos humanos con ideas afines se unieran en combinaciones políticas y económicas para su beneficio mutuo.</p>
-
-<p>Eventualmente, en algún momento durante esta era, toda la Humanidad se unió bajo alguna forma de gobierno interestelar. Lo que también se sabe (en gran parte a partir de las obras del Guardián Cripias) es que un grupo conocido como los "Hombres de Oro" dependía de las obras de los "Hombres de Piedra" para crear una sociedad intergaláctica fantásticamente próspera, pero una desprovista (según los estándares imperiales posteriores) de espiritualidad o piedad, enfocada solo en el avance de la ciencia y la tecnología.</p>
-
-<p>Se sabe que los Hombres de Piedra crearon un tercer grupo, los "Hombres de Hierro", postulados como alguna forma de robots artificialmente autoconscientes o máquinas pensantes, para ayudarlos en sus trabajos y llevar a cabo deberes militares. Los Hombres de Hierro se salieron de control y se rebelaron contra sus creadores humanos, y estalló un conflicto cataclísmico, resultando en una catástrofe maltusiana parcial en gran parte de la galaxia colonizada por la Humanidad, en la que ya no había suficientes recursos para mantener a las vastas poblaciones de la Humanidad. A partir de este momento, se convirtió en un artículo de fe en las sociedades humanas que la creación de máquinas pensantes y toda inteligencia artificial general debería estar prohibida.</p>
-
-<p>Peor aún, tras la destrucción causada por la guerra contra los Hombres de Hierro, los psíquicos humanos comenzaron a aparecer en gran número en muchos mundos coloniales humanos, uno de los presagios de la decadencia final del Imperio Aeldari que controlaba aún más de la galaxia que la Humanidad en estos años. El resultado fue la primera introducción de la Humanidad a las entidades "Demoníacas" que moraban dentro del Warp y el colapso final de la civilización interestelar humana durante lo que se conoció como la Era de los Conflictos. En la propia Terra, este período sería recordado por un nombre diferente -- "Vieja Noche."</p><br id="Era de los Conflictos">
-
-<hr><br><br>
-<h3>Era de los Conflictos ("Vieja Noche") (M25-M30)</h3><br>
-
-<p>Durante la Edad de la Tecnología, la Humanidad alcanzó su cenit científico y tecnológico, disfrutando de una edad dorada de prosperidad y avance. El "Constructo de Plantilla Estándar", o STC, una base de datos de computadora artificialmente inteligente de esquemas para todas las tecnologías humanas avanzadas conocidas, había sido perfeccionado por científicos e ingenieros humanos y permitió una expansión sin precedentes de la Humanidad por toda la galaxia.</p>
-
-<p>Como se señaló anteriormente, una de las razones por las que la Humanidad tuvo tanto éxito en conquistar una gran parte de la galaxia fue el desarrollo de los constructos artificialmente inteligentes ahora conocidos solo en la leyenda imperial como los "Hombres de Hierro". Estos poderosos y completamente inteligentes robots de combate ganaron muchas guerras para la Humanidad, pero por alguna razón se volvieron contra sus amos al final de la Edad Oscura de la Tecnología en el gran conflicto llamado la "Revolución Cibernética". Esta guerra eventualmente fue ganada por la Humanidad, pero a un gran costo y solo a través de la intervención de otras facciones. El daño de este conflicto resultó catastrófico y destrozó gran parte del poder de la Humanidad. Desafortunadamente, esto fue solo el comienzo de las desgracias de la Humanidad a medida que la Edad de la Tecnología llegaba a su fin.</p>
-
-<p>A medida que la Humanidad se dispersaba ampliamente por toda la galaxia durante la Edad de la Tecnología, el antiguo Imperio Aeldari comenzó su declive; el gran éxito de la avanzada especie Aeldari había llevado a la decadencia y al hedonismo a gran escala en el último milenio de su imperio. Dentro del universo inmaterial y psíquico del Warp, la corrupción espiritual de la civilización Aeldari se reflejaba en la formación de una nueva entidad estética, psíquica o "Dios del Caos", Slaanesh, que a su vez causó disturbios masivos en el Warp; partes de la galaxia quedaron aisladas por estas "Tormentas de Warp", haciendo que los viajes Warp y la comunicación interestelar astrotelepática fueran cada vez más imposibles a medida que pasaban los años, aislando muchos mundos coloniales humanos entre sí, incluidos los del Sistema Solar.</p>
-
-<p>Hacia el final de la Edad de la Tecnología, los psíquicos aparecieron por primera vez entre la Humanidad. Mientras eran perseguidos en muchos mundos humanos atrasados y regresivos como brujos, en sociedades ilustradas y progresistas estos psíquicos fueron protegidos y aceptados al principio. Sin embargo, la intolerancia inicial por la aparición de psíquicos entre la Humanidad luego parecería previsora, ya que muchos mundos humanos cayeron bajo el dominio de Demonios y otras criaturas del Warp usando psíquicos poseídos y débiles como pasajes hacia el mundo físico. Solo los mundos que habían suprimido rigurosamente a los psíquicos sobrevivieron a la Era de los Conflictos.</p>
-
-<p>La Era de los Conflictos siguió a la Edad de la Tecnología, ya que la civilización humana interestelar colapsó en locura generalizada, posesión demoníaca, anarquía y guerra civil interhumana. Se desataron terribles armas de la era dorada de la tecnología, devastando muchas colonias humanas y convirtiendo mundos alguna vez verdes como Baal Secundus en planetas desérticos irradiados. Muchos mundos colonizados humanos aislados y vulnerables también se convirtieron en presa de especies alienígenas hostiles, como los Orkos.</p>
-
-<p>En un período de tiempo relativamente corto, la civilización humana, que alguna vez se extendió por toda la galaxia, fue llevada a sus rodillas, y se vio obligada a soportar casi cinco milenios terrestres de anarquía, terror, guerra, genocidio y esclavitud. Aparte de los relatos de un gran sufrimiento, poca información sobre estos largos años sobrevivió a este oscuro momento para ser conocida por los hombres y mujeres del Imperio.</p><br id="Caída de los Aeldari">
-
-<hr><br><br>
-<h3>Caída de los Aeldari (M25-M30)</h3><br>
-
-<p>Antes de la caída de su potente imperio interestelar, los Aeldari eran una especie humanoide tecnológica y psíquicamente avanzada, generalmente considerada la especie inteligente más poderosa de toda la galaxia. Su tecnología había avanzado tanto que poco o ningún trabajo era requerido por cada individuo Aeldari para proveer las necesidades diarias de la vida. Como resultado del aburrimiento y la enajenación que resultaron, en algún momento durante el 25º Milenio d.C. según el calendario Terrano, grupos de Aeldari comenzaron a formar lo que se conocía como "Cultos del Placer" dedicados a la búsqueda de todos los placeres y sensaciones que la vida tenía para ofrecerles a su especie.</p>
-
-<p>A pesar de la predicción de los reclusivos Videntes Aeldari que advertían de una perdición inminente si los Aeldari no cambiaban sus formas hedonistas, el gobierno dentro del Imperio Aeldari pronto colapsó y la degeneración moral de sus mundos natales y varios mundos coloniales continuó sin obstáculos. A medida que la búsqueda de experiencias cada vez más extremas alcanzaba su punto máximo, la muerte reinaba en las calles de las ciudades Aeldari, cazador y cazado siendo parte de un ritual retorcido de destrucción que consumía a millones en orgías de salvaje sed de sangre y exceso.</p>
-
-<p>Algunos Aeldari fueron capaces de ver que su sociedad ahora corrupta se estaba destruyendo a sí misma, y huyeron con disgusto; estos refugiados se establecerían en las distantes colonias rurales de su imperio, y más tarde serían conocidos como los Exoditas o se embarcarían en las gigantescas naves-mundo Aeldari del tamaño de continentes y navegarían entre las estrellas como comerciantes y exploradores, lejos de las escenas de exceso hedonista que estaban destruyendo el corazón del Imperio Aeldari en el noroeste galáctico.</p>
-
-<p>Al morir, las almas de todos los seres autoconscientes fallecidos atraviesan los límites del reino físico y van a descansar dentro del reino hiperdimensional de energía psíquicamente reactiva que subyace a toda la realidad conocida como el Inmaterium o Warp. A medida que más y más Aeldari corruptos morían, sus almas comenzaron a coalescer en una entidad más grande dentro del Warp, una representación viviente de la corrupción hedonista que había definido sus vidas. Esta presencia creciente en el Warp causó la agregación de enormes tormentas de Warp en toda la galaxia, eventualmente haciendo que los viajes y comunicaciones interestelares fueran imposibles para las colonias de la Humanidad, dando inicio a la Era de los Conflictos de la Humanidad.</p>
-
-<p>Esta colección gestáltica de almas Aeldari corruptas obtuvo autoconciencia en algún momento a fines del 30º Milenio, creando la poderosa nueva entidad del Warp conocida como el Dios del Caos Slaanesh, el Príncipe del Placer, llamado "Ella que Tiene Sed" por los Aeldari. Cuando Slaanesh llegó a ser, ocurrió una explosión etérea que abarcó la extensión del Espacio Warp dentro de la Galaxia de la Vía Láctea, con el epicentro ubicado dentro de los mundos natales centrales Aeldari del noroeste galáctico. Todos los Aeldari atrapados en la inmensa explosión psíquica fueron instantáneamente asesinados, sus almas consumidas por Slaanesh, y la región circundante del espacio se transformó en una gigantesca grieta permanente en el Warp más tarde conocida como el "Ojo del Terror" para la Humanidad. Los mundos natales Aeldari centrales fueron transformados en los páramos arruinados conocidos hoy como "Mundos Crone".</p>
-
-<p>La mayoría de los dioses Aeldari restantes, que existían como entidades dentro del Warp, fueron destruidos por Slaanesh después de su catastrófico nacimiento. Kaela Mensha Khaine, el dios Aeldari de la guerra, intentó combatir al nuevo Dios del Caos, pero la forma de Khaine fue destrozada y exiliada al reino mortal, donde reposó en los Circuitos de la Eternidad de las naves-mundo Asuryani, pero podía encarnarse en forma de constructos animados llamados "Avatares", que descansaban en los corazones de las diversas naves-mundo durante tiempos de grave peligro.</p>
-
-<p>Los únicos otros dioses Aeldari que sobrevivieron a la Caída fueron el dios bromista Cegorach (también llamado el "Dios Riente"), quien se escondió dentro de la Telaraña, y Isha, quien fue arrancada de las fauces de Slaanesh por el Dios del Caos Nurgle, quien ahora la mantiene como esclava dentro de su horrendo hogar jardín dentro del Reino del Caos.</p>
-
-<p>La Caída destruyó por completo el una vez vasto Imperio Aeldari interestelar, dejando bandas dispersas de Aeldari luchando por sobrevivir. Antes de la Caída, se construyeron vastas naves-mundo llamadas naves-mundo, lo que permitió a aquellos que deseaban escapar de la degeneración de los mundos natales Aeldari huir, junto con muestras de la flora y fauna perdidas de sus mundos. Cuando ocurrió la Caída, las diversas naves-mundo resistieron la onda de choque etérea en el Warp, algunas siendo destruidas en el proceso.</p>
-
-<p>Los mundos Exoditas, lejos del epicentro de la terrible catástrofe, quedaron en gran medida intactos por el grito de nacimiento de Slaanesh. Para evitar que los eventos de la Caída se repitieran, los Aeldari de las naves-mundo, que ahora se llamaban a sí mismos los "Asuryani" pero eran conocidos como los "Eldar" para los forasteros, idearon el sistema de Sendero Asuryani, mediante el cual cada Aeldari de las naves-mundo seguiría un camino de vida estricto, casi fanático, persiguiendo una actividad específica, como la artesanía o la guerra, durante una parte de sus largas vidas, antes de cambiar a otro Sendero cuando el anterior se volviera aburrido. De esta manera, los Asuryani esperaban controlar la extrema sensibilidad emocional y psíquica que los había dejado abiertos a la corrupción por el Caos en primer lugar.</p>
-
-<p>Sin embargo, algunos Aeldari corruptos sobrevivieron al nacimiento de Slaanesh refugiándose dentro de la Telaraña misma. La Telaraña había sido durante mucho tiempo el hogar de una casi infinita cabalgata de subdimensiones hiperdimensionales que estaban protegidas de las depredaciones de Slaanesh por las barreras psíquicas erigidas dentro de la Dimensión del Laberinto para mantener a raya los peligros del Warp. Estos seres sádicos se conocieron como los Drukhari o "Eldar Oscuros" para los forasteros, los habitantes de la vasta Ciudad Oscura dentro de la Telaraña llamada Commorragh. Los Drukhari luego se alimentaron de Humanos y Asuryani por igual para encontrar almas cuyo tormento y angustia pudieran devorar psíquicamente para mantener sus propias almas contaminadas lejos de ser consumidas por Slaanesh.</p><br id="Gran Cruzada">
-
-<hr><br><br>
-<h3>Gran Cruzada (aprox. 798.M30-005.M31)</h3><br>
-
-<p>La Gran Cruzada del Emperador de la Humanidad comenzó cuando la Era de la Ruina llegó a su fin para la Humanidad. Las tormentas del Warp que habían aislado a los mundos colonizados por Humanos durante 5.000 años terranos finalmente desaparecieron con el nacimiento de Slaanesh y la Caída de los Aeldari en el 30º Milenio.</p>
-
-<p>El hombre conocido solo como el Emperador, un Perpetuo y el mayor psíquico de la historia Humana, emergió misteriosamente de las tinieblas de la Vieja Noche como el más grande caudillo de guerra del mundo natal Humano. El Emperador, con la ayuda de su amigo y aliado Malcador el Sigilite, había unido Terra bajo su dominio durante las Guerras de Unificación, que terminaron en el 712.M30 en las décadas finales de la Era de la Ruina. Tenía la intención de usar a sus Marines Espaciales genéticamente mejorados y al Ejército Imperial para reunir ahora a toda la Humanidad bajo su gobierno ilustrado y la filosofía racionalista de la Verdad Imperial.</p>
-
-<p>Haciendo un pacto conocido como el Tratado de Marte con el Culto Mechanicus del Dios Máquina en Marte en el 739.M30, el Emperador prometió permitir que los Tecno-sacerdotes continuaran practicando su fe y mantuvieran la autonomía política de su gobierno Mechanicum si le proporcionaban las naves estelares y otra tecnología avanzada que necesitaba para reunir la galaxia colonizada por Humanos.</p>
-
-<p>El Emperador era un hombre de enormes habilidades en la práctica de la ciencia y el desarrollo de nuevas tecnologías, y así muchos miembros del antiguo Mechanicum vieron en Él la venida del Omnissiah, el avatar físico del Dios Máquina, que había sido profetizado por su fe. En el tratado que firmaron con el Emperador, el Mechanicum de Marte prometió su apoyo a la creación de un nuevo Imperio del Hombre en el que servirían como los principales proveedores de ciencia y tecnología del Imperio a cambio del primer acceso a cualquier tecnología antigua, o "arqueotecnología", descubierta más allá de los límites del Sistema Solar.</p>
-
-<p>Con la firma del Tratado de Marte, el símbolo del Imperio cambió de la cabeza de rapaz y el rayo icono utilizado por el Emperador durante las Guerras de Unificación en Terra al águila bicéfala conocida como el Águila Imperial, para simbolizar la unión de los imperios de la Tierra y Marte. Con las fábricas forjadoras y la producción industrial de Marte, el Emperador pudo reequipar a sus ejércitos, y lo que es más importante, ahora contaba con el uso de las Legiones Titánicas y los Caballeros del Mechanicum, gigantescas máquinas de guerra robóticas con el potencial de dominar el campo de batalla.</p>
-
-<p>Al principio, la expansión del recién nacido Imperio hacia el espacio interestelar fue lenta, ya que el Ejército Imperial aún era pequeño, y lo que es más importante, las 20 Legiones de Marines Espaciales del Emperador estaban inhibidas por la ausencia de sus primarcas, los comandantes militares transhumanos genéticamente modificados que el Emperador había creado durante las Guerras de Unificación para liderar su reconquista eventual de la galaxia al frente de las Legiones Astartes, pero que se habían perdido en el Warp antes del final de las Guerras de Unificación debido a las maquinaciones de los Dioses del Caos.</p>
-
-<p>Esta falta hacía que el tiempo para la creación de un nuevo Marine Espacial a partir de un joven humano normal fuera mucho más largo. Sin embargo, esta dificultad estaba a punto de terminar, ya que en Cthonia, un planeta en un sistema estelar no muy lejano de Terra, el Emperador se reunió por primera vez en el 801.M30 con uno de sus primarcas perdidos, Horus. Descubierto a temprana edad, el Emperador tomó a Horus bajo su protección y le enseñó todo lo que sabía. Horus y el Emperador tenían un vínculo verdaderamente único, el de padre e hijo, y muchas veces se salvaron la vida mutuamente. Pero después de casi 20 años estándar, el Emperador descubrió a otro de los primarcas de los Marines Espaciales, Leman Russ, en el gélido mundo de Fenris en el 819.M30. Aunque Horus estaba contento con el descubrimiento de uno de sus hermanos, secretamente esperaba siempre ser el hijo favorito del Emperador.</p>
-
-<p>Con el tiempo, todos los primarcas fueron encontrados en los mundos a los que habían sido enviados por voluntad de los Poderes Ruinosos del Caos, y cada uno fue colocado al mando de sus respectivas Legiones de Marines Espaciales. Las Legiones, como resultado, se expandieron enormemente con nuevos reclutas provenientes de los mundos adoptivos de sus primarcas, y ahora se podían producir nuevos Marines Espaciales en solo un año terrano. Pero esta aceleración y las técnicas de genética empleadas para llevarla a cabo produjeron defectos fundamentales en la psique de cada Marine Espacial creado a partir de ciertas herencias genéticas de primarcas a través de este proceso. Estos defectos resultarían más tarde fatales para muchos de los sueños del Emperador para la Humanidad.</p>
-
-<p>La Gran Cruzada duró 200 años estándar, hasta los primeros años del 31º Milenio, y llevó muchos sistemas estelares perdidos de nuevo al seno del recién nacido Imperio del Hombre. Bajo el mando del Consejo de Guerra del Emperador y sus primarcas redescubiertos, vastas flotas expedicionarias compuestas por el Ejército Imperial y las veinte Legiones de Marines Espaciales lucharon contra alienígenas, tribus humanas salvajes, dictadores humanos mezquinos y las fuerzas corrompidas por el Warp que habían ganado control sobre grandes porciones del espacio colonizado por Humanos durante la Era de la Ruina.</p>
-
-<p>Una vez que un mundo colonizado por Humanos había sido pacificado, se llevaba a cabo su "Cumplimiento Imperial" por un nuevo gobernador planetario imperial elegido por el Emperador. Parte de este proceso incluía la erradicación de cualquier creencia supersticiosa o religiosa de la población, con un respeto únicamente por la razón y el avance medido de la ciencia y la tecnología, un sistema de creencias ateo conocido como la "Verdad Imperial".</p>
-
-<p>Luego, el mundo era ocupado a menudo por una o varias unidades del Ejército Imperial que quedaban atrás para completar la integración del planeta en el Imperio mientras la flota expedicionaria, liderada por los Astartes, avanzaba hacia su próximo objetivo. A medida que los primarcas tomaban el control de las Legiones de Marines Espaciales que habían sido creadas a partir de su semilla genética, la Gran Cruzada se separó, moviéndose en muchas direcciones y llegando lejos por toda la galaxia.</p>
-
-<p>Después de que la Cruzada Imperial en el mundo de Ullanor concluyera en el 000.M30 al llevar ese planeta al Cumplimiento Imperial después de la derrota de una gran fuerza de Orkos, el Emperador la reclamó como la mayor victoria del Imperio hasta la fecha, y que Horus debería recibir todo el crédito. Alabando a Horus y su Legión de Lobos Lunares (más tarde renombrada como los Hijos de Horus), el Emperador declaró que tendría que dejar atrás las flotas expedicionarias y regresar a Terra para comenzar la próxima fase secreta de su plan para asegurar la dominación de la galaxia por parte de la Humanidad.</p>
-
-<p>En su lugar, el Emperador anunció que Horus sería declarado Maestro de Guerra del Imperio, el comandante de facto de todos los ejércitos del Emperador en la Gran Cruzada. Aunque Horus estaba preocupado de que el Emperador lo dejara a él y a sus hermanos primarcas para continuar solos por alguna razón desconocida, con Horus como su nuevo comandante, los ejércitos y Marines Espaciales del Imperio continuaron expandiéndose cada vez más hacia afuera, redescubriendo mundos humanos perdidos y trayéndolos de vuelta al seno del Imperio ilustrado. Esta expansión duró cinco años estándar más hasta el estallido de la terrible guerra civil imperial conocida como la Herejía de Horus en el 005.M31.</p><br id="Herejía de Horus">
-
-<hr><br><br>
-<h3>Herejía de Horus (aprox. 005-014.M31)</h3><br>
-
-<p>Pero las semillas de la destrucción para el gran sueño del Emperador ya habían sido sembradas. Uno de los primarcas, Lorgar Aureliano de la Legión de los Portadores de la Palabra, se había convertido secretamente al servicio de los Dioses Oscuros del Warp aproximadamente ciento sesenta años estándar después del inicio de la Gran Cruzada. Buscando la verdadera fuente de la divinidad en el universo después de que el Emperador reprendiera brutalmente a Lorgar y su Legión en la "ciudad perfecta" de Monarchia en el mundo de Khur por difundir la falsedad de que el Emperador era el único y verdadero dios de la Humanidad, el primarca emprendió una gran peregrinación a través de la galaxia.</p>
-
-<p>La búsqueda de Lorgar eventualmente llevó a los Portadores de la Palabra al corazón del gran y permanente Rift del Warp en el Segmentum Obscurus, más tarde llamado el Ojo del Terror. Allí, Lorgar estableció contacto con entidades que creía que realmente eran divinidades dignas de su adoración: los Dioses del Caos. Dedicándose a su visión de ver el Warp y el espacio real entrelazados en una sola realidad y los beneficios que creía que esto traería a la Humanidad, el primarca pasó las próximas cuatro décadas solares preparándose para convertir a sus hermanos y sus Legiones al servicio del Caos.</p>
-
-<p>Con este fin, Lorgar organizó para que el Señor de la Guerra Horus visitara el mundo bárbaro de Davin poco después del final de la Cruzada de Ullanor. Allí, arregló para que el Señor de la Guerra fuera herido de muerte por un arma contaminada por el toque oscuro del Dios del Caos Nurgle, el Padre de la Peste. Incluso la constitución superhumana de un primarca resultó incapaz de derrotar al patógeno corrompido por el Warp creado por el Dios de la Peste, y así, para salvar su vida, los propios Astartes de Horus lo entregaron a un círculo de Cultistas del Caos de Davin conocidos como el Templo de la Logia de la Serpiente.</p>
-
-<p>Allí, en un ritual malvado y mágico que había sido preparado por Lorgar y supervisado por el Primer Capellán de los Portadores de la Palabra, Erebus, el espíritu de Horus fue arrojado al Warp, donde los Dioses del Caos prometieron salvarle la vida si elegía convertirse en su siervo y derrocar el gobierno del Emperador de la Humanidad. Manipulando las inseguridades de Horus con respecto al afecto del Emperador por él y su deseo insaciable de reconocimiento, poder y gloria, los Poderes Ruinosos lograron convertir a Horus contra el Amo de la Humanidad mediante una combinación de mentiras y medias verdades. Con su acuerdo con su trato, el alma de Horus fue devuelta a su cuerpo en el templo de Davin y se despertó completamente curado, aunque ahora caminaba por el camino de la perdición.</p>
-
-<p>Durante los próximos años estándar, Horus comenzó a mover sigilosamente todas las piezas del ejército imperial que comandaba para lanzar una gran rebelión contra la autoridad del Emperador, destinada a que Horus reclamara el Mundo Trono de Terra y el manto del nuevo emperador de la Humanidad. El Señor de la Guerra, siempre con la ayuda de Lorgar y sus aliados Demoníacos, logró subornar la lealtad de ocho de sus hermanos primarcas.</p>
-
-<p>Lo hizo explotando sus propias inseguridades con respecto al trato del Emperador hacia ellos y las rivalidades celosas que muchos de los primarcas habían desarrollado a lo largo de la Gran Cruzada con sus compañeros. Las promesas de Horus de una mayor autonomía política y la eliminación de restricciones en la adquisición de ciertas tecnologías prohibidas por el Emperador también ganaron la lealtad de Kelbor-Hal, el fabricator-general de Marte y líder del antiguo Mechanicum.</p>
-
-<p>Para el 005.M31, la traición de Horus, conocida en siglos posteriores como la "Herejía de Horus", se extendió para abarcar aproximadamente la mitad de las fuerzas militares del Imperio, incluidas pequeñas Fuerzas de Defensa Planetaria, muchos regimientos del Ejército Imperial, las 9 Legiones Traidoras de Marines Espaciales del Caos y casi la mitad de las potentes fuerzas Taghmata del antiguo Mechanicum, Legiones de Titán y casas de caballeros, formando el núcleo de los adeptos del Mechanicum que eligieron servir a los Poderes Ruinosos y que más tarde fueron llamados el "Dark Mechanicum", aunque se referían a sí mismos como el "True Mechanicum".</p>
-
-<p>La Herejía de Horus realmente comenzó en el mundo de Isstvan III, donde Horus utilizó el estallido de una rebelión alimentada por el Caos contra el gobierno imperial como pretexto para enviar a todos los Astartes Leales, aquellos Marines Espaciales que Horus y sus primarcas aliados sabían que nunca se volverían contra el Emperador, a la superficie. Una vez que los Leales de cuatro de las Legiones de Marines Espaciales aliadas a Horus estuvieron en el planeta y participaron en combates, la flota imperial en órbita desató un devastador bombardeo de bombas de virus sobre ellos, buscando matar a todos los Leales y también a toda la población planetaria en lo que se recuerda como la "Atrocidad de Isstvan III".</p>
-
-<p>Pero Horus calculó mal, ya que varios de los Leales se enteraron del complot antes y pudieron advertir a sus hermanos de batalla en la superficie de Isstvan III antes de que comenzara el mortal bombardeo. Miles de Astartes Leales sobrevivieron, obligando a Horus y a los Traidores a lanzar una campaña de combates urbanos de semanas solares contra sus antiguos aliados, ya que la occlusión atmosférica causada por el bombardeo con virus impedía un simple bombardeo orbital de sus posiciones. Al mismo tiempo, otro grupo de Leales a bordo de la fragata de la Legión de la Guardia de la Muerte, el Eisenstein, logró huir al Warp con noticias de la traición del Señor de la Guerra, con la intención de informar al Emperador de la traición de su hijo favorito.</p>
-
-<p>Después de que Horus eliminara a los Leales en Isstvan III con un bombardeo orbital una vez que los cielos sobre el área objetivo se despejaron lo suficiente para permitir un asalto orbital preciso, trasladó sus fuerzas al mundo vecino de Isstvan V para esperar la retribución imperial que sabía que vendría. Los Leales creían con razón que superaban en número a las cuatro Legiones de Marines Espaciales de Horus, por lo que cuando el Emperador, representado en el asunto por Rogal Dorn, primarca de la Legión de los Puños Imperiales y el Pretoriano de Terra, envió una fuerza de siete Legiones contra él en Isstvan V, los Leales pensaron que la rebelión del Señor de la Guerra sería de corta duración.</p>
-
-<p>Pero subestimaron profundamente al hombre que el Emperador había elegido para ocupar su lugar al frente de la máquina militar del Imperio. De las siete Legiones de Astartes enviadas contra él en Isstvan V en ca. 006.M31, Horus ya había ganado secretamente la lealtad de cuatro, que se volvieron abruptamente contra las tres Legiones Leales y las destruyeron casi por completo. De un solo golpe, en la llamada "Masacre del Sitio de Aterrizaje" de Isstvan V, Horus casi duplicó sus fuerzas y debilitó a los Leales hasta el punto en que ahora podía comenzar una ofensiva hacia Terra misma.</p>
-
-<p>La terrible guerra civil que siguió mientras Horus avanzaba hacia el corazón del Imperio duró otros 7 años estándar, matando a billones de hombres y mujeres en toda la galaxia y culminando en el 014.M31 en un asalto masivo al Palacio Imperial durante el climático Asedio de Terra. Después de 55 días solares de lucha, la guerra fue terminada por el Emperador y Horus duelo en combate singular a bordo del buque insignia de Horus, el acorazado clase Gloriana Vengeful Spirit, en órbita de Terra, antes de que refuerzos Leales pudieran llegar al Mundo Trono y arrojar a las fuerzas Traidoras de su premio.</p>
-
-<p>Aunque mortalmente herido durante la batalla final con su hijo una vez favorito, que se había vuelto inmensamente poderoso y henchido de las energías del Warp como resultado del favor unido de los Dioses del Caos, el Emperador logró derribar a Horus usando todo el poder reunido de sus inigualables poderes psíquicos. A pesar de su gran tristeza y reluctancia, el Emperador borró el alma de Horus del Warp, impidiendo que fuera resucitado para servir a los Poderes Ruinosos una vez más.</p>
-
-<p>Sin su líder, la unidad de las fuerzas del Caos pronto se desmoronó y, cuando los refuerzos Leales liderados por Roboute Guilliman de los Ultramarines llegaron al Sistema Sol, las Legiones Traidoras y su Mechanicum Oscuro y aliados mortales se retiraron al masivo Rift del Warp en el Segmentum Obscurus conocido como el Ojo del Terror.</p>
-
-<p>Por su propia dirección, el cuerpo lisiado del Emperador fue instalado en los mecanismos de soporte vital cibernéticos del amplificador psíquico conocido como el Trono Dorado. Esto permitió que su mente tuviera un ancla en el espacio real desde el cual podría luchar contra la influencia de los Dioses del Caos en el Warp y continuar dirigiendo las energías del Astronomican, el faro psíquico que era la sangre vital de las comunicaciones, el comercio y los viajes interestelares del Imperio.</p>
-
-<p>En un epílogo a los terribles traumas de la Herejía, una batalla entre Leales y Traidores librada en el planeta Sotha, hogar del antiguo faro del Warp Necron conocido como el Pharos, atrajo la atención de las flotas enjambre de los Tiránidos hacia la galaxia. Fue en este tiempo antiguo que sus vastas flotas biomecánicas comenzaron a moverse a través del vacío extragaláctico hacia la Vía Láctea, atrayéndolos siempre hacia el brillante faro psíquico del Astronomican.</p><br id="Gran Purga">
-
-<hr><br><br>
-<h3>Gran Purga (ca. 014-Fecha Desconocida.M31)</h3><br>
-
-<p>La "Gran Purga", o simplemente "La Purga", fue la gran contraofensiva del Imperio del Hombre contra las Legiones Traidoras. Comenzó inmediatamente después del final de la Herejía de Horus tras la muerte del Señor de la Guerra y el fracaso de su asalto al Palacio Imperial durante el Asedio de Terra en el 014.M31. A lo largo de muchas décadas solares, finalmente logró expulsar a las fuerzas del Caos de sus territorios conquistados dentro del espacio Imperial para encontrar un refugio en la tormenta Warp permanente conocida como el Ojo del Terror.</p>
-
-<p>Antes de ser confinado para siempre dentro de los mecanismos de soporte vital del Trono Dorado, el Emperador había pronunciado juicio sobre los Traidores: los declaró Excomulgados Traitoris y determinó que debían ser arrojados al infernal Ojo del Terror por toda la eternidad. Todos los registros y recuerdos de las Legiones Traidoras serían posteriormente expurgados de los archivos imperiales.</p>
-
-<p>Mundos como Isstvan V y los antiguos mundos natales de las Legiones Traidoras serían limpiados de toda vida debido a la corrupción de su gente por el Caos. Las tropas asociadas de las Legiones Traidoras del Mechanicum Oscuro, las Legiones de Titán, las casas de caballeros del Caos o los regimientos y naves estelares del Ejército Imperial y la Armada Imperial que se habían vuelto hacia el Caos serían destruidos o arrojados al Ojo. Sería como si las Legiones Traidoras y sus aliados nunca hubieran existido para manchar al Imperio con su traición.</p>
-
-<p>Después de la muerte de Horus, aquellos Traidores que no habían sido asesinados de inmediato durante el Asedio de Terra huyeron ante la ira vengativa de las fuerzas Leales lideradas por el Primarca Roboute Guilliman de la Legión de los Ultramarines, quien también asumió las responsabilidades de liderazgo del Imperio como el Regente Imperial y el señor comandante del Imperio en la ausencia del Emperador. Muchos Traidores lograron escapar al espacio inexplorado o desaparecieron en el Ojo del Terror o en otras fisuras del Warp menos conocidas como el Maelstrom.</p>
-
-<p>La lucha continuó durante muchos años estándar después de que la Herejía había terminado con la muerte de Horus antes de que las fuerzas Traidoras fueran completamente destruidas o exiliadas al Ojo del Terror. Muchos sistemas estelares corruptos por el Caos fueron purgados y puestos bajo la vigilancia de la recién nacida Inquisición. El sueño del Emperador de una nueva era de iluminación, un tiempo en el que la Humanidad fue liberada de la superstición y la ignorancia, se convertiría en algo muy diferente. La Gran Purga sería seguida por la era de diez milenios conocida como la Era del Imperio.</p><br id="Segunda Fundación">
-
-<hr><br><br>
-<h3>Segunda Fundación (ca. 021.M31)</h3><br>
-
-<p>En medio de las campañas de la Gran Purga, ocurrió la Segunda Fundación. Las 9 Legiones Leales de Marines Espaciales restantes fueron disueltas, sus guerreros transhumanos transferidos a las organizaciones mucho más pequeñas de 1,000 Astartes conocidas como Capítulos, de acuerdo con los dictados recién establecidos del Códice Astartes de Roboute Guilliman. El Códice proporcionaba un manual altamente detallado y una guía de instrucciones para el establecimiento, entrenamiento, organización y tácticas militares de un Capítulo de Marines Espaciales.</p>
-
-<p>El propósito de esta reorganización era evitar que un líder como Horus volviera a hacer uso del poder de una Legión completa de Marines Espaciales contra el reino del Emperador. Al mismo tiempo, debido a su menor tamaño, los Marines Espaciales se transformaron de las fuerzas militares de primera línea del Imperio en una fuerza de asalto planetaria y de reacción rápida dedicada.</p>
-
-<p>Una parte de los Marines Espaciales, ahora colectivamente conocidos como el Adeptus Astartes, mantuvieron los nombres, emblemas y colores originales de sus Legiones progenitoras, mientras que los Capítulos restantes adoptaron nuevos nombres y heráldica y eventualmente desarrollaron culturas, tradiciones y creencias de Capítulo independientes. La mayoría de estos Capítulos de la Segunda Fundación todavía sirven con orgullo al Imperio hoy.</p><br id="Era del Imperio">
-
-<hr><br><br>
-<h3>Era del Imperio (M31 - Presente)</h3><br>
-
-<p>La Era del Imperio es el período de tiempo que comenzó con el final de la Herejía de Horus a principios del milenio 31, y generalmente se hace referencia en tiempo presente. El período de tiempo aproximado comienza en el 014.M31 y continúa hasta el presente, con el último año representado en los registros imperiales antes de la apertura de la Gran Grieta y el inicio de la Era Indomitus siendo 999.M41.</p>
-
-<p>La Era del Imperio generalmente se considera que abarca desde el final de la Herejía de Horus hasta el presente narrativo, un período de aproximadamente diez mil años terranos.</p>
-
-
-<button id="btnGenerico" title="Subir" onclick="scrollToTop()"><i class="fa-solid fa-up-long"></i></button>
-
-</section><br>
-<!--SECCION FOOTER-->
-<footer>
-    <p>Todos los derechos reservados - 2024</p>
-   </footer>
+        </div>
+        <br id="Historia Pre-Humana"><br><br>
+        <h2 id="Nacimiento de los Dioses Estelares"><u> Historia Pre-Humana</u></h2>
+
+        <br>
+        <h3>Nacimiento de los Dioses Estelares</h3><br>
+
+        <div class="wrapper">
+            <img class="imgFacc5" src="../facciones/Necron/imgNecron/Necron_1.webp" alt="">
+        </div>
+
+        <p>El nacimiento de las entidades posteriormente conocidas como los Dioses Estelares ocurrió al mismo tiempo
+            que el momento de la Creación misma, ya que se formaron a partir de las vastas, insensibles energías
+            primero desatadas por esa masa tumultuosa de fuerza cataclísmica. En ese entrelazamiento anárquico de
+            materia y energía, el mar de estrellas comenzó a girar hacia la existencia y durante un eón el universo
+            no era más que gas de hidrógeno caliente y polvo elemental de luz dominado por la fuerza gravitatoria de
+            miles de millones de soles recién nacidos.</p><br>
+
+        <p>Mucho antes de que se formaran y enfriaran los primeros planetas, los primeros seres verdaderamente
+            conscientes emergieron en el universo, sus pensamientos encerrados dentro de las líneas de fuerza
+            producidas por el plasma y las ráfagas electromagnéticas de las propias estrellas. En tiempos
+            posteriores, estas entidades serían conocidas como los C'tan, pero al principio de su existencia no se
+            parecían en nada a los seres malignos que eventualmente llegarían a ser. Eran poco más que monstruosos
+            parásitos de energía que se alimentaban de las energías solares de las estrellas que los habían traído a
+            la existencia, acortando las vidas de estrellas de secuencia principal por millones de años estándar.
+        </p><br>
+
+        <p>Con el tiempo, estos vampiros estelares aprendieron a moverse a lo largo de las líneas del flujo
+            electromagnético del universo, dejando sus lugares de nacimiento para derivar a través del éter cósmico
+            hacia nuevos campos de alimentación estelar y comenzar su ciclo de destrucción estelar una vez más.
+            Siendo seres de energía pura, no prestaban atención a los trozos de materia sólida que pasaban en el
+            vacío del espacio, los ardientes fuegos geotérmicos y los débiles campos geomagnéticos de estos planetas
+            incipientes eran insuficientes para alimentar siquiera su hambre insaciable.</p><br><br id="Los Antiguos">
+
+        <hr><br><br>
+        <h3>Los Antiguos</h3><br>
+
+        <div class="wrapper2">
+            <img class="imgFacc3" src="../facciones/Necron/imgNecron/Necron_3.webp" alt="">
+        </div>
+
+        <p>Así como las estrellas dieron a luz a sus hijos, los planetas de la recién nacida Vía Láctea
+            eventualmente dieron a luz a formas de vida compuestas de materia que comenzaron la larga escalada
+            evolutiva hacia la autoconciencia. Los primeros seres inteligentes de la galaxia conocidos por haber
+            desarrollado una civilización tecnológicamente avanzada suficiente para cruzar las estrellas fueron una
+            especie reptiliana de seres posteriormente llamados "Antiguos" por los Aeldari, quienes los conocieron
+            mejor de todas sus creaciones.</p><br>
+
+        <p>Los Antiguos poseían una sabiduría lenta y fría, pero aún así profunda, habiendo estudiado durante mucho
+            tiempo las estrellas y elevado la astronomía y la física a tal nivel que su ciencia y tecnología ahora
+            parecen a la Humanidad como un arte arcano. Su comprensión del funcionamiento del universo era tal que
+            podían manipular dimensiones alternas y emprender grandes obras de ingeniería psíquica.</p><br>
+
+        <p>Los Antiguos eran poderosos psíquicos que rutinariamente utilizaban los poderes del Disforme para una
+            amplia variedad de aplicaciones tecnológicas. Esto incluía la construcción de un sistema de portales
+            instantáneos más rápidos que la luz a través del Espacio Disforme. Estos portales conectaban todos los
+            mundos coloniales de los Antiguos, lo que les permitía cruzar los vastos abismos del espacio con solo un
+            paso a través de las innumerables Puertas del Disforme que construyeron para conectar los mundos de la
+            galaxia. Esta era una vasta red interdimensional similar al Webway de hoy, que es su descendiente
+            directo, aunque en una escala mucho mayor y más avanzada.</p><br>
+
+        <p>A través de esta red, los Antiguos dispersaron su descendencia en muchos lugares de la galaxia, pero
+            también sabían que toda vida era preciosa. Donde pasaban, sembraban nuevas especies inteligentes y
+            remodelaban miles de mundos para hacerlos propios según sus criterios ambientales y geográficos
+            predeterminados. Algunos en el Adeptus Mechanicus creen que incluso Terra sintió el toque de los
+            Antiguos mucho antes del surgimiento de la Humanidad a la autoconciencia, aunque esta noción se
+            considera herética en el mejor de los casos por el Ecclesiarchy, ya que el Credo Imperial enseña que la
+            Humanidad fue creada a imagen del Dios-Emperador antes de que su espíritu fuera encarnado en carne
+            física hace milenios.</p><br>
+
+        <p>La civilización de los Antiguos alcanzó su apogeo hace más de 60 millones de años estándar. Los Antiguos
+            fueron responsables de la creación o el avance genético de la mayoría de las especies inteligentes
+            actualmente activas de la galaxia, incluidos los Aeldari, los Krork (los precursores de los Orkos), los
+            Slann y los Jokaero, aunque se desconoce si desempeñaron algún papel directo en la evolución de la
+            Humanidad.</p><br><br id="Los Necrontyr y las Guerras de Secesión">
+        <hr><br><br>
+        <h3>Los Necrontyr y las Guerras de Secesión</h3><br>
+
+        <div class="wrapper">
+            <img class="imgFacc5" src="../facciones/Necron/imgNecron/Necron_4.webp" alt="">
+        </div>
+
+        <p>La especie humanoide que se convertiría en los Necrones comenzó su existencia bajo una estrella temible
+            y devastadora en los rincones más lejanos de la galaxia conocida como la región de las Estrellas del
+            Halo, miles de millones de años estándar antes de que la Humanidad evolucionara en Terra. Asediados en
+            cada momento por vientos solares e intensas tormentas de radiación, la especie de carne y sangre
+            conocida como los Necrontyr se convirtieron en un pueblo mórbido cuyos precarios lapsos de vida estaban
+            marcados por pérdidas constantes. La poca información que el Imperio del Hombre ha recuperado sobre los
+            Necrontyr indica que sus vidas eran cortas e inciertas, sus cuerpos plagados y consumidos a una edad
+            temprana por los terribles cánceres y otras enfermedades vinculadas a los altos niveles de radiación
+            ionizante emitidos por su sol.</p><br>
+
+        <p>Las ciudades de los Necrontyr fueron construidas anticipando la muerte prematura de sus habitantes, ya
+            que los vivos eran solo residentes breves que rascaban sus medios de vida diarios a la sombra de las
+            vastas sepulcros y tumbas de sus antepasados. De manera similar, sus dinastías gobernantes se fundaron
+            en la anticipación de una muerte temprana, y se considerabaa los vivos como no más que residentes
+            temporales que se apresuraban a través de las estructuras más permanentes y duraderas erigidas para
+            honrar a los muertos. En el mundo natal de los Necrontyr, los mayores monumentos siempre se construían
+            para los muertos, nunca para los vivos.</p><br>
+        Impulsados por la necesidad, los Necrontyr escaparon de su prisión-crucible y se lanzaron a las estrellas,
+        con la esperanza de tallar un imperio en el que pudieran realizar la libertad de su especie de las mortales
+        energías de su estrella natal. Utilizando criptas de estasis y naves antorcha impulsadas por antimateria de
+        movimiento lento, recubiertas en el metal vivo conocido como necrodermis para resistir los viajes milenarios
+        a través del vacío, los Necrontyr comenzaron a colonizar mundos distantes.</p><br>
+
+        <p>Poco a poco, las dinastías Necrontyr se extendieron cada vez más, hasta que gran parte de la antigua
+            galaxia respondió a su gobierno. Desde los primeros días, los gobernantes de las dinastías Necrontyr
+            eran ellos mismos gobernados por el Triarca, un consejo compuesto por tres monarcas de dinastía Necron
+            conocidos como faraones. El jefe del Triarca era conocido como el Rey Silente, pues se dirigía a sus
+            súbditos solo a través de los otros dos faraones que gobernaban junto a él. Nominalmente una posición
+            hereditaria, las inciertas esperanzas de vida de los Necrontyr aseguraron que el título de Rey Silente
+            pasara de una dinastía real a otra muchas veces. Los días finales del Imperio Necrontyr ocurrieron
+            durante el reinado de Szarekh, el último de los Reyes Silentes.</p><br>
+
+        <p>En algún momento durante su lenta expansión interestelar, los Necrontyr encontraron una especie antigua
+            mucho más vieja que cualquier otra en existencia en la galaxia conocida. Estos seres eran los Antiguos,
+            y eran los maestros absolutos de formas de energía que los Necrontyr ni siquiera podían concebir, y
+            mucho menos manejar. Los Antiguos habían conquistado hacía mucho tiempo los secretos de la inmortalidad,
+            pero se negaban a compartir el don de la vida eterna con los Necrontyr, que aún llevaban la maldición
+            genética de la estrella amarga bajo la que habían nacido.</p><br>
+
+        <p>La colonización de gran parte de la galaxia por los místicos reptilianos había sido incomparablemente más
+            rápida y expansiva que la de los Necrontyr debido a sus Puertas del Disforme y su dominio del
+            Inmaterial. Eso, y las longevas, si no inmortales, vidas de los Antiguos, encendieron una ardiente y
+            envidiosa ira en los Necrontyr, que carcomió su cultura espiritualmente tanto como los cánceres físicos
+            consumían sus cuerpos. Los Necrontyr se asombraron al descubrir que otra especie inteligente disfrutaba
+            de vidas tan largas mientras las suyas se cortaban tan brutalmente cortas.</p><br>
+
+        <div class="wrapper2">
+            <img class="imgFacc3" src="../facciones/Necron/imgNecron/Necron_5.webp" alt="">
+        </div>
+
+        <p>Pero a medida que pasaba el tiempo, más conflictos llegaban a los Necrontyr. Cada dinastía buscaba
+            reclamar su propio destino y pronto las grandes casas se vieron envueltas en conflictos totales
+            conocidos como las "Guerras de Secesión". Si las circunstancias hubieran permanecido como estaban por
+            solo una generación más, es posible que los Necrontyr se hubieran exterminado, como tantas especies
+            antes que ellos y lo harán en el futuro. A medida que su territorio se ampliaba cada vez más y se
+            diversificaba, la unidad que los había hecho fuertes se erosionaba, y se libraban amargas guerras
+            mientras reinos enteros luchaban por ganar independencia.
+
+        <p>En última instancia, el Triarca se dio cuenta de que la única esperanza de unidad para su pueblo residía
+            en el conflicto con un enemigo externo, pero había pocos que pudieran representar una amenaza creíble
+            para los Necrontyr tecnológicamente avanzados. Solo los Antiguos eran un enemigo potencialmente lo
+            suficientemente poderoso como para unir a las dinastías Necrontyr en una causa común. Tal guerra era
+            simple de justificar, pues los Necrontyr siempre se habían resentido de la negativa de los Antiguos a
+            compartir los secretos de la vida eterna.</p><br>
+
+        <p>Así fue como Szarekh, el último de los Reyes Silentes, en un acto típicamente amargo de celos y
+            resentimiento hacia la raza Necrontyr, declaró la guerra a los Antiguos. Al mismo tiempo, ofreció
+            amnistía a cualquier dinastía Necrontyr secesionista que regresara voluntariamente al seno del Triarca.
+            Atraídas por los despojos de la victoria y la promesa de inmortalidad, los reinos Necrontyr
+            secesionistas abandonaron sus Guerras de Secesión y comenzó lo que más tarde se conocería como la
+            "Guerra en el Cielo". Un conflicto como ningún otro antes estalló a través de las estrellas, pero aunque
+            el Rey Silente y el Triarca habían logrado unir a su odiado pueblo, era una guerra que los Necrontyr no
+            podían ganar. No por sí solos.</p><br><br id="La Guerra en el Cielo">
+
+
+        <hr><br><br>
+        <h3>La Guerra en el Cielo</h3><br>
+
+        <div class="wrapper">
+            <img class="imgFacc5" src="../facciones/Necron/imgNecron/Necron_6.webp" alt="">
+        </div>
+
+        <p>Las terribles guerras entre los Antiguos y los Necrontyr que siguieron, conocidas más tarde en el mito
+            Aeldari como la "Guerra en el Cielo", llenarían una biblioteca por sí solas, pero los Necrontyr nunca
+            podrían ganar. Su tecnología superior fue consistentemente superada por los Antiguos gracias a su dominio de
+            los portales del Webway y las Puertas del Disforme. Los Necrontyr fueron empujados hacia atrás hasta que no
+            fueron más que una irritación para la dominación de los Antiguos en la galaxia, una amenaza quiescente
+            aferrada a su mundo irradiado entre las Estrellas del Halo, exiliados y olvidados. La furia de los Necrontyr
+            fue enfriada por sus largos milenios de encarcelamiento en su mundo natal, transformándose lentamente en un
+            odio absoluto hacia todas las demás formas de vida inteligente y en una determinación implacable de vengarse
+            de sus enemigos aparentemente invencibles.</p><br>
+
+        <p>Pero ante la derrota, la siempre frágil unidad de los Necrontyr comenzó a fracturarse una vez más. Ya no
+            tenía ningún atractivo la perspectiva de un enemigo común sobre las dispares dinastías. Generaciones enteras
+            habían vivido y muerto en el servicio de una guerra inviable, y muchas dinastías Necrontyr habrían
+            solicitado la paz con los Antiguos si el Triarca gobernante lo hubiera permitido.</p><br>
+
+        <p>Así comenzó la segunda iteración de las Guerras de Secesión, más extendida y ruinosa que cualquier otra que
+            hubiera ocurrido antes. Tan fracturadas se habían vuelto las dinastías Necrontyr para entonces que, si los
+            Antiguos hubieran querido, podrían haber aniquilado a sus enemigos con facilidad. Frente al colapso total de
+            su dominio, el Triarca buscó desesperadamente un medio de restaurar el orden. En esto, sus oraciones fueron
+            respondidas, aunque el precio para su especie sería incalculablemente alto.</p><br>
+
+        <p>Fue durante el reinado del Rey Silente Szarekh que los seres de energía divina conocidos como los C'tan
+            primero asolaron a los Necrontyr. Es imposible decir con certeza cómo los Necrontyr hicieron contacto por
+            primera vez con los C'tan, aunque existen muchas cuentas engañosas, contradictorias y unilaterales de estos
+            eventos. Los polvorientos archivos del Mundo Tumba de Solemnace afirman que fue solo un accidente, un
+            descubrimiento fortuito hecho por una sonda estelar durante la investigación de una estrella moribunda. El
+            Libro de la Noche Lamentable, guardado bajo estrecha vigilancia en el santuario más interno de la Biblioteca
+            Negra Aeldari, cuenta más bien que el odio crudo que los Necrontyr sostenían como especie por los Antiguos
+            resonaba a través del espacio, actuando como un faro que los C'tan no podían ignorar.</p><br>
+
+        <p>Otra versión afirma que desde los primeros días de su civilización, los científicos Necrontyr estuvieron
+            profundamente involucrados en estudios estelares para tratar de entender y protegerse de las energías
+            malignas de su propio sol. Después de largos, amargos siglos de búsqueda de algún poder para desatar sobre
+            los Antiguos, los investigadores Necrontyr usaron sondas estelares para descubrir anomalías electrodinámicas
+            inusuales en las estrellas más antiguas y moribundas de la galaxia. En los complejos hilos de plasma
+            energético de estas estrellas, los Necrontyr encontraron una inteligencia más antigua que la de cualquiera
+            de las especies corporales en la Creación, incluidos los Antiguos, entidades de pura energía que habían
+            surgido durante el nacimiento de las estrellas eones antes.</p><br>
+
+        <p>Estas entidades tenían poca concepción de lo que el resto del universo implicaba cuando los Necrontyr las
+            encontraron por primera vez, alimentándose de las llamaradas solares y tormentas magnéticas de estos
+            gigantes rojos hinchados. Aquí estaba el arma que los Necrontyr habían buscado durante mucho tiempo para
+            derrotar a los Antiguos, seres que creían eran la descendencia del dios de la muerte al que habían adorado
+            durante mucho tiempo. De cualquier manera que ocurriera el primer contacto, la sombra de los C'tan cayó
+            primero sobre las dinastías Necrontyr más antiguas.</p><br>
+
+        <p>El poder de estas criaturas nacidas de las estrellas era increíble, la energía cruda de las estrellas se
+            hacía animada, y los Necrontyr los llamaban los C'tan o "Dioses Estelares" en su propia lengua. Los C'tan
+            estaban dispersos en áreas más grandes que planetas enteros, sus conciencias demasiado vastas para que los
+            humanoides las comprendieran. Cómo los Necrontyr lograron comunicarse con ellos es desconocido para el
+            Adeptus Mechanicus. Entendiendo que mentes tan difusas nunca podrían percibir el universo material sin
+            manifestarse en una forma material, algunos Necrontyr buscaron activamente el favor de los C'tan y
+            supervisaron la forja de caparazones físicos para que los C'tan los ocuparan, fundidos en el metal vivo
+            llamado necrodermis que alguna vez habían usado para sus naves antorchas coloniales.</p><br>
+
+        <div class="wrapper2">
+            <img class="imgFacc3" src="../facciones/Necron/imgNecron/Necron_7.webp" alt="">
+        </div>
+
+        <p>Leyendas fragmentarias Aeldari cuentan de franjas translúcidas de fuerza electromagnética cambiando a través
+            del espacio mientras los vampiros estelares se enrollaban en sus nuevos cuerpos en el reino físico a través
+            de un puente incorpóreo de luz estelar. Así vestidos, los C'tan tomaron las formas físicas de los dioses
+            semiolvidados de los Necrontyr, ocultando sus propios verdaderos deseos bajo mantos de servilismo
+            obsequioso.</p><br>
+
+        <p>Fuerzas incomprensibles fueron comprimidas en el metal vivo de los cuerpos de necrodermis que los Necrontyr
+            habían forjado cuando el poder completo de los C'tan finalmente encontró forma. A medida que los C'tan
+            enfocaban sus conciencias y se volvían cada vez más conscientes de su nuevo modo de existencia, llegaron a
+            apreciar los placeres disponibles para los seres materiales y las otras realidades de la vida corpórea. Los
+            deliciosamente enfocados goteos de energía electromagnética emitidos por los cuerpos físicos de los
+            Necrontyr a su alrededor despertaron un nuevo hambre en los C'tan, muy diferente a la que habían saciado una
+            vez usando las energías nutritivas pero esencialmente insípidas de las estrellas.</p><br>
+
+        <p>Así fue como uno de los C'tan se presentó ante el Rey Silente Szarekh, actuando como precursor de la llegada
+            de sus hermanos. Entre los suyos, a este C'tan se le conocía como Mephet'ran, el "Engañador", pues era
+            voluntariamente traicionero. Sin embargo, el Rey Silente no conocía la verdadera naturaleza de este C'tan, y
+            en cambio concedió al ser una audiencia. El Engañador habló de una guerra, librada mucho antes del
+            nacimiento de los Necrontyr, entre los C'tan y los Antiguos. Era una guerra, dijo, que los C'tan habían
+            perdido. En el caos posterior, y temiendo la venganza de los Antiguos, él y sus hermanos se habían
+            escondido, esperando algún día encontrar aliados con quienes finalmente pudieran rendir cuentas a los
+            Antiguos.</p><br>
+
+        <p>A cambio de esta ayuda, aseguró el Engañador, él y sus hermanos entregarían todo lo que los Necrontyr
+            anhelaban. La unidad podría ser suya una vez más, y la inmortalidad que habían buscado durante tanto tiempo
+            finalmente estaría al alcance de su mano. No habría precio por estos grandes regalos, insistió el Engañador,
+            pues eran simplemente favores que se otorgarían a valiosos aliados.</p><br>
+
+        <p>Así habló el Engañador, ¿y quién puede decir cuánto de su historia era verdad? Es dudoso siquiera si el
+            propio Engañador lo sabía, pues el engaño se había convertido tanto en parte de su existencia que ni
+            siquiera los C'tan podían ya discernir sus raíces. Sin embargo, sus palabras ejercieron influencia sobre
+            Szarekh, quien, como sus antepasados antes que él, desesperaba de las divisiones que una vez más estaban
+            desgarrando a su pueblo. Durante largos meses solares, debatió el asunto con los otros dos faraones del
+            Triarca y los nobles de su Corte Real.</p><br>
+
+        <p>A lo largo de todo esto, la única voz disidente fue la de Orikan, el astrólogo de la corte del Triarca, quien
+            predijo que la alianza entre los Necrontyr y los C'tan traería un renacimiento de gloria, pero destruiría
+            para siempre el alma del pueblo Necrontyr. Sin embargo, el deseo y la ambición rápidamente anularon la
+            precaución, y la profecía de Orikan fue desestimada. Un año Necrontyr después de que el Engañador hubiera
+            presentado su proposición, el Triarca acordó la alianza, y así para siempre condenaron a su especie.</p><br>
+
+        <p>Por su parte, los Necrontyr pronto cayeron en asombro por sus descubrimientos y los C'tan pasaron a tomar el
+            control sobre sus benefactores. Los poderes de los C'tan manifestados en el mundo físico eran de hecho casi
+            divinos y no pasó mucho tiempo antes de que los C'tan fueran adorados como los Dioses Estelares que los
+            Necrontyr los habían nombrado.</p><br>
+
+        <p>Tal vez habían sido contaminados por el universo material del que ahora formaban parte, o tal vez esta había
+            sido siempre su naturaleza incluso cuando estaban atados a los soles de los que se alimentaban, pero los
+            C'tan resultaron ser tan crueles y caprichosos como las estrellas de las que habían nacido. Pronto se
+            regocijaron en la adoración religiosa de los Necrontyr y se deleitaron con las energías electromagnéticas
+            vitales de incontables esclavos mortales.</p><br><br id="Biotransferencia y el surgimiento de los Necrones">
+
+
+        <hr><br><br>
+        <h3>Biotransferencia y el surgimiento de los Necrones</h3><br>
+
+        <div class="wrapper">
+            <img class="imgFacc5" src="../facciones/Necron/imgNecron/Necron_8.webp" alt="">
+        </div>
+
+        <p>
+            <i> "Cuando el Rey Silente vio lo que se había hecho, finalmente comprendió la verdadera naturaleza de los
+                C'tan y el destino que habían traído en su nombre."</i>
+            — Extracto del Libro de la Noche Lamentable.
+        </p><br>
+
+
+        <p>Armados con armas de poder divino y naves estelares capaces de cruzar la galaxia en un parpadeo mediante el
+            uso de tecnología de fase cuántica, los Necrontyr estaban listos para comenzar su guerra contra los Antiguos
+            una vez más. Pero los C'tan tenían otro regalo para sus sujetos mortales. Ofrecieron a los Necrontyr un
+            camino hacia la inmortalidad y la estabilidad física que su especie siempre había anhelado. Su carne enferma
+            sería reemplazada por el metal vivo de la necrodermis que constituía las propias formas físicas de sus
+            Dioses Estelares. Sus desechadas cáscaras orgánicas serían consumidas y sus formas metálicas frías estarían
+            entonces libres para perseguir su gran venganza contra los Antiguos y el resto de un universo lleno de odio,
+            liberados para siempre de las debilidades de su carne odiada.</p><br>
+        <p>Con el pacto sellado entre los Necrontyr y los C'tan, los Dioses Estelares revelaron la forma que tomaría la
+            inmortalidad para los Necrontyr, y comenzó el gran proceso de biotransferencia. Se construyeron vastas
+            bio-fundiciones, y en ellas marcharon los pueblos del Rey Silente de acuerdo con los términos del pacto que
+            había hecho con los C'tan. Los procedimientos blasfemos a los que fueron sometidos los Necrontyr dentro de
+            las furiosas bio-fundiciones no pueden ser conocidos, pero ciertamente, cada uno fue despojado de carne y de
+            alma, su cuerpo reemplazado por una concha de necrodermis de metal vivo, similar a los propios C'tan,
+            animada por lo que quedaba de su disminuida esencia.</p><br>
+
+        <p>Sobre cada horno se cernían y se zambullían las formas etéreas verdaderas de los C'tan mientras se hartaban
+            del detritus espiritual y electromagnético de una especie entera. Solo cuando el Rey Silente emergió del
+            proceso de biotransferencia y contempló lo que había sucedido a su pueblo, vio la terrible verdad del pacto
+            que había hecho. Aunque la inmortalidad y la fuerza y vigor casi divinos eran suyos, había venido a costa de
+            su alma, cuyos restos etéreos ya habían sido absorbidos por la boca de un C'tan en vuelo.</p><br>
+
+        <p>Mientras Szarekh observaba a los C'tan festinando con la esencia vital de su pueblo, se dio cuenta de la
+            terrible profundidad de su error. En muchos aspectos, se sentía mejor que en décadas de Necrontyr, los
+            innumerables dolores y dudas de la vida orgánica ahora estaban detrás de él. Su nuevo cuerpo mecánico era
+            mucho más poderoso que la frágil forma que había tolerado durante tanto tiempo, y sus pensamientos eran más
+            rápidos y claros que nunca.</p><br>
+
+        <p>Sin embargo, había un terrible vacío que carcomía su mente, un hueco insondable de espíritu que desafiaba
+            toda explicación racional. En ese momento, supo con fría certeza que el precio de la inmortalidad física
+            había sido la pérdida de su alma. Con gran pesar, el Rey Silente contempló el destino que había traído a su
+            pueblo: los Necrontyr ahora eran solo un recuerdo, y los Necrones sin alma, imperecederos, habían renacido
+            en su lugar.</p><br>
+
+        <p>Pero si el precio había sido elevado, la biotransferencia había cumplido todas las promesas que los C'tan
+            habían hecho. Incluso el más humilde de los Necrontyr ahora estaba bendecido con la inmortalidad; la edad y
+            la radiación ionizante apenas podían erosionar sus nuevos cuerpos mecánicos, y solo las lesiones más
+            terribles podían destruirlos por completo.</p><br>
+
+        <div class="wrapper2">
+            <img class="imgFacc3" src="../facciones/Necron/imgNecron/Necron_9.webp" alt="">
+        </div>
+
+        <p>El proceso de biotransferencia había incrustado protocolos de comando engramáticos en cada mente necrona,
+            otorgando al Rey Silente la lealtad inquebrantable de sus súbditos. Al principio, el Rey Silente abrazó esta
+            unanimidad, pues era un respiro bienvenido del caos y la fractura que habían consumido al Imperio Necrontyr
+            en años recientes. Toda la especie estaba ahora bajo su mando, y así recayó sobre los Necrones cumplir su
+            parte del terrible trato. Sin embargo, con el paso del tiempo, Szarekh se cansó de su carga pero no se
+            atrevió a romper los protocolos de comando, temeroso de que sus súbditos se volvieran contra él buscando
+            venganza por la terrible maldición que había traído sobre ellos.</p><br>
+
+        <p>La biotransferencia solo dejó atrás los ecos espectrales de la conciencia de los Necrontyr. Solo unos pocos
+            de los más fuertes de voluntad entre la nobleza y el ejército Necrontyr retuvieron su intelecto y
+            autoconciencia, y aún así eran solo sombras de lo que alguna vez fueron. Se habían purgado de gran parte de
+            lo que los hacía individuos únicos. Pero a diferencia del Rey Silente, la mayoría de los Necrones al
+            principio no les importaba en absoluto su pérdida; todo lo que les importaba era que vivirían para siempre
+            sin enfermedad ni muerte, como habían prometido sus Dioses Estelares.</p><br>
+
+        <p>Renovados y fortalecidos como nunca antes por su devoración de las almas de una especie entera, los C'tan
+            eran ahora imparables, y con las legiones inmortales de los Necrones marchando a su paso, los Antiguos
+            estaban condenados. Solo una cosa quedaba verdaderamente de los antiguos Necrontyr: su ardiente odio por
+            todas las demás especies vivientes e inteligentes del universo.</p><br>
+
+        <p>Legiones de guerreros de metal vivo imperecederos se aventuraron en la galaxia en sus Naves Tumba, y las
+            estrellas ardieron a su paso. El dominio de los Antiguos sobre el Warp ahora era contrarrestado por la
+            supremacía de los C'tan sobre el universo físico, y los antiguos enemigos de los Necrones sufrieron
+            enormemente en la masacre interestelar que siguió.</p><br><br id="La ascención de los Necrones">
+
+        <hr><br><br>
+        <h3>La ascención de los Necrones</h3><br>
+
+        <div class="wrapper2">
+            <img class="imgFacc2" src="../facciones/Necron/imgNecron/Necron_10.webp" alt="">
+        </div>
+
+        <p>Con los C'tan y los Necrones luchando como uno solo, los Antiguos estaban ahora condenados a la derrota.
+            Saciados con la fuerza vital de los Necrontyr, los C'tan empoderados pudieron desatar fuerzas más allá de la
+            comprensión. Planetas fueron arrasados, soles extinguieron y sistemas estelares enteros devorados por
+            agujeros negros invocados por los poderes de distorsión de la realidad de los Dioses Estelares. Las legiones
+            Necron finalmente atravesaron la Telaraña y asaltaron a los Antiguos en cada rincón de la galaxia. Sitian
+            las fortalezas de los muchos aliados de los Antiguos entre las jóvenes especies inteligentes de la galaxia,
+            cosechando la fuerza vital de los defensores para alimentar a sus voraces amos C'tan.</p><br>
+
+        <p>En los últimos años de la Guerra en el Cielo, uno de los factores principales que llevó a la ascendencia de
+            los Necrones fue su capacidad para finalmente acceder a la Telaraña de los Antiguos. El C'tan conocido como
+            Nyadra'zath, el Ardiente, había deseado llevar sus fuegos arcanos a ese espacio más allá del espacio, y así
+            mostró a los Necrones cómo romper sus fronteras extradimensionales. A través de una serie de portales de
+            piedra viva conocidos como las Puertas de Dolmen, los Necrones finalmente pudieron utilizar el arma más
+            poderosa de los Antiguos en su contra, acelerando enormemente el fin último de la Guerra en el Cielo.</p>
+        <br>
+
+        <p>Los portales ofrecidos por las Puertas de Dolmen no son tan estables ni tan controlables como las entradas
+            naturales al Webway dispersas por la galaxia. De hecho, de alguna manera curiosa, el Webway puede detectar
+            cuando sus alrededores han sido violados por una Puerta de Dolmen y sus mecanismos arcanos intentan sellar
+            rápidamente el ramal infectado del resto de la Dimensión del Laberinto hasta que haya pasado el peligro para
+            su integridad. Así, los Necrones que entran al Webway deben llegar a su destino previsto a través de sus
+            corredores extradimensionales cambiantes rápidamente, no sea que la propia red provoque su destrucción.</p>
+        <br>
+
+        <div class="wrapper">
+            <img class="imgFacc5" src="../facciones/Necron/imgNecron/Necron_11.webp" alt="">
+        </div>
+
+        <p>Por supuesto, en la era presente, eones han pasado desde que los Necrones utilizaron las Puertas de Dolmen
+            para asaltar a sus archienemigos. Los Antiguos han desaparecido, y el Webway mismo se ha convertido en un
+            laberinto enredado y roto. Muchas Puertas de Dolmen se perdieron o fueron abandonadas durante el tiempo del
+            Gran Sueño de los Necrones, y muchas más fueron destruidas por los Aeldari, los sucesores de los Antiguos
+            como guardianes del Webway. Aquellas que quedan conceden acceso solo a una pequeña porción del inmenso
+            laberinto que es el Webway, gran parte de eso sellado voluntariamente por los Aeldari para evitar más
+            contaminación.</p><br>
+
+        <p>Sin embargo, el Webway es inmensamente vasto, y incluso estos hilos separados permiten a los Necrones un modo
+            de viaje que supera con creces a los de las razas más jóvenes. Es bueno que así sea. Como especie
+            desprovista de psíquicos como resultado de la pérdida de sus almas durante el proceso de biotransferencia,
+            los Necrones también son incapaces de viajar por el Warp, y sin acceso al Webway, se verían obligados a
+            depender una vez más de las naves de estasis de viaje lento, condenándolos al aislamiento interestelar.</p>
+        <br>
+
+        <p>Tras estas victorias, los C'tan y sus servidores Necrones imperecederos dominaban ahora la galaxia. Las
+            últimas fortalezas planetarias de los Antiguos estaban sitiadas y las especies inteligentes que alguna vez
+            habían nutrido se convirtieron en ganado para el hambre obscena de los C'tan. Para las especies inteligentes
+            más jóvenes de la galaxia, los Necrones y sus Dioses Estelares eran amos crueles, cosechando sin escrúpulos
+            sus poblaciones a voluntad para alimentar el hambre incesante de energías vitales de los C'tan. Los C'tan
+            eran figuras de terror que exigían la adoración y el miedo de los mortales en igual medida.</p><br>
+
+        <p>Por razones desconocidas, pero probablemente porque sus hambres individuales de energías vitales mortales no
+            conocían límites, los C'tan finalmente comenzaron a pelear entre ellos mismos tanto por deporte como por
+            rencor. Entre los Aeldari, un antiguo mito sostiene que su Dios Riente engañó al C'tan conocido como "el
+            Extranjero" para que se volviera contra sus hermanos y comenzara su larga guerra por la supremacía.</p><br>
+
+        <p>En el curso de la lucha de los C'tan entre sí, se arrasaron planetas enteros, se extinguieron estrellas y
+            sistemas solares enteros fueron devorados por agujeros negros liberados. Se construyeron nuevas ciudades por
+            los esfuerzos de millones y luego fueron derribadas una vez más. A medida que las "cosechas rojas" de los
+            C'tan y sus servidores Necrones se volvían escasas, los C'tan eventualmente devoraron a los C'tan, hasta que
+            solo quedaron unos pocos en el universo y compitieron entre sí durante una larga edad.</p><br>
+
+        <p>Eventualmente, incluso los Antiguos, que alguna vez se habían definido por su paciencia y voluntad imparable,
+            se volvieron desesperados ante el asalto de los Necrones. Utilizaron sus grandes habilidades científicas
+            para ingeniar seres inteligentes con un vínculo psíquico aún más fuerte con el Warp, con la esperanza de
+            crear servidores con la capacidad de canalizar el poder psíquico para defenderse.</p><br>
+
+        <p>Nurturaron muchas especies guerreras potenciales, entre las cuales se cree que se encuentran los primeros
+            miembros de la especie Aeldari y muchas otras razas xenos, incluidas los Rashan, los K'nib, los Krork y
+            muchos otros. Pasaron milenios terrestres mientras las creaciones y experimentos de los Antiguos finalmente
+            daban fruto, incluso cuando los C'tan y sus servidores Necrones continuaban extinguir la vida en toda la
+            galaxia.</p><br><br id="El Giro de la Marea">
+
+        <hr><br><br>
+
+        <h3>El Giro de la Marea</h3><br>
+
+        <div class="wrapper2">
+            <img class="imgFacc3" src="../facciones/Necron/imgNecron/Necron_12.webp" alt="">
+        </div>
+
+        <p>Las especies servidores de los Antiguos, empoderadas psíquicamente, se extendieron por la galaxia, luchando
+            contra la tecnología avanzada Necron con el poder psíquico de su "magia" invocada del Warp. Ante este nuevo
+            asalto, el imperio de los C'tan fue destrozado, ya que las fuerzas psíquicas del Inmaterium eran anatema
+            para entidades sin alma cuya existencia estaba completamente contenida dentro de patrones puramente físicos
+            de fuerza electromagnética. Por toda la destrucción que podían desatar, no podían detener el avance
+            implacable de los Antiguos y las razas más jóvenes a través de las estrellas.</p><br>
+
+        <p>Los C'tan restantes, unificados por esta gran amenaza por primera vez en millones de años terrestres,
+            buscaron una forma de derrotar las energías alimentadas por el alma de las especies más jóvenes. Iniciaron
+            un gran amurallamiento, un plan para derrotar para siempre las sortilegios psíquicos de los Antiguos
+            sellando el universo material del Warp, un plan cuyos primeros frutos una vez se encontraban en el Mundo
+            Fortaleza Imperial de Cadia en forma de los grandes pilones que llenaban la superficie de ese mundo en redes
+            intrincadas y creaban el área de estabilidad espacio-temporal cerca del Ojo del Terror conocida como la
+            Puerta Cadia.</p><br>
+
+        <p>Con sus poderes como dioses, solo era cuestión de tiempo hasta que los C'tan tuvieran éxito. Pero antes de
+            que su gran obra estuviera completa, las semillas de destrucción que los Antiguos habían plantado milenios
+            antes trajeron un cataclismo imprevisto. Los dolores del crecimiento y los defectos psíquicos colectivos de
+            las especies más jóvenes arrojaron las energías del Inmaterium, reactivas psíquicamente, del caos.</p><br>
+
+        <p>La guerra, el dolor y la destrucción se reflejaron en la profundidad sin fondo del Mar de Almas que era el
+            Warp. El torbellino de almas liberado en el Inmaterium por la carnicería de la Guerra en el Cielo se
+            condensó en las energías antes informes del Warp. Entidades más antiguas que habían existido dentro del
+            Inmaterium se transformaron en terroríficos depredadores psíquicos, desgarrando las almas de los psíquicos
+            vulnerables mientras su propio entorno era destrozado y refundido en el Reino del Caos.</p><br><br
+            id="Plaga Esclavista">
+
+        <hr><br><br>
+        <h3>Plaga Esclavista</h3><br>
+
+        <div class="wrapper">
+            <img class="imgFacc1" src="../facciones/Necron/imgNecron/Necron_13.webp" alt="">
+        </div>
+
+        <p>Los habitantes del Warp, agitados en un frenesí por el conflicto en el Materium, se agruparon vorazmente en
+            las grietas entre el Inmaterium y el universo material, buscando nuevas formas de entrar en el reino físico.
+            Los Antiguos trajeron nuevas especies guerreras genéticamente modificadas para defender sus últimos
+            bastiones, incluidos los Jokaero, que imitaban la tecnología, y los formidables Krork de piel verde,
+            ancestros de los presentes Orkos, pero ya era demasiado tarde. La red intergaláctica del Webway de los
+            Antiguos fue violada desde el Inmaterium y perdida para ellos, varias de sus Puertas de Warp fueron
+            destruidas por sus propias manos para evitar que las entidades del Warp se propagaran a mundos no
+            corrompidos y las mayores obras y lugares de poder de los Antiguos fueron invadidos por los horrores que sus
+            propias creaciones habían desencadenado.</p><br>
+
+        <p>Los más aterradores de estos horrores fueron los Esclavistas, entidades del Warp cuya capacidad para dominar
+            las mentes de las especies más jóvenes y crear sus propios portales en el reino material usando psíquicos
+            mutados y poseídos los trajeron en cada vez mayor número. Para los Antiguos, este fue el desastre final
+            cuando los Esclavistas tomaron el control de sus servidores. La Caja de Pandora desatada por la creación de
+            las especies más jóvenes finalmente dispersó a los últimos de los Antiguos y rompió su poder sobre la
+            galaxia de una vez por todas. La vida había estado al borde de un apocalipsis durante la Guerra en el Cielo
+            entre los Antiguos y los C'tan. Ahora, mientras los Esclavistas irrumpían en el Inmaterium en proporciones
+            epidémicas, los supervivientes parecían condenados.</p><br>
+
+        <p>Finalmente, acosados por el avance implacable de los C'tan y los peligros catastróficos del Warp que habían
+            desencadenado ellos mismos por error, los Antiguos fueron derrotados, dispersados y finalmente destruidos.
+            Si las especies se extinguieron o simplemente huyeron de la galaxia para buscar un nuevo refugio en otro
+            lugar es desconocido.</p><br><br id="Traición del Rey Silente">
+
+        <hr><br><br>
+        <h3>Traición del Rey Silente</h3><br>
+
+        <div class="wrapper2">
+            <img class="imgFacc3" src="../facciones/Necron/imgNecron/Necron_14.webp" alt="">
+        </div>
+
+        <p>A lo largo de las etapas finales de la Guerra en el Cielo, Szarekh esperó pacientemente, esperando el momento
+            en que los C'tan demostrarían ser más vulnerables.</p><br>
+
+        <p>Aunque toda la especie Necron estaba ahora bajo su mando, el Rey Silente no podía esperar oponerse a los
+            C'tan en la cúspide de su poder, y aun si lo hiciera y tuviera éxito, entonces los Necrones tendrían que
+            terminar la Guerra en el Cielo contra los Antiguos y sus cada vez más potentes especies aliadas solos. No,
+            los Antiguos tenían que ser completamente y completamente derrotados antes de que los C'tan pudieran ser
+            llevados a rendir cuentas por el horror que habían traído entre los Necrontyr.</p><br>
+
+        <p>Y así, cuando finalmente los C'tan ganaron su gran guerra, su triunfo fue efímero. Con un enemigo odiado
+            finalmente derrotado, y el otro agotado por una victoria luchada duramente, el Rey Silente finalmente lideró
+            a los Necrones en revuelta. En su arrogancia, los C'tan no se dieron cuenta de su peligro hasta que fue
+            demasiado tarde.</p><br>
+
+        <p>Los Necrones enfocaron las inimaginables energías del universo vivo en armas, hipercañones para matar dioses
+            ideados por los mejores Crypteks de la galaxia, demasiado poderosos incluso para que los Dioses Estelares
+            los soportaran. Ni siquiera los grandes señores de las mundos corona Necron bien recuerdan las batallas
+            contra los Dioses Estelares, pues la causalidad misma fue dañada por las fuerzas desatadas para desmembrar a
+            los C'tan, y el Rey Silente solía eliminar el conocimiento de las armas terribles empleadas de sus guerreros
+            después del hecho por temor a lo que se podría hacer más tarde con ellas.</p><br>
+
+        <p>Lamentablemente, los C'tan eran seres estelares inmortales, parte de la tela fundamental de la realidad y por
+            lo tanto casi imposibles de destruir. Así, cada C'tan fue dividido en miles de fragmentos energéticos más
+            pequeños y menos poderosos, cada uno con la personalidad de la entidad completa, sin embargo, este resultado
+            fue suficiente para los objetivos del Rey Silente.</p><br>
+
+        <p>De hecho, había sabido que la destrucción final de los C'tan era imposible y había trazado sus planes en
+            consecuencia; cada "Fragmento C'tan" recién nacido fue atado dentro de un Laberinto Tesseract
+            multidimensional, tan atado y seguro como un legendario djinn Terrano atrapado en una botella. Aunque el
+            costo de la victoria fue alto, millones de Necrones fueron destruidos como consecuencia de su rebelión,
+            incluidos todos los miembros del Triarca salvo el Rey Silente mismo, los Necrones estaban una vez más al
+            mando de su propio destino.</p><br><br id="Gran Sueño">
+
+        <hr><br><br>
+        <h3>Gran Sueño</h3><br>
+
+        <div class="wrapper">
+            <img class="imgFacc5" src="../facciones/Necron/imgNecron/Necron_15.webp" alt="">
+        </div>
+
+        <p>Los Necrones habían sido vindicados en su búsqueda única de ciencia y control sobre el reino material y
+            ciertamente se complacieron al ver el colapso de la civilización de los Antiguos como resultado de su exceso
+            de poder psíquico y el fin de la dominación de los C'tan sobre su especie. Sin embargo, incluso con la
+            derrota de los Antiguos y los C'tan por igual, el Rey Silente vio que el tiempo de los Necrones en la
+            galaxia había terminado, al menos por el momento. Permitirían que los Esclavistas se llevaran lo que quedaba
+            de la vida inteligente en la galaxia y permitirían que se convirtiera en un páramo interestelar; luego, la
+            plaga psíquica se extinguiría y con el tiempo la galaxia evolucionaría nuevas formas de vida que serían
+            menos sofisticadas y más fáciles de dominar.</p><br>
+
+        <p>Además, los Necrones entendían que el manto del dominio galáctico pronto pasaría a los Aeldari, una de las
+            especies psíquicamente potentes que habían luchado junto a los Antiguos durante toda la Guerra en el Cielo y
+            que, por lo tanto, habían llegado a odiar a los Necrones y todas sus obras con la pasión ardiente que es la
+            característica definitoria de esa especie. Los Aeldari habían sobrevivido donde los Antiguos no lo habían
+            hecho y los Necrones, debilitados por su gasto de vidas y recursos en derrocar el dominio de los C'tan, no
+            podían enfrentarse a ellos.</p><br>
+
+        <p>Sin embargo, el Rey Silente sabía que el tiempo de los Aeldari eventualmente pasaría, como debía pasar para
+            todos aquellos seres aún envueltos en carne. Tomaría millones de años terrestres para que el poder de los
+            Aeldari se desvaneciera, pero lo importante era que los Necrones estarían allí para aprovecharlo.</p><br>
+
+        <p>Así fue como el Rey Silente ordenó que las ciudades Necron restantes fueran transformadas en grandes
+            complejos de tumbas atravesados por criptas de estasis. Dejen que los Aeldari den forma a la galaxia por un
+            tiempo; ellos eran efímeros, mientras que los Necrones eran inmortales y eternos. El mandato final del Rey
+            Silente a su pueblo fue que debían dormir durante el equivalente a 60 millones de años estándar, pero
+            despertar listos para reconstruir todo lo que habían perdido, para restaurar las dinastías Necron a su
+            antigua gloria.</p><br>
+
+        <p>Esta fue la orden final del Rey Silente, y cuando el último Mundo Tumba selló sus bóvedas subterráneas,
+            Szarekh destruyó los protocolos de comando engramáticos mediante los cuales había controlado a su pueblo
+            durante tanto tiempo, pues los había fallado completamente. Sin mirar hacia atrás, Szarekh, el último de los
+            Reyes Silentes del Triarca, se embarcó en la oscuridad del vacío interestelar, allí para encontrar cualquier
+            medida de consuelo o penitencia que pudiera.</p><br>
+
+        <p>Mientras tanto, pasaron eones y los Necrones siguieron durmiendo, sus esclavos y construcciones de máquinas
+            los guardaban mientras dormían en Mundos Tumba que habían sido purgados de toda vida para mantener a los
+            Esclavistas lejos de su puerta. Este plan funcionó con un grado asombroso de éxito hasta que los Necrones
+            fueron despertados por las fuerzas del Imperio del Hombre en el 41er Milenio para asolar la galaxia una vez
+            más. Descubrieron una nueva e inesperada era de civilización y guerra interestelar muy similar a la que
+            habían dejado atrás hace 60 millones de años estándar.</p><br>
+
+        <p>La galaxia está floreciendo con vida una vez más, pero aún está plagada de psíquicos latentes y adoradores de
+            las energías infernales del Caos del Warp, primero desatadas durante la Guerra en el Cielo. Se necesitará
+            tiempo y muchas maquinaciones para que las dinastías Necron recuperen su lugar legítimo como gobernantes de
+            la galaxia; los agentes del Caos deben ser derrocados; los peligrosos Aeldari, herederos del manto de los
+            Antiguos, eliminados; la Humanidad subyugada y el gran trabajo de cortar el universo material del Warp
+            completado antes de que pueda comenzar verdaderamente una nueva era de dominio Necron.</p><br>
+
+        <p>Pero los Necrones son eternos e inmortales, su tecnología aún no igualada por ninguna de las especies
+            estelares más jóvenes. Y el tiempo siempre está de su lado...</p><br><br id="Ascenso de la Humanidad">
+
+        <hr><br><br>
+        <h2 id="Edad de Terra y el Éxodo Estelar"><u> Ascenso de la Humanidad</u></h2><br>
+
+        <h3>Edad de Terra y el Éxodo Estelar (M1-M15)</h3><br>
+
+        <div class="wrapper">
+            <img class="imgFacc5" src="../img/imgCrono/Crono_2.webp" alt="">
+        </div>
+
+
+        <p>Durante millones de años estándar después de que los Necrones y sus fragmentos cautivos de C'tan entraran en
+            hibernación en sus Mundos Tumba, las poblaciones devastadas de las especies inteligentes de la galaxia se
+            recuperaron lentamente de las "cosechas rojas" de los C'tan. Con el tiempo, los Aeldari emergieron como la
+            civilización más dominante en la galaxia, con el núcleo de su imperio que se extendía por las estrellas
+            ubicado en la región de la galaxia que más tarde se convertiría en la brecha del Warp llamada el Ojo del
+            Terror.</p><br>
+
+        <p>Pero en el planeta llamado Tierra y luego Terra por sus habitantes, una especie inteligente, mamífera y
+            humanoide conocida como la Humanidad estaba ascendiendo a la prominencia hace más de 40,000 años estándar.
+            Durante la Edad de Terra, o la Edad del Progreso como a veces la llaman los historiadores imperiales, la
+            raza humana avanzó más allá de su antiguo pasado preindustrial para obtener capacidad de viaje espacial y
+            comenzar a colonizar lentamente los mundos terraformables en su propio sistema solar y en los sistemas
+            estelares cercanos a su mundo natal utilizando enormes naves estelares de subluz.</p><br>
+
+        <p>El así llamado "Éxodo Estelar" que ocurrió durante la Edad de Terra es un período mal entendido de la
+            historia humana que generalmente se acepta que cubre la mayoría de las incursiones iniciales de la humanidad
+            en el espacio interestelar y el origen de la mayoría de las colonias humanas extrasolares más antiguas,
+            comenzando en algún punto desconocido a mediados o finales del tercer milenio.</p><br>
+
+        <p>Este período generalmente se entiende que lleva al llamado "Edad Oscura de la Tecnología" en algún momento
+            alrededor del año 15,000 d.C. Durante gran parte del Éxodo Estelar, la Humanidad carecía de cualquier
+            conocimiento de la existencia del Inmaterial o del Impulsor de Warp, por lo que se vio obligada a viajar
+            entre las estrellas en enormes naves generacionales de subluz o mediante hibernación criogénica.</p><br><br
+            id="Edad de la Tecnología">
+
+        <hr><br><br>
+        <h3>Edad de la Tecnología (M15-M25)</h3><br>
+
+        <div class="wrapper2">
+            <img class="imgFacc3" src="../img/imgCrono/Crono_3.webp" alt="">
+        </div>
+
+        <p>Gran parte de la era de la historia humana conocida por los historiadores imperiales como la Edad de la
+            Tecnología o la "Edad Oscura de la Tecnología", que duró aproximadamente entre el 15º milenio y el 25º
+            milenio d.C., es misteriosa. Fue en este tiempo cuando los mutantes psíquicos llamados Navegantes nacieron
+            por primera vez o fueron creados mediante ingeniería genética, y combinados con la invención del Impulsor de
+            Warp, permitieron que la Humanidad viajara entre mundos más rápido que la velocidad de la luz utilizando el
+            peligroso medio hiperdimensional y psíquicamente reactivo del Inmaterial o "Warp".</p><br>
+
+        <p>Mucho antes del surgimiento del Emperador y el nacimiento del Imperio, durante la Edad de la Tecnología, la
+            Humanidad se extendió hacia las estrellas, ansiosa por ocupar nuevos mundos y expandir su floreciente
+            imperio interestelar. Enormes naves colonizadoras llevaban a colonos humanos entusiastas, junto con todos
+            los recursos que pudieran necesitar, y aterrizaban en mundos lejanos, a menudo aislados.</p><br>
+
+        <p>Los primeros Mundos de los Caballeros fueron fundados al comienzo mismo de la Edad de la Tecnología, antes
+            del descubrimiento del Impulsor de Warp en el 18º Milenio, cuando exploradores de la Vieja Tierra viajaron
+            lejos a través de la galaxia buscando planetas para utilizar como mundos agrícolas para proporcionar
+            alimentos para la creciente población de la Humanidad, o como colonias mineras para proporcionar los
+            materiales necesarios para alimentar su expansión a través de las estrellas. De hecho, estos llamados
+            "Mundos de los Caballeros" ya habían sido establecidos durante miles de años estándar cuando se fundó por
+            primera vez el Imperio en el 30º Milenio.</p><br>
+
+        <p>Cuando esas primeras naves exploradoras humanas descubrían un planeta adecuado para la colonización, se
+            enviaban enormes naves espaciales de subluz para establecerse en ellos. Estas naves formaban parte de las
+            flotas del "Largo Viaje" de Terra, nombradas así por la duración de su viaje y su destino entre las
+            estrellas. El nombre era apropiado; cada una de las naves coloniales del Largo Viaje llevaba a miles de
+            colonos en un viaje de décadas solares a un planeta muy distante. A su llegada, la nave colonial aterrizaba
+            y era inmediatamente desmantelada por los colonos para proporcionar los materiales necesarios para sus
+            primeros asentamientos; no había esperanza de regreso al lejano hogar de la Humanidad.</p><br>
+
+        <p>La lucha por la supervivencia en muchos de estos mundos fue desalentadora. En algunos, los colonos se
+            encontraban como presa de depredadores viciosos o eran atacados por especies alienígenas nativas, que veían
+            a los colonos humanos como invasores. En otros mundos, las condiciones climáticas extremas o una atmósfera
+            no respirable hacían que el viaje fuera imposible fuera de las zonas de hábitat con domos.</p><br>
+
+        <p>Sin embargo, se anticiparon problemas como estos, y para enfrentarlos, los colonos recibieron bases de datos
+            de Constructos de Plantillas Estándar (STC) artificialmente inteligentes y facilidades de fabricación que
+            les permitían construir trajes de exoarmadura potenciados. Los pilotos de estas máquinas bípedas estaban
+            protegidos por una dura cáscara de plasteel y armados con una serie de armas pesadas de grado militar.</p>
+        <br>
+
+        <p>Los trajes resultaron invaluables: pocos, si acaso ninguno, depredadores naturales o guerreros alienígenas
+            hostiles podían resistirles, y podían viajar incluso a través del entorno más peligroso con facilidad. Las
+            figuras acorazadas y altas pronto se convirtieron en una vista común en las colonias del Largo Viaje Humano,
+            donde los colonos los conocían como "Caballeros", en honor a los legendarios guerreros y protectores
+            acorazados de la antigua historia terráquea.</p><br>
+
+        <div class="wrapper">
+            <img class="imgFacc5" src="../img/imgCrono/Crono_4.webp" alt="">
+        </div>
+
+        <p>Impulsados por los efectos de alteración mental instilados por los Tronos Mechanicum (una plataforma de
+            control de impulsos mentales que permite a un piloto interfazarse mentalmente con su traje de batalla de
+            Caballero), a lo largo de unas pocas generaciones, estos guerreros de élite gradualmente desarrollaron una
+            sociedad que evolucionó hacia las posteriores casas nobles. Las placas de plasteel de los trajes de
+            exo-esqueleto originales fueron reemplazadas lentamente por una armadura más ornamental hecha de adamantium,
+            proporcionando una mejor protección, así como una panoplia digna del prestigio y rango del portador en su
+            sociedad.</p><br>
+
+        <p>Los deberes más mundanos que los Caballeros habían asumido alguna vez en los mundos coloniales - tal como
+            talar con sus poderosas sierras de cadena segadoras, por ejemplo, o despedazar rocas con sus cañones de
+            batalla de disparo rápido - fueron delegados a aquellos de rangos inferiores, permitiendo que los Caballeros
+            se concentraran en las artes de la guerra y el gobierno.</p><br>
+
+        <p>Residiendo en altos bastiones, estos "Nobles" y "Herederos" se esforzaban por proteger las vidas de sus
+            súbditos (como ahora veían a los colonos que protegían) y por traer orden al caótico maelstrom primordial en
+            los planetas que eran sus hogares. Las casas nobles demostraron ser sumamente exitosas en ambas cosas, y
+            pronto se convirtieron en una parte vital de la sociedad humana durante la Edad de la Tecnología.</p><br>
+
+        <p>La existencia de viajes interestelares rápidos proporcionados eventualmente por la invención del Impulsor de
+            Warp permitió que los mundos coloniales humanos interactuaran en una escala de tiempo normal por primera
+            vez, y el comercio y la comunicación interestelar se volvieron posibles, permitiendo que los mundos humanos
+            con ideas afines se unieran en combinaciones políticas y económicas para su beneficio mutuo.</p><br>
+
+        <p>Eventualmente, en algún momento durante esta era, toda la Humanidad se unió bajo alguna forma de gobierno
+            interestelar. Lo que también se sabe (en gran parte a partir de las obras del Guardián Cripias) es que un
+            grupo conocido como los "Hombres de Oro" dependía de las obras de los "Hombres de Piedra" para crear una
+            sociedad intergaláctica fantásticamente próspera, pero una desprovista (según los estándares imperiales
+            posteriores) de espiritualidad o piedad, enfocada solo en el avance de la ciencia y la tecnología.</p><br>
+
+        <div class="wrapper2">
+            <img class="imgFacc3" src="../img/imgCrono/Crono_1.webp" alt="">
+        </div>
+
+        <p>Se sabe que los Hombres de Piedra crearon un tercer grupo, los "Hombres de Hierro", postulados como alguna
+            forma de robots artificialmente autoconscientes o máquinas pensantes, para ayudarlos en sus trabajos y
+            llevar a cabo deberes militares. Los Hombres de Hierro se salieron de control y se rebelaron contra sus
+            creadores humanos, y estalló un conflicto cataclísmico, resultando en una catástrofe maltusiana parcial en
+            gran parte de la galaxia colonizada por la Humanidad, en la que ya no había suficientes recursos para
+            mantener a las vastas poblaciones de la Humanidad. A partir de este momento, se convirtió en un artículo de
+            fe en las sociedades humanas que la creación de máquinas pensantes y toda inteligencia artificial general
+            debería estar prohibida.</p><br>
+
+        <p>Peor aún, tras la destrucción causada por la guerra contra los Hombres de Hierro, los psíquicos humanos
+            comenzaron a aparecer en gran número en muchos mundos coloniales humanos, uno de los presagios de la
+            decadencia final del Imperio Aeldari que controlaba aún más de la galaxia que la Humanidad en estos años. El
+            resultado fue la primera introducción de la Humanidad a las entidades "Demoníacas" que moraban dentro del
+            Warp y el colapso final de la civilización interestelar humana durante lo que se conoció como la Era de los
+            Conflictos. En la propia Terra, este período sería recordado por un nombre diferente -- "Vieja Noche."</p>
+        <br><br id="Era de los Conflictos">
+
+        <hr><br><br>
+        <h3>Era de los Conflictos ("Vieja Noche") (M25-M30)</h3><br>
+
+        <div class="wrapper">
+            <img class="imgFacc1" src="../img/imgCrono/Crono_5.webp" alt="">
+        </div>
+
+        <p>Durante la Edad de la Tecnología, la Humanidad alcanzó su cenit científico y tecnológico, disfrutando de una
+            edad dorada de prosperidad y avance. El "Constructo de Plantilla Estándar", o STC, una base de datos de
+            computadora artificialmente inteligente de esquemas para todas las tecnologías humanas avanzadas conocidas,
+            había sido perfeccionado por científicos e ingenieros humanos y permitió una expansión sin precedentes de la
+            Humanidad por toda la galaxia.</p><br>
+
+        <p>Como se señaló anteriormente, una de las razones por las que la Humanidad tuvo tanto éxito en conquistar una
+            gran parte de la galaxia fue el desarrollo de los constructos artificialmente inteligentes ahora conocidos
+            solo en la leyenda imperial como los "Hombres de Hierro". Estos poderosos y completamente inteligentes
+            robots de combate ganaron muchas guerras para la Humanidad, pero por alguna razón se volvieron contra sus
+            amos al final de la Edad Oscura de la Tecnología en el gran conflicto llamado la "Revolución Cibernética".
+            Esta guerra eventualmente fue ganada por la Humanidad, pero a un gran costo y solo a través de la
+            intervención de otras facciones. El daño de este conflicto resultó catastrófico y destrozó gran parte del
+            poder de la Humanidad. Desafortunadamente, esto fue solo el comienzo de las desgracias de la Humanidad a
+            medida que la Edad de la Tecnología llegaba a su fin.</p><br>
+
+        <p>A medida que la Humanidad se dispersaba ampliamente por toda la galaxia durante la Edad de la Tecnología, el
+            antiguo Imperio Aeldari comenzó su declive; el gran éxito de la avanzada especie Aeldari había llevado a la
+            decadencia y al hedonismo a gran escala en el último milenio de su imperio. Dentro del universo inmaterial y
+            psíquico del Warp, la corrupción espiritual de la civilización Aeldari se reflejaba en la formación de una
+            nueva entidad estética, psíquica o "Dios del Caos", Slaanesh, que a su vez causó disturbios masivos en el
+            Warp; partes de la galaxia quedaron aisladas por estas "Tormentas de Warp", haciendo que los viajes Warp y
+            la comunicación interestelar astrotelepática fueran cada vez más imposibles a medida que pasaban los años,
+            aislando muchos mundos coloniales humanos entre sí, incluidos los del Sistema Solar.</p><br>
+
+        <div class="wrapper2">
+            <img class="imgFacc3" src="../img/imgCrono/Crono_6.webp" alt="">
+        </div>
+
+        <p>Hacia el final de la Edad de la Tecnología, los psíquicos aparecieron por primera vez entre la Humanidad.
+            Mientras eran perseguidos en muchos mundos humanos atrasados y regresivos como brujos, en sociedades
+            ilustradas y progresistas estos psíquicos fueron protegidos y aceptados al principio. Sin embargo, la
+            intolerancia inicial por la aparición de psíquicos entre la Humanidad luego parecería previsora, ya que
+            muchos mundos humanos cayeron bajo el dominio de Demonios y otras criaturas del Warp usando psíquicos
+            poseídos y débiles como pasajes hacia el mundo físico. Solo los mundos que habían suprimido rigurosamente a
+            los psíquicos sobrevivieron a la Era de los Conflictos.</p><br>
+
+
+        <p>La Era de los Conflictos siguió a la Edad de la Tecnología, ya que la civilización humana interestelar
+            colapsó en locura generalizada, posesión demoníaca, anarquía y guerra civil interhumana. Se desataron
+            terribles armas de la era dorada de la tecnología, devastando muchas colonias humanas y convirtiendo mundos
+            alguna vez verdes como Baal Secundus en planetas desérticos irradiados. Muchos mundos colonizados humanos
+            aislados y vulnerables también se convirtieron en presa de especies alienígenas hostiles, como los Orkos.
+        </p><br>
+
+        <p>En un período de tiempo relativamente corto, la civilización humana, que alguna vez se extendió por toda la
+            galaxia, fue llevada a sus rodillas, y se vio obligada a soportar casi cinco milenios terrestres de
+            anarquía, terror, guerra, genocidio y esclavitud. Aparte de los relatos de un gran sufrimiento, poca
+            información sobre estos largos años sobrevivió a este oscuro momento para ser conocida por los hombres y
+            mujeres del Imperio.</p><br><br id="Caída de los Aeldari">
+
+        <hr><br><br>
+        <h2 id="Caída de los Aeldari"><u>Caída de los Aeldari (M25-M30)</u></h2><br>
+
+        <div class="wrapper">
+            <img class="imgFacc5" src="../img/imgCrono/Crono_8.webp" alt="">
+        </div>
+
+        <p>Antes de la caída de su potente imperio interestelar, los Aeldari eran una especie humanoide tecnológica y
+            psíquicamente avanzada, generalmente considerada la especie inteligente más poderosa de toda la galaxia. Su
+            tecnología había avanzado tanto que poco o ningún trabajo era requerido por cada individuo Aeldari para
+            proveer las necesidades diarias de la vida. Como resultado del aburrimiento y la enajenación que resultaron,
+            en algún momento durante el 25º Milenio d.C. según el calendario Terrano, grupos de Aeldari comenzaron a
+            formar lo que se conocía como "Cultos del Placer" dedicados a la búsqueda de todos los placeres y
+            sensaciones que la vida tenía para ofrecerles a su especie.</p><br>
+
+        <p>A pesar de la predicción de los reclusivos Videntes Aeldari que advertían de una perdición inminente si los
+            Aeldari no cambiaban sus formas hedonistas, el gobierno dentro del Imperio Aeldari pronto colapsó y la
+            degeneración moral de sus mundos natales y varios mundos coloniales continuó sin obstáculos. A medida que la
+            búsqueda de experiencias cada vez más extremas alcanzaba su punto máximo, la muerte reinaba en las calles de
+            las ciudades Aeldari, cazador y cazado siendo parte de un ritual retorcido de destrucción que consumía a
+            millones en orgías de salvaje sed de sangre y exceso.</p><br>
+
+        <p>Algunos Aeldari fueron capaces de ver que su sociedad ahora corrupta se estaba destruyendo a sí misma, y
+            huyeron con disgusto; estos refugiados se establecerían en las distantes colonias rurales de su imperio, y
+            más tarde serían conocidos como los Exoditas o se embarcarían en las gigantescas naves-mundo Aeldari del
+            tamaño de continentes y navegarían entre las estrellas como comerciantes y exploradores, lejos de las
+            escenas de exceso hedonista que estaban destruyendo el corazón del Imperio Aeldari en el noroeste galáctico.
+        </p><br>
+
+        <p>Al morir, las almas de todos los seres autoconscientes fallecidos atraviesan los límites del reino físico y
+            van a descansar dentro del reino hiperdimensional de energía psíquicamente reactiva que subyace a toda la
+            realidad conocida como el Inmaterium o Warp. A medida que más y más Aeldari corruptos morían, sus almas
+            comenzaron a coalescer en una entidad más grande dentro del Warp, una representación viviente de la
+            corrupción hedonista que había definido sus vidas. Esta presencia creciente en el Warp causó la agregación
+            de enormes tormentas de Warp en toda la galaxia, eventualmente haciendo que los viajes y comunicaciones
+            interestelares fueran imposibles para las colonias de la Humanidad, dando inicio a la Era de los Conflictos
+            de la Humanidad.</p><br>
+
+        <div class="wrapper2">
+            <img class="imgFacc3" src="../img/imgCrono/Crono_9.webp" alt="">
+        </div>
+
+        <p>Esta colección gestáltica de almas Aeldari corruptas obtuvo autoconciencia en algún momento a fines del 30º
+            Milenio, creando la poderosa nueva entidad del Warp conocida como el Dios del Caos Slaanesh, el Príncipe del
+            Placer, llamado "Ella que Tiene Sed" por los Aeldari. Cuando Slaanesh llegó a ser, ocurrió una explosión
+            etérea que abarcó la extensión del Espacio Warp dentro de la Galaxia de la Vía Láctea, con el epicentro
+            ubicado dentro de los mundos natales centrales Aeldari del noroeste galáctico. Todos los Aeldari atrapados
+            en la inmensa explosión psíquica fueron instantáneamente asesinados, sus almas consumidas por Slaanesh, y la
+            región circundante del espacio se transformó en una gigantesca grieta permanente en el Warp más tarde
+            conocida como el "Ojo del Terror" para la Humanidad. Los mundos natales Aeldari centrales fueron
+            transformados en los páramos arruinados conocidos hoy como "Mundos Crone".</p><br>
+
+        <p>La mayoría de los dioses Aeldari restantes, que existían como entidades dentro del Warp, fueron destruidos
+            por Slaanesh después de su catastrófico nacimiento. Kaela Mensha Khaine, el dios Aeldari de la guerra,
+            intentó combatir al nuevo Dios del Caos, pero la forma de Khaine fue destrozada y exiliada al reino mortal,
+            donde reposó en los Circuitos de la Eternidad de las naves-mundo Asuryani, pero podía encarnarse en forma de
+            constructos animados llamados "Avatares", que descansaban en los corazones de las diversas naves-mundo
+            durante tiempos de grave peligro.</p><br>
+
+        <p>Los únicos otros dioses Aeldari que sobrevivieron a la Caída fueron el dios bromista Cegorach (también
+            llamado el "Dios Riente"), quien se escondió dentro de la Telaraña, y Isha, quien fue arrancada de las
+            fauces de Slaanesh por el Dios del Caos Nurgle, quien ahora la mantiene como esclava dentro de su horrendo
+            hogar jardín dentro del Reino del Caos.</p><br><br>
+
+        <div class="wrapper">
+            <img class="imgFacc1" src="../img/imgCrono/Crono_10.webp" alt="">
+        </div>
+
+        <p>La Caída destruyó por completo el una vez vasto Imperio Aeldari interestelar, dejando bandas dispersas de
+            Aeldari luchando por sobrevivir. Antes de la Caída, se construyeron vastas naves-mundo llamadas naves-mundo,
+            lo que permitió a aquellos que deseaban escapar de la degeneración de los mundos natales Aeldari huir, junto
+            con muestras de la flora y fauna perdidas de sus mundos. Cuando ocurrió la Caída, las diversas naves-mundo
+            resistieron la onda de choque etérea en el Warp, algunas siendo destruidas en el proceso.</p><br>
+
+        <p>Los mundos Exoditas, lejos del epicentro de la terrible catástrofe, quedaron en gran medida intactos por el
+            grito de nacimiento de Slaanesh. Para evitar que los eventos de la Caída se repitieran, los Aeldari de las
+            naves-mundo, que ahora se llamaban a sí mismos los "Asuryani" pero eran conocidos como los "Eldar" para los
+            forasteros, idearon el sistema de Sendero Asuryani, mediante el cual cada Aeldari de las naves-mundo
+            seguiría un camino de vida estricto, casi fanático, persiguiendo una actividad específica, como la artesanía
+            o la guerra, durante una parte de sus largas vidas, antes de cambiar a otro Sendero cuando el anterior se
+            volviera aburrido. De esta manera, los Asuryani esperaban controlar la extrema sensibilidad emocional y
+            psíquica que los había dejado abiertos a la corrupción por el Caos en primer lugar.</p><br>
+
+        <p>Sin embargo, algunos Aeldari corruptos sobrevivieron al nacimiento de Slaanesh refugiándose dentro de la
+            Telaraña misma. La Telaraña había sido durante mucho tiempo el hogar de una casi infinita cabalgata de
+            subdimensiones hiperdimensionales que estaban protegidas de las depredaciones de Slaanesh por las barreras
+            psíquicas erigidas dentro de la Dimensión del Laberinto para mantener a raya los peligros del Warp. Estos
+            seres sádicos se conocieron como los Drukhari o "Eldar Oscuros" para los forasteros, los habitantes de la
+            vasta Ciudad Oscura dentro de la Telaraña llamada Commorragh. Los Drukhari luego se alimentaron de Humanos y
+            Asuryani por igual para encontrar almas cuyo tormento y angustia pudieran devorar psíquicamente para
+            mantener sus propias almas contaminadas lejos de ser consumidas por Slaanesh.</p><br><br
+            id="Gran Cruzada"><br><br>
+
+        <hr><br><br>
+        <h3>Gran Cruzada (aprox. 798.M30-005.M31)</h3><br>
+
+        <div class="wrapper">
+            <img class="imgFacc5" src="../img/imgCrono/Crono_11.webp" alt="">
+        </div>
+
+        <p>La Gran Cruzada del Emperador de la Humanidad comenzó cuando la Era de la Ruina llegó a su fin para la
+            Humanidad. Las tormentas del Warp que habían aislado a los mundos colonizados por Humanos durante 5.000 años
+            terranos finalmente desaparecieron con el nacimiento de Slaanesh y la Caída de los Aeldari en el 30º
+            Milenio.</p><br>
+
+        <p>El hombre conocido solo como el Emperador, un Perpetuo y el mayor psíquico de la historia Humana, emergió
+            misteriosamente de las tinieblas de la Vieja Noche como el más grande caudillo de guerra del mundo natal
+            Humano. El Emperador, con la ayuda de su amigo y aliado Malcador el Sigilite, había unido Terra bajo su
+            dominio durante las Guerras de Unificación, que terminaron en el 712.M30 en las décadas finales de la Era de
+            la Ruina. Tenía la intención de usar a sus Marines Espaciales genéticamente mejorados y al Ejército Imperial
+            para reunir ahora a toda la Humanidad bajo su gobierno ilustrado y la filosofía racionalista de la Verdad
+            Imperial.</p><br>
+
+        <p>Haciendo un pacto conocido como el Tratado de Marte con el Culto Mechanicus del Dios Máquina en Marte en el
+            739.M30, el Emperador prometió permitir que los Tecno-sacerdotes continuaran practicando su fe y mantuvieran
+            la autonomía política de su gobierno Mechanicum si le proporcionaban las naves estelares y otra tecnología
+            avanzada que necesitaba para reunir la galaxia colonizada por Humanos.</p><br>
+
+        <p>El Emperador era un hombre de enormes habilidades en la práctica de la ciencia y el desarrollo de nuevas
+            tecnologías, y así muchos miembros del antiguo Mechanicum vieron en Él la venida del Omnissiah, el avatar
+            físico del Dios Máquina, que había sido profetizado por su fe. En el tratado que firmaron con el Emperador,
+            el Mechanicum de Marte prometió su apoyo a la creación de un nuevo Imperio del Hombre en el que servirían
+            como los principales proveedores de ciencia y tecnología del Imperio a cambio del primer acceso a cualquier
+            tecnología antigua, o "arqueotecnología", descubierta más allá de los límites del Sistema Solar.</p><br>
+
+        <div class="wrapper2">
+            <img class="imgFacc3" src="../img/imgCrono/Crono_12.webp" alt="">
+        </div>
+
+        <p>Con la firma del Tratado de Marte, el símbolo del Imperio cambió de la cabeza de rapaz y el rayo icono
+            utilizado por el Emperador durante las Guerras de Unificación en Terra al águila bicéfala conocida como el
+            Águila Imperial, para simbolizar la unión de los imperios de la Tierra y Marte. Con las fábricas forjadoras
+            y la producción industrial de Marte, el Emperador pudo reequipar a sus ejércitos, y lo que es más
+            importante, ahora contaba con el uso de las Legiones Titánicas y los Caballeros del Mechanicum, gigantescas
+            máquinas de guerra robóticas con el potencial de dominar el campo de batalla.</p><br>
+
+        <p>Al principio, la expansión del recién nacido Imperio hacia el espacio interestelar fue lenta, ya que el
+            Ejército Imperial aún era pequeño, y lo que es más importante, las 20 Legiones de Marines Espaciales del
+            Emperador estaban inhibidas por la ausencia de sus primarcas, los comandantes militares transhumanos
+            genéticamente modificados que el Emperador había creado durante las Guerras de Unificación para liderar su
+            reconquista eventual de la galaxia al frente de las Legiones Astartes, pero que se habían perdido en el Warp
+            antes del final de las Guerras de Unificación debido a las maquinaciones de los Dioses del Caos.</p><br>
+
+        <p>Esta falta hacía que el tiempo para la creación de un nuevo Marine Espacial a partir de un joven humano
+            normal fuera mucho más largo. Sin embargo, esta dificultad estaba a punto de terminar, ya que en Cthonia, un
+            planeta en un sistema estelar no muy lejano de Terra, el Emperador se reunió por primera vez en el 801.M30
+            con uno de sus primarcas perdidos, Horus. Descubierto a temprana edad, el Emperador tomó a Horus bajo su
+            protección y le enseñó todo lo que sabía. Horus y el Emperador tenían un vínculo verdaderamente único, el de
+            padre e hijo, y muchas veces se salvaron la vida mutuamente. Pero después de casi 20 años estándar, el
+            Emperador descubrió a otro de los primarcas de los Marines Espaciales, Leman Russ, en el gélido mundo de
+            Fenris en el 819.M30. Aunque Horus estaba contento con el descubrimiento de uno de sus hermanos,
+            secretamente esperaba siempre ser el hijo favorito del Emperador.</p><br>
+
+        <p>Con el tiempo, todos los primarcas fueron encontrados en los mundos a los que habían sido enviados por
+            voluntad de los Poderes Ruinosos del Caos, y cada uno fue colocado al mando de sus respectivas Legiones de
+            Marines Espaciales. Las Legiones, como resultado, se expandieron enormemente con nuevos reclutas
+            provenientes de los mundos adoptivos de sus primarcas, y ahora se podían producir nuevos Marines Espaciales
+            en solo un año terrano. Pero esta aceleración y las técnicas de genética empleadas para llevarla a cabo
+            produjeron defectos fundamentales en la psique de cada Marine Espacial creado a partir de ciertas herencias
+            genéticas de primarcas a través de este proceso. Estos defectos resultarían más tarde fatales para muchos de
+            los sueños del Emperador para la Humanidad.</p><br>
+
+        <p>La Gran Cruzada duró 200 años estándar, hasta los primeros años del 31º Milenio, y llevó muchos sistemas
+            estelares perdidos de nuevo al seno del recién nacido Imperio del Hombre. Bajo el mando del Consejo de
+            Guerra del Emperador y sus primarcas redescubiertos, vastas flotas expedicionarias compuestas por el
+            Ejército Imperial y las veinte Legiones de Marines Espaciales lucharon contra alienígenas, tribus humanas
+            salvajes, dictadores humanos mezquinos y las fuerzas corrompidas por el Warp que habían ganado control sobre
+            grandes porciones del espacio colonizado por Humanos durante la Era de la Ruina.</p><br><br>
+
+        <div class="wrapper">
+            <img class="imgFacc5" src="../img/imgCrono/Crono_13.webp" alt="">
+        </div>
+
+        <p>Una vez que un mundo colonizado por Humanos había sido pacificado, se llevaba a cabo su "Cumplimiento
+            Imperial" por un nuevo gobernador planetario imperial elegido por el Emperador. Parte de este proceso
+            incluía la erradicación de cualquier creencia supersticiosa o religiosa de la población, con un respeto
+            únicamente por la razón y el avance medido de la ciencia y la tecnología, un sistema de creencias ateo
+            conocido como la "Verdad Imperial".</p><br>
+
+        <p>Luego, el mundo era ocupado a menudo por una o varias unidades del Ejército Imperial que quedaban atrás para
+            completar la integración del planeta en el Imperio mientras la flota expedicionaria, liderada por los
+            Astartes, avanzaba hacia su próximo objetivo. A medida que los primarcas tomaban el control de las Legiones
+            de Marines Espaciales que habían sido creadas a partir de su semilla genética, la Gran Cruzada se separó,
+            moviéndose en muchas direcciones y llegando lejos por toda la galaxia.</p><br>
+
+        <p>Después de que la Cruzada Imperial en el mundo de Ullanor concluyera en el 000.M30 al llevar ese planeta al
+            Cumplimiento Imperial después de la derrota de una gran fuerza de Orkos, el Emperador la reclamó como la
+            mayor victoria del Imperio hasta la fecha, y que Horus debería recibir todo el crédito. Alabando a Horus y
+            su Legión de Lobos Lunares (más tarde renombrada como los Hijos de Horus), el Emperador declaró que tendría
+            que dejar atrás las flotas expedicionarias y regresar a Terra para comenzar la próxima fase secreta de su
+            plan para asegurar la dominación de la galaxia por parte de la Humanidad.</p><br>
+
+
+        <p>En su lugar, el Emperador anunció que Horus sería declarado Maestro de Guerra del Imperio, el comandante de
+            facto de todos los ejércitos del Emperador en la Gran Cruzada. Aunque Horus estaba preocupado de que el
+            Emperador lo dejara a él y a sus hermanos primarcas para continuar solos por alguna razón desconocida, con
+            Horus como su nuevo comandante, los ejércitos y Marines Espaciales del Imperio continuaron expandiéndose
+            cada vez más hacia afuera, redescubriendo mundos humanos perdidos y trayéndolos de vuelta al seno del
+            Imperio ilustrado. Esta expansión duró cinco años estándar más hasta el estallido de la terrible guerra
+            civil imperial conocida como la Herejía de Horus en el 005.M31.</p><br><br id="Herejía de Horus">
+
+        <hr><br><br>
+        <h3>Herejía de Horus (aprox. 005-014.M31)</h3><br>
+
+        <div class="wrapper2">
+            <img class="imgFacc3" src="../img/imgCrono/Crono_17.webp" alt="">
+        </div>
+
+        <p>Pero las semillas de la destrucción para el gran sueño del Emperador ya habían sido sembradas. Uno de los
+            primarcas, Lorgar Aureliano de la Legión de los Portadores de la Palabra, se había convertido secretamente
+            al servicio de los Dioses Oscuros del Warp aproximadamente ciento sesenta años estándar después del inicio
+            de la Gran Cruzada. Buscando la verdadera fuente de la divinidad en el universo después de que el Emperador
+            reprendiera brutalmente a Lorgar y su Legión en la "ciudad perfecta" de Monarchia en el mundo de Khur por
+            difundir la falsedad de que el Emperador era el único y verdadero dios de la Humanidad, el primarca
+            emprendió una gran peregrinación a través de la galaxia.</p><br>
+
+        <p>La búsqueda de Lorgar eventualmente llevó a los Portadores de la Palabra al corazón del gran y permanente
+            Rift del Warp en el Segmentum Obscurus, más tarde llamado el Ojo del Terror. Allí, Lorgar estableció
+            contacto con entidades que creía que realmente eran divinidades dignas de su adoración: los Dioses del Caos.
+            Dedicándose a su visión de ver el Warp y el espacio real entrelazados en una sola realidad y los beneficios
+            que creía que esto traería a la Humanidad, el primarca pasó las próximas cuatro décadas solares preparándose
+            para convertir a sus hermanos y sus Legiones al servicio del Caos.</p><br>
+
+        <p>Con este fin, Lorgar organizó para que el Señor de la Guerra Horus visitara el mundo bárbaro de Davin poco
+            después del final de la Cruzada de Ullanor. Allí, arregló para que el Señor de la Guerra fuera herido de
+            muerte por un arma contaminada por el toque oscuro del Dios del Caos Nurgle, el Padre de la Peste. Incluso
+            la constitución superhumana de un primarca resultó incapaz de derrotar al patógeno corrompido por el Warp
+            creado por el Dios de la Peste, y así, para salvar su vida, los propios Astartes de Horus lo entregaron a un
+            círculo de Cultistas del Caos de Davin conocidos como el Templo de la Logia de la Serpiente.</p><br>
+
+        <p>Allí, en un ritual malvado y mágico que había sido preparado por Lorgar y supervisado por el Primer Capellán
+            de los Portadores de la Palabra, Erebus, el espíritu de Horus fue arrojado al Warp, donde los Dioses del
+            Caos prometieron salvarle la vida si elegía convertirse en su siervo y derrocar el gobierno del Emperador de
+            la Humanidad. Manipulando las inseguridades de Horus con respecto al afecto del Emperador por él y su deseo
+            insaciable de reconocimiento, poder y gloria, los Poderes Ruinosos lograron convertir a Horus contra el Amo
+            de la Humanidad mediante una combinación de mentiras y medias verdades. Con su acuerdo con su trato, el alma
+            de Horus fue devuelta a su cuerpo en el templo de Davin y se despertó completamente curado, aunque ahora
+            caminaba por el camino de la perdición.</p><br>
+
+        <p>Durante los próximos años estándar, Horus comenzó a mover sigilosamente todas las piezas del ejército
+            imperial que comandaba para lanzar una gran rebelión contra la autoridad del Emperador, destinada a que
+            Horus reclamara el Mundo Trono de Terra y el manto del nuevo emperador de la Humanidad. El Señor de la
+            Guerra, siempre con la ayuda de Lorgar y sus aliados Demoníacos, logró subornar la lealtad de ocho de sus
+            hermanos primarcas.</p><br>
+
+        <p>Lo hizo explotando sus propias inseguridades con respecto al trato del Emperador hacia ellos y las
+            rivalidades celosas que muchos de los primarcas habían desarrollado a lo largo de la Gran Cruzada con sus
+            compañeros. Las promesas de Horus de una mayor autonomía política y la eliminación de restricciones en la
+            adquisición de ciertas tecnologías prohibidas por el Emperador también ganaron la lealtad de Kelbor-Hal, el
+            fabricator-general de Marte y líder del antiguo Mechanicum.</p><br>
+
+        <p>Para el 005.M31, la traición de Horus, conocida en siglos posteriores como la "Herejía de Horus", se extendió
+            para abarcar aproximadamente la mitad de las fuerzas militares del Imperio, incluidas pequeñas Fuerzas de
+            Defensa Planetaria, muchos regimientos del Ejército Imperial, las 9 Legiones Traidoras de Marines Espaciales
+            del Caos y casi la mitad de las potentes fuerzas Taghmata del antiguo Mechanicum, Legiones de Titán y casas
+            de caballeros, formando el núcleo de los adeptos del Mechanicum que eligieron servir a los Poderes Ruinosos
+            y que más tarde fueron llamados el "Mechanicum Oscuro", aunque se referían a sí mismos como el "verdadero
+            Mechanicum".</p><br><br>
+
+        <div class="wrapper">
+            <img class="imgFacc5" src="../img/imgCrono/Crono_14.webp" alt="">
+        </div>
+
+        <p>La Herejía de Horus realmente comenzó en el mundo de Isstvan III, donde Horus utilizó el estallido de una
+            rebelión alimentada por el Caos contra el gobierno imperial como pretexto para enviar a todos los Astartes
+            Leales, aquellos Marines Espaciales que Horus y sus primarcas aliados sabían que nunca se volverían contra
+            el Emperador, a la superficie. Una vez que los Leales de cuatro de las Legiones de Marines Espaciales
+            aliadas a Horus estuvieron en el planeta y participaron en combates, la flota imperial en órbita desató un
+            devastador bombardeo de bombas de virus sobre ellos, buscando matar a todos los Leales y también a toda la
+            población planetaria en lo que se recuerda como la "Atrocidad de Isstvan III".</p><br>
+
+        <p>Pero Horus calculó mal, ya que varios de los Leales se enteraron del complot antes y pudieron advertir a sus
+            hermanos de batalla en la superficie de Isstvan III antes de que comenzara el mortal bombardeo. Miles de
+            Astartes Leales sobrevivieron, obligando a Horus y a los Traidores a lanzar una campaña de combates urbanos
+            de semanas solares contra sus antiguos aliados, ya que la occlusión atmosférica causada por el bombardeo con
+            virus impedía un simple bombardeo orbital de sus posiciones. Al mismo tiempo, otro grupo de Leales a bordo
+            de la fragata de la Legión de la Guardia de la Muerte, el Eisenstein, logró huir al Warp con noticias de la
+            traición del Señor de la Guerra, con la intención de informar al Emperador de la traición de su hijo
+            favorito.</p><br>
+
+        <p>Después de que Horus eliminara a los Leales en Isstvan III con un bombardeo orbital una vez que los cielos
+            sobre el área objetivo se despejaron lo suficiente para permitir un asalto orbital preciso, trasladó sus
+            fuerzas al mundo vecino de Isstvan V para esperar la retribución imperial que sabía que vendría. Los Leales
+            creían con razón que superaban en número a las cuatro Legiones de Marines Espaciales de Horus, por lo que
+            cuando el Emperador, representado en el asunto por Rogal Dorn, primarca de la Legión de los Puños Imperiales
+            y el Pretoriano de Terra, envió una fuerza de siete Legiones contra él en Isstvan V, los Leales pensaron que
+            la rebelión del Señor de la Guerra sería de corta duración.</p><br>
+
+        <p>Pero subestimaron profundamente al hombre que el Emperador había elegido para ocupar su lugar al frente de la
+            máquina militar del Imperio. De las siete Legiones de Astartes enviadas contra él en Isstvan V en ca.
+            006.M31, Horus ya había ganado secretamente la lealtad de cuatro, que se volvieron abruptamente contra las
+            tres Legiones Leales y las destruyeron casi por completo. De un solo golpe, en la llamada "Masacre del Sitio
+            de Aterrizaje" de Isstvan V, Horus casi duplicó sus fuerzas y debilitó a los Leales hasta el punto en que
+            ahora podía comenzar una ofensiva hacia Terra misma.</p><br>
+
+        <p>La terrible guerra civil que siguió mientras Horus avanzaba hacia el corazón del Imperio duró otros 7 años
+            estándar, matando a billones de hombres y mujeres en toda la galaxia y culminando en el 014.M31 en un asalto
+            masivo al Palacio Imperial durante el climático Asedio de Terra. Después de 55 días solares de lucha, la
+            guerra fue terminada por el Emperador y Horus duelo en combate singular a bordo del buque insignia de Horus,
+            el acorazado clase Gloriana Vengeful Spirit, en órbita de Terra, antes de que refuerzos Leales pudieran
+            llegar al Mundo Trono y arrojar a las fuerzas Traidoras de su premio.</p><br>
+
+        <p>Aunque mortalmente herido durante la batalla final con su hijo una vez favorito, que se había vuelto
+            inmensamente poderoso y henchido de las energías del Warp como resultado del favor unido de los Dioses del
+            Caos, el Emperador logró derribar a Horus usando todo el poder reunido de sus inigualables poderes
+            psíquicos. A pesar de su gran tristeza y reluctancia, el Emperador borró el alma de Horus del Warp,
+            impidiendo que fuera resucitado para servir a los Poderes Ruinosos una vez más.</p><br>
+
+        <div class="wrapper2">
+            <img class="imgFacc3" src="../img/imgCrono/Crono_16.webp" alt="">
+        </div>
+
+        <p>Sin su líder, la unidad de las fuerzas del Caos pronto se desmoronó y, cuando los refuerzos Leales liderados
+            por Roboute Guilliman de los Ultramarines llegaron al Sistema Sol, las Legiones Traidoras y su Mechanicum
+            Oscuro y aliados mortales se retiraron al masivo Rift del Warp en el Segmentum Obscurus conocido como el Ojo
+            del Terror.</p><br>
+
+        <p>Por su propia dirección, el cuerpo lisiado del Emperador fue instalado en los mecanismos de soporte vital
+            cibernéticos del amplificador psíquico conocido como el Trono Dorado. Esto permitió que su mente tuviera un
+            ancla en el espacio real desde el cual podría luchar contra la influencia de los Dioses del Caos en el Warp
+            y continuar dirigiendo las energías del Astronomican, el faro psíquico que era la sangre vital de las
+            comunicaciones, el comercio y los viajes interestelares del Imperio.</p><br>
+
+        <p>En un epílogo a los terribles traumas de la Herejía, una batalla entre Leales y Traidores librada en el
+            planeta Sotha, hogar del antiguo faro del Warp Necron conocido como el Pharos, atrajo la atención de las
+            flotas enjambre de los Tiránidos hacia la galaxia. Fue en este tiempo antiguo que sus vastas flotas
+            biomecánicas comenzaron a moverse a través del vacío extragaláctico hacia la Vía Láctea, atrayéndolos
+            siempre hacia el brillante faro psíquico del Astronomican.</p><br><br id="Gran Purga">
+
+        <hr><br><br>
+        <h3>Gran Purga (ca. 014-Fecha Desconocida.M31)</h3><br>
+
+        <div class="wrapper">
+            <img class="imgFacc1" src="../img/imgCrono/Crono_15.webp" alt="">
+        </div>
+
+        <p>La "Gran Purga", o simplemente "La Purga", fue la gran contraofensiva del Imperio del Hombre contra las
+            Legiones Traidoras. Comenzó inmediatamente después del final de la Herejía de Horus tras la muerte del Señor
+            de la Guerra y el fracaso de su asalto al Palacio Imperial durante el Asedio de Terra en el 014.M31. A lo
+            largo de muchas décadas solares, finalmente logró expulsar a las fuerzas del Caos de sus territorios
+            conquistados dentro del espacio Imperial para encontrar un refugio en la tormenta Warp permanente conocida
+            como el Ojo del Terror.</p><br>
+
+        <p>Antes de ser confinado para siempre dentro de los mecanismos de soporte vital del Trono Dorado, el Emperador
+            había pronunciado juicio sobre los Traidores: los declaró Excomulgados Traitoris y determinó que debían ser
+            arrojados al infernal Ojo del Terror por toda la eternidad. Todos los registros y recuerdos de las Legiones
+            Traidoras serían posteriormente expurgados de los archivos imperiales.</p><br>
+
+        <p>Mundos como Isstvan V y los antiguos mundos natales de las Legiones Traidoras serían limpiados de toda vida
+            debido a la corrupción de su gente por el Caos. Las tropas asociadas de las Legiones Traidoras del
+            Mechanicum Oscuro, las Legiones de Titán, las casas de caballeros del Caos o los regimientos y naves
+            estelares del Ejército Imperial y la Armada Imperial que se habían vuelto hacia el Caos serían destruidos o
+            arrojados al Ojo. Sería como si las Legiones Traidoras y sus aliados nunca hubieran existido para manchar al
+            Imperio con su traición.</p><br>
+
+        <p>Después de la muerte de Horus, aquellos Traidores que no habían sido asesinados de inmediato durante el
+            Asedio de Terra huyeron ante la ira vengativa de las fuerzas Leales lideradas por el Primarca Roboute
+            Guilliman de la Legión de los Ultramarines, quien también asumió las responsabilidades de liderazgo del
+            Imperio como el Regente Imperial y el señor comandante del Imperio en la ausencia del Emperador. Muchos
+            Traidores lograron escapar al espacio inexplorado o desaparecieron en el Ojo del Terror o en otras fisuras
+            del Warp menos conocidas como el Maelstrom.</p><br>
+
+        <p>La lucha continuó durante muchos años estándar después de que la Herejía había terminado con la muerte de
+            Horus antes de que las fuerzas Traidoras fueran completamente destruidas o exiliadas al Ojo del Terror.
+            Muchos sistemas estelares corruptos por el Caos fueron purgados y puestos bajo la vigilancia de la recién
+            nacida Inquisición. El sueño del Emperador de una nueva era de iluminación, un tiempo en el que la Humanidad
+            fue liberada de la superstición y la ignorancia, se convertiría en algo muy diferente. La Gran Purga sería
+            seguida por la era de diez milenios conocida como la Era del Imperio.</p><br><br id="Segunda Fundación">
+
+        <hr><br><br>
+        <h3>Segunda Fundación (ca. 021.M31)</h3><br>
+
+        <p>En medio de las campañas de la Gran Purga, ocurrió la Segunda Fundación. Las 9 Legiones Leales de Marines
+            Espaciales restantes fueron disueltas, sus guerreros transhumanos transferidos a las organizaciones mucho
+            más pequeñas de 1,000 Astartes conocidas como Capítulos, de acuerdo con los dictados recién establecidos del
+            Códice Astartes de Roboute Guilliman. El Códice proporcionaba un manual altamente detallado y una guía de
+            instrucciones para el establecimiento, entrenamiento, organización y tácticas militares de un Capítulo de
+            Marines Espaciales.</p><br>
+
+        <p>El propósito de esta reorganización era evitar que un líder como Horus volviera a hacer uso del poder de una
+            Legión completa de Marines Espaciales contra el reino del Emperador. Al mismo tiempo, debido a su menor
+            tamaño, los Marines Espaciales se transformaron de las fuerzas militares de primera línea del Imperio en una
+            fuerza de asalto planetaria y de reacción rápida dedicada.</p><br>
+
+        <p>Una parte de los Marines Espaciales, ahora colectivamente conocidos como el Adeptus Astartes, mantuvieron los
+            nombres, emblemas y colores originales de sus Legiones progenitoras, mientras que los Capítulos restantes
+            adoptaron nuevos nombres y heráldica y eventualmente desarrollaron culturas, tradiciones y creencias de
+            Capítulo independientes. La mayoría de estos Capítulos de la Segunda Fundación todavía sirven con orgullo al
+            Imperio hoy.</p><br><br id="Era del Imperio">
+
+        <hr><br><br>
+        <h3>Era del Imperio (M31 - Presente)</h3><br>
+
+        <p>La Era del Imperio es el período de tiempo que comenzó con el final de la Herejía de Horus a principios del
+            milenio 31, y generalmente se hace referencia en tiempo presente. El período de tiempo aproximado comienza
+            en el 014.M31 y continúa hasta el presente, con el último año representado en los registros imperiales antes
+            de la apertura de la Gran Grieta y el inicio de la Era Indomitus siendo 999.M41.</p><br>
+
+        <p>La Era del Imperio generalmente se considera que abarca desde el final de la Herejía de Horus hasta el
+            presente narrativo, un período de aproximadamente diez mil años terranos.</p><br><br>
+
+        <img src="../img/imgCrono/Crono_18.webp" alt="" width="700px">
+
+
+        <button id="btnGenerico" title="Subir" onclick="scrollToTop()"><i class="fa-solid fa-up-long"></i></button>
+
+    </section>
+    <!--SECCION FOOTER-->
+    <footer>
+        <p>Todos los derechos reservados - 2024</p>
+    </footer>
 </body>
+
 </html>
